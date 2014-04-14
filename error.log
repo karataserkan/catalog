@@ -1,0 +1,8 @@
+[Mon Apr 14 14:03:24 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.okutus.com/site/login
+[Mon Apr 14 14:03:24 2014] [error] [client 81.215.15.54] U2FsdGVkX1/Qo6EHFUgW9DdxyBTlHgM3JCjlL6zjUsKq3OyaOYZOCuGLD05wmFi1\\nKxFgo9sSGRvJwzHaP4Rx/5USBHSEmFtVYaiLgnipQND8ImVtqxBShfnEq1P+Ako8\\npIq3e6Vy+vffByf2NtlEnvLWKxJq3TIOFvKf15OpTs7tFVy0SXodfHC+Mxm+h20Y\\n/wVCInNShpBJvhYhK0rcu8W2E5lUZSbzkJXiTCwfIK4VwcrXPbmVPeMlYl/lrSzZ\\ngaCK502mMRXC/QayoF7FAfDBfAc+NS2sRoWo8CRp2CX5PQcnh9pVFKDfLcd0Ep+Z\\n, referer: http://reader.okutus.com/site/login
+[Mon Apr 14 14:03:24 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.okutus.com/site/login
+[Mon Apr 14 14:03:24 2014] [error] [client 81.215.15.54] U2FsdGVkX185s8a+ty65NInWm6m6+gehWPT17L3DRcOvAKT+Dz5yKR42TuBmj2NQ\\nQAVCR5moxbqZ1y+zW1Z2/wcfX25EljOKMemSIV9i93Y=\\n, referer: http://reader.okutus.com/site/login
+[Mon Apr 14 14:03:24 2014] [error] [client 81.215.15.54] KERBERIZED, referer: http://reader.okutus.com/site/login
+[Mon Apr 14 14:03:24 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => admin@seviye.com.tr\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1397473396\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 0479b85e086899e49ba59f301270918f7d224195eae86cb1a0a071ef2205fa72\n)\n, referer: http://reader.okutus.com/site/login
+[Mon Apr 14 14:03:24 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => admin@seviye.com.tr\n    [timestamp] => 1397473396\n)\n, referer: http://reader.okutus.com/site/login
+[Mon Apr 14 14:03:24 2014] [error] [client 81.215.15.54] SENDING DATA..., referer: http://reader.okutus.com/site/login
