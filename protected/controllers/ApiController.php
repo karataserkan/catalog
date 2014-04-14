@@ -102,8 +102,8 @@ class ApiController extends Controller
 		$data['contentTotalPage']=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'totalPage'))->metaValue;
 
 
-		$data['host_address']=Yii::app()->db->createCommand("SELECT h.address FROM host h, content_host c where c.content_id='".$id."' AND h.id=c.host_id")->queryRow();
-
+		$host=Yii::app()->db->createCommand("SELECT h.address FROM host h, content_host c where c.content_id='".$id."' AND h.id=c.host_id")->queryRow();
+		$data['host_address']=$host['address'];
 		// if ($res) {
 		// 	foreach ($res as $key => &$items) {
 		// 		$items=$items->attributes;
