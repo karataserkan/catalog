@@ -208,13 +208,13 @@ class SiteController extends Controller
 			$contentMeta->save();
 		}
 
-		// if ($_POST['tracking']) {
-		// 	$contentMeta=new ContentMeta;
-		// 	$contentMeta->contentId=$content->contentId;
-		// 	$contentMeta->metaKey="tracking";
-		// 	$contentMeta->metaValue=$_POST['tracking'];
-		// 	$contentMeta->metaCreationDate=$content->created;
-		// 	$contentMeta->save();
+		if ($_POST['tracking']) {
+			$contentMeta=new ContentMeta;
+			$contentMeta->contentId=$content->contentId;
+			$contentMeta->metaKey="tracking";
+			$contentMeta->metaValue=$_POST['tracking'];
+			$contentMeta->metaCreationDate=$content->created;
+			$contentMeta->save();
 		}
 
 		//book MARC
