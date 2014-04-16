@@ -21,13 +21,40 @@ class SiteController extends Controller
 		);
 	}
 
+	
+
 	/**
 	 * This is the default 'index' action that is invoked
 	 * when an action is not explicitly requested by users.
 	 */
 	public function actionIndex()
 	{
-		$this->render('index');
+			$this->render('index');
+	}
+
+	public function actionSearch($page=1,$key=null)
+	{
+		$books;
+		$page--;
+		if ((isset($_POST['text']) || $key) AND $page >-1) {
+			$limit=10;
+			$offset=$limit*$page;
+			if (!$key) {
+				$key=$_POST['text'];
+			}
+			$books=Content::model()->findAll('contentTitle LIKE "%'.$key.'%" OR contentExplanation LIKE "%'.$key.'%" OR author LIKE "%'.$key.'%" OR organisationName LIKE "%'.$key.'%" LIMIT '.$limit.' OFFSET '.$offset,array());
+			$pages=Yii::app()->db->createCommand('select count(*) as count,ceil(count(*)/10) as pages  from content where contentTitle LIKE "%'.$key.'%" OR contentExplanation LIKE "%'.$key.'%" OR author LIKE "%'.$key.'%" OR organisationName LIKE "%'.$key.'%"')->queryRow();
+			$totalPage=$pages['pages'];
+			$totalBooks=$pages['count'];
+		}
+
+	    $this->render('search', array(
+	    'books' => $books,
+	    'criteria' =>$key,
+	    'totalPage'=>$totalPage,
+	    'currentPage'=>++$page,
+	    'totalBooks'=>$totalBooks
+	    ));
 	}
 
 	public function actionImport()
