@@ -57,6 +57,19 @@ class SiteController extends Controller
 	    ));
 	}
 
+	public function actionBook($name,$id)
+	{
+		$book=Content::model()->findByPk($id);
+		$abstract=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'abstract','contentId'=>$id))->metaValue;
+		$publishDate=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'date','contentId'=>$id))->metaValue;
+		$totalPage=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'totalPage','contentId'=>$id))->metaValue;
+		$subject=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'subject','contentId'=>$id))->metaValue;
+		$language=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'language','contentId'=>$id))->metaValue;
+		$edition=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'edition','contentId'=>$id))->metaValue;
+		$translator=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'translator','contentId'=>$id))->metaValue;
+		$this->render("book",array('book'=>$book,'abstract'=>$abstract,'publishDate'=>$publishDate,'totPage'=>$totalPage,'subject'=>$subject,'language'=>$language,'edition'=>$edition,'translator'=>$translator));
+	}
+
 	public function actionImport()
 	{
 		$control=array();
