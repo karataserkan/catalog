@@ -523,3 +523,144 @@ Stack trace:
 REQUEST_URI=/site/search?page=3&key=a
 HTTP_REFERER=http://catalog.lindneo.com/site/search?page=2&key=a
 ---
+2014/04/17 04:16:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/catalog/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/catalog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/04/17 06:17:15 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('book')
+#4 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/book/Felse...')
+#5 /var/www/catalog/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/catalog/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/site/book/Felsefe%20YGS%20Soru%20Bankas%C4%B1/5zyMRkr6sW3bzyYKepCN1F3dopJYS03KoDeVNJ7CVpVX
+HTTP_REFERER=http://catalog.lindneo.com/site/search
+---
+2014/04/17 06:17:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('book')
+#4 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/book/denem...')
+#5 /var/www/catalog/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/catalog/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/site/book/deneme/2GjHRKKEoDh6JxcjGoFIyE6cxT6eaUS57TWLdaBrSpDD
+HTTP_REFERER=http://catalog.lindneo.com/site/search
+---
+2014/04/17 06:18:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('book')
+#4 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/book/denem...')
+#5 /var/www/catalog/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/catalog/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/site/book/deneme/2GjHRKKEoDh6JxcjGoFIyE6cxT6eaUS57TWLdaBrSpDD
+HTTP_REFERER=http://catalog.lindneo.com/site/search
+---
+2014/04/17 06:18:25 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('book')
+#4 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/book/denem...')
+#5 /var/www/catalog/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/catalog/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/site/book/deneme/2GjHRKKEoDh6JxcjGoFIyE6cxT6eaUS57TWLdaBrSpDD
+HTTP_REFERER=http://catalog.lindneo.com/site/search
+---
+2014/04/17 06:20:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('book')
+#4 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/book/denem...')
+#5 /var/www/catalog/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/catalog/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/site/book/deneme/2GjHRKKEoDh6JxcjGoFIyE6cxT6eaUS57TWLdaBrSpDD
+HTTP_REFERER=http://catalog.lindneo.com/site/search
+---
+2014/04/17 06:20:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('book')
+#4 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/book')
+#5 /var/www/catalog/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/catalog/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/site/book?/name=deneme&id=2GjHRKKEoDh6JxcjGoFIyE6cxT6eaUS57TWLdaBrSpDD
+HTTP_REFERER=http://catalog.lindneo.com/site/search
+---
+2014/04/17 07:18:24 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT * FROM `contentMeta` `t` WHERE metaKey=:metaKey AND contentId=: LIMIT 1.
+in /var/www/catalog/protected/controllers/SiteController.php (63)
+in /var/www/catalog/index.php (13)
+2014/04/17 07:18:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT * FROM `contentMeta` `t` WHERE metaKey=:metaKey AND contentId=: LIMIT 1' in /var/www/catalog/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/catalog/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /var/www/catalog/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1351): CDbCommand->queryRow()
+#2 /var/www/catalog/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1456): CActiveRecord->query(Object(CDbCriteria))
+#3 /var/www/catalog/protected/controllers/SiteController.php(63): CActiveRecord->find('metaKey=:metaKe...', Array)
+#4 [internal function]: SiteController->actionBook('Leyleklerin U??...', 'AbpyrViD5H3ZMRI...')
+#5 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#6 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#7 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('book')
+#11 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/book')
+#12 /var/www/catalog/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/catalog/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/site/book?name=Leyleklerin%20U%C3%A7u%C5%9Fu&id=AbpyrViD5H3ZMRIHK4aOSm9ju91VZZ1ooat4moAR5kH3
+HTTP_REFERER=http://catalog.lindneo.com/site/search
+---
+2014/04/17 07:18:26 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT * FROM `contentMeta` `t` WHERE metaKey=:metaKey AND contentId=: LIMIT 1.
+in /var/www/catalog/protected/controllers/SiteController.php (63)
+in /var/www/catalog/index.php (13)
+2014/04/17 07:18:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT * FROM `contentMeta` `t` WHERE metaKey=:metaKey AND contentId=: LIMIT 1' in /var/www/catalog/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/catalog/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /var/www/catalog/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1351): CDbCommand->queryRow()
+#2 /var/www/catalog/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1456): CActiveRecord->query(Object(CDbCriteria))
+#3 /var/www/catalog/protected/controllers/SiteController.php(63): CActiveRecord->find('metaKey=:metaKe...', Array)
+#4 [internal function]: SiteController->actionBook('Leyleklerin U??...', 'AbpyrViD5H3ZMRI...')
+#5 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#6 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#7 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('book')
+#11 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/book')
+#12 /var/www/catalog/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/catalog/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/site/book?name=Leyleklerin%20U%C3%A7u%C5%9Fu&id=AbpyrViD5H3ZMRIHK4aOSm9ju91VZZ1ooat4moAR5kH3
+HTTP_REFERER=http://catalog.lindneo.com/site/search
+---
+2014/04/17 07:18:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/book".' in /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/book')
+#1 /var/www/catalog/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/catalog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/site/book?name=Leyleklerin%20U%C3%A7u%C5%9Fu&id=AbpyrViD5H3ZMRIHK4aOSm9ju91VZZ1ooat4moAR5kH3
+HTTP_REFERER=http://catalog.lindneo.com/site/search
+---
