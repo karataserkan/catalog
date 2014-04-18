@@ -57,8 +57,62 @@ class SiteController extends Controller
 	    ));
 	}
 
-	public function actionBook($name,$id)
+	public function getNiceName($id)
 	{
+		$meta=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'nicename'));
+		if (!$meta) {
+			$this->setNiceName($id);
+			$meta=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'nicename'));
+		}
+		return $meta->metaValue;
+	}
+
+	public function generateRandomString($length = 10) {
+	    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+	    $randomString = '';
+	    for ($i = 0; $i < $length; $i++) {
+	        $randomString .= $characters[rand(0, strlen($characters) - 1)];
+	    }
+	    return $randomString;
+	}
+
+	public function setNiceName($id){
+		$content=Content::model()->findByPk($id);
+		$meta=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'nicename'));
+		if (!$meta) {
+			$meta=new ContentMeta;
+		}
+		$meta->contentId=$id;
+		$meta->metaKey='nicename';
+
+		$bul = array('Ç', 'Ş', 'Ğ', 'Ü', 'İ', 'Ö', 'ç', 'ş', 'ğ', 'ü', 'ö', 'ı', ' ');
+		$yap = array('C', 'S', 'G', 'U', 'I', 'O', 'c', 's', 'g', 'u', 'o', 'i', '-');
+		$perma = str_replace($bul, $yap, $content->contentTitle);
+		$perma = preg_replace("@[^A-Za-z0-9\.\-_]@i", '', $perma);
+		$nicename=strtolower($perma);
+		$i=0;
+		while (!$i) {
+			$i=0;
+			$hasNiceName=ContentMeta::model()->find('metaValue=:metaValue AND metaKey=:metaKey',array('metaValue'=>$nicename,'metaKey'=>'nicename'));
+			if ($hasNiceName) {
+				$nicename=$nicename.'-'.$this->generateRandomString(3);
+			}
+			else
+			{
+				$i++;
+			}
+		}
+
+		$meta->metaCreationDate=date('Y-n-d g:i:s',time());
+		$meta->metaValue=$nicename;
+		$meta->save();
+		
+	}
+
+	public function actionBook($name)
+	{
+		$meta=ContentMeta::model()->find('metaValue=:metaValue AND metaKey=:metaKey',array('metaValue'=>$name,'metaKey'=>'nicename'));
+		$id=$meta->contentId;
 		$book=Content::model()->findByPk($id);
 		$abstract=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'abstract','contentId'=>$id))->metaValue;
 		$publishDate=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'date','contentId'=>$id))->metaValue;
