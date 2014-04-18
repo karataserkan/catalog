@@ -2,6 +2,11 @@
 
 class SiteController extends Controller
 {
+	public $metaTitle="";
+	public $metaDescription="OKUTUS farklı alt sektörlerde faaliyet gösteren (akademik, eğitim, gazete ve dergi, ders kitapları, vb) yayıncılık firmalarının, kurum ve kuruluşların (devlet kurumları, üniversiteler, vb) ve bireysel yazar, yayıncı ve çevirmenlerin etkileşimli, içeriği multimedya destekli elektronik yayınlarını (eYayın) kolaylıkla ePub3 formatında üretmelerini, güvenli Linden LDDS (Linden Digital Distribution System) sistemi ile dağıtmalarını ve Linden elektronik kaynak okuyucu yazılımlarında gelişmiş okuyucu deneyimleri ile tüketmelerini sağlayan bir yazılım teknolojisidir.";
+	public $metaKeywords="okutus, dijital yayıncılık,dijital yayıncılık,yayıncılık,ebook,ebooks,digital publishing,digital books,epub,epub3,dijital kitap,elektronik kitap,etkileşimli kitap,linden";
+	public $metaAuthor="linden-tech.com";
+	public $metaSubject="Digital Publishing";
 	/**
 	 * Declares class-based actions.
 	 */
@@ -121,6 +126,25 @@ class SiteController extends Controller
 		$language=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'language','contentId'=>$id))->metaValue;
 		$edition=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'edition','contentId'=>$id))->metaValue;
 		$translator=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'translator','contentId'=>$id))->metaValue;
+		
+		if ($book->contentTitle) {
+			$this->metaTitle=$book->contentTitle;
+		}
+		
+		if ($book->author) {
+			$this->metaAuthor=$book->author;
+		}
+		
+		if ($subject) {
+			$this->metaSubject=$subject;
+		}
+
+		if ($book->contentExplanation) {
+			$this->metaDescription=$book->contentExplanation;
+		}
+		
+		$this->metaKeywords=$book->contentTitle.','.$book->author;
+		
 		$this->render("book",array('book'=>$book,'abstract'=>$abstract,'publishDate'=>$publishDate,'totPage'=>$totalPage,'subject'=>$subject,'language'=>$language,'edition'=>$edition,'translator'=>$translator));
 	}
 
