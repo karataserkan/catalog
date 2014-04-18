@@ -123,17 +123,20 @@ class ApiController extends Controller
 		$res=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'thumbnail'))->metaValue;
 		define('UPLOAD_DIR', 'images/');
 		$img = $res;
-		$img = str_replace('data:image/jpeg;base64,', '', $img);
+		$exp=explode(";", $img);
+		$ext=explode("/", $exp[0]);
+		$extension = $ext[1]; 
+		$img = str_replace('data:image/'.$extension.';base64,', '', $img);
 		$img = str_replace(' ', '+', $img);
 		$data = base64_decode($img);
-		$file = UPLOAD_DIR . uniqid() . '.jpeg';
+		$file = UPLOAD_DIR . uniqid() . '.'.$extension;
 		$success = file_put_contents($file, $data);
 		shell_exec("convert ".$file." -resize 270x390 ".$file);
 		$im = file_get_contents($file);
     	//$imdata = 'data:image/jpeg;base64,'.base64_encode($im);
 
-    	header('Content-Type: image/jpg');
-		echo $im; 
+     	header('Content-Type: image/'.$extension);
+		 echo $im; 
 		unlink($file);
 	}
 
@@ -164,9 +167,12 @@ class ApiController extends Controller
 		// $file = UPLOAD_DIR . uniqid() . '.jpeg';
 		// $success = file_put_contents($file, $data);
 		// //shell_exec("convert ".$file." -resize 270x390 ".$file);
-		 $im = file_get_contents($res);
+		$exp=explode(";", $res);
+		$ext=explode("/", $exp[0]);
+		$extension = $ext[1];
+		$im = file_get_contents($res);
 
-		header('Content-Type: image/jpg');
+		header('Content-Type: image/'.$extension);
 		echo $im;
 
   //   	$imdata = 'data:image/jpeg;base64,'.base64_encode($im);
