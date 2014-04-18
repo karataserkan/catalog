@@ -4,6 +4,10 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
+	<meta name="description" content="<?php echo $this->metaDescription;?>">
+	<meta name="keywords" content="<?php echo $this->metaKeywords;?>">
+	<meta name="author" content="<?php echo $this->metaAuthor; ?>">
+	<meta name="subject" content="<?php echo $this->metaSubject; ?>">
 
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/cloud-admin.css" >
 	<!--<link rel="stylesheet" type="text/css"  href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/themes/night.css" >-->
@@ -96,8 +100,14 @@
 
 		<!--<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/lazyloader.min.js"></script>-->
 		<!-- /JS -->
-
-	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+	<title>
+	<?php if ($this->metaTitle) {
+		echo $this->metaTitle;
+	}
+	else{
+		echo CHtml::encode($this->pageTitle);
+	} ?>
+	</title>
 </head>
 <?php if (Yii::app()->controller->action->id=="index"):?>
 <body id="not-found-bg">
