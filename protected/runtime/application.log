@@ -664,3 +664,11 @@ Stack trace:
 REQUEST_URI=/site/book?name=Leyleklerin%20U%C3%A7u%C5%9Fu&id=AbpyrViD5H3ZMRIHK4aOSm9ju91VZZ1ooat4moAR5kH3
 HTTP_REFERER=http://catalog.lindneo.com/site/search
 ---
+2014/04/18 08:52:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/catalog/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/catalog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
