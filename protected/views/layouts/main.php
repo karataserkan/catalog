@@ -4,10 +4,10 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
-	<meta name="description" content="<?php echo $this->metaDescription;?>">
-	<meta name="keywords" content="<?php echo $this->metaKeywords;?>">
-	<meta name="author" content="<?php echo $this->metaAuthor; ?>">
-	<meta name="subject" content="<?php echo $this->metaSubject; ?>">
+	<meta name="description" content="<?php echo htmlspecialchars($this->metaDescription);?>">
+	<meta name="keywords" content="<?php echo htmlspecialchars($this->metaKeywords);?>">
+	<meta name="author" content="<?php echo htmlspecialchars($this->metaAuthor); ?>">
+	<meta name="subject" content="<?php echo htmlspecialchars($this->metaSubject); ?>">
 
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/cloud-admin.css" >
 	<!--<link rel="stylesheet" type="text/css"  href="<?php echo Yii::app()->request->baseUrl; ?>/css/ui/css/themes/night.css" >-->
