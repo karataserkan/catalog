@@ -60,6 +60,7 @@ return array(
 			'showScriptName'=>false,
 			'rules'=>array(
 				array('KerberizedService/authenticate','pattern'=>'kerberizedservice/authenticate/','verb'=>'POST'),
+				'<id:\w+>'=>'/site/book',
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\w+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
@@ -101,6 +102,7 @@ return array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
 		'reader_host'=>'http://reader.lindneo.com/ekaratas',
+		'catalog_host'=>'http://catalog.lindneo.com',
 		'android_reader'=>'https://play.google.com/store/apps/details?id=com.noyan.sesomen',
 	),
 );

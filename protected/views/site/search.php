@@ -25,9 +25,9 @@ $this->pageTitle=Yii::app()->name;
 						  <div class="panel-body">
 							<div class="row">
 							   <div class="col-md-12">
-							   	<form action="<?php echo Yii::app()->request->baseUrl; ?>/site/search" method="POST">
+							   	<form action="<?php echo Yii::app()->request->baseUrl; ?>/site/search" method="GET">
 								  <div class="input-group">
-									<input class="form-control" type="text" placeholder="<?php echo ($criteria) ? $criteria : 'Search...' ;?>" value="<?php echo ($criteria) ? $criteria : '' ;?>" name="text">
+									<input class="form-control" type="text" placeholder="<?php echo ($criteria) ? $criteria : 'Search...' ;?>" value="<?php echo ($criteria) ? $criteria : '' ;?>" name="key">
 									<span class="input-group-btn">
 										<button class="btn btn-primary" type="button">Search <i class="fa fa-search"></i></button>
 									</span>
@@ -51,7 +51,7 @@ $this->pageTitle=Yii::app()->name;
 										<?php
 										foreach ($books as $k => $book) {?>
 									   		<img class="pull-left" src="<?php echo Yii::app()->request->baseUrl; ?>/api/getThumbnail?id=<?php echo $book->contentId ?>" height="80">
-									   		<h4><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/book/<?php echo $this->getNiceName($book->contentId); ?>"><?php echo $book->contentTitle; ?></a></h4>
+									   		<h4><a href="<?php echo Yii::app()->request->baseUrl; ?>/<?php echo $this->getNiceName($book->contentId); ?>"><?php echo $book->contentTitle; ?></a></h4>
 									   		<div class="url"><?php echo $book->organisationName; ?></div>
 									   		<div class="url"><?php echo $book->author; ?></div>
 									   		<p><?php echo $book->contentExplanation; ?></p>

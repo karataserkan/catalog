@@ -1,0 +1,3 @@
+Sitemap: http://catalog.lindneo.com/sitemap.xml
+User-agent: *
+Disallow:

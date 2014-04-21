@@ -19,9 +19,9 @@ $this->pageTitle=Yii::app()->name;
 			<div class="col-md-6 not-found">
 			   <div class="content">
 				  <h3>Are you lost in the worlds?</h3>
-				  <form action="<?php echo Yii::app()->request->baseUrl; ?>/site/search" method="POST">
+				  <form action="<?php echo Yii::app()->request->baseUrl; ?>/site/search" method="GET">
 					 <div class="input-group">
-						<input type="text" class="form-control" placeholder="search here..." name="text">
+						<input type="text" class="form-control" placeholder="search here..." name="key">
 						<span class="input-group-btn">                   
 							<button type="submit" class="btn btn-danger" style="height:34px"><i class="fa fa-search"></i></button>
 						</span>
