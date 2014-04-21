@@ -100,5 +100,7 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
+		'reader_host'=>'http://reader.lindneo.com/ekaratas',
+		'android_reader'=>'https://play.google.com/store/apps/details?id=com.noyan.sesomen',
 	),
 );

@@ -31,34 +31,45 @@ $this->pageTitle=Yii::app()->name;
 								<div class="col-sm-6">
 									<h3><?php echo $book->contentTitle; ?></h3>
 									<p><b>Author:</b> <?php echo $book->author; ?></p>
-									<?php if ($translator) { ?>
-										<p><b>Translator:</b> <?php echo $translator; ?></p>
+									<?php if ($bookMeta["translator"]) { ?>
+										<p><b>Translator:</b> <?php echo $bookMeta["translator"]; ?></p>
 									<?php }?>
 
 									<?php if ($book->organisationName) { ?>
 										<p><b>Publisher:</b> <?php echo $book->organisationName; ?></p>
 									<?php } ?>
-									<?php if ($subject) { ?>
-										<p><b>Subject:</b> <?php echo $subject; ?></p>
+									<?php if ($bookMeta["subject"]) { ?>
+										<p><b>Subject:</b> <?php echo $bookMeta["subject"]; ?></p>
 									<?php } ?>
 									<?php if ($book->contentExplanation) { ?>
 										<p><b>Explanation:</b> <?php echo $book->contentExplanation; ?></p>
 									<?php } ?>
-									<?php if ($abstract) { ?>
-										<p><b>Abstract:</b> <?php echo $abstract; ?></p>
+									<?php if ($bookMeta["abstract"]) { ?>
+										<p><b>Abstract:</b> <?php echo $bookMeta["abstract"] ?></p>
 									<?php } ?>
-									<?php if ($edition) { ?>
-										<p><b>Edition:</b> <?php echo $edition; ?></p>
+									<?php if ($bookMeta["edition"]) { ?>
+										<p><b>Edition:</b> <?php echo $bookMeta["edition"] ?></p>
 									<?php } ?>
-									<?php if ($language) { ?>
-										<p><b>Language:</b> <?php echo $language; ?></p>
+									<?php if ($bookMeta["language"]) { ?>
+										<p><b>Language:</b> <?php echo $bookMeta["language"] ?></p>
 									<?php } ?>
-									<?php if ($publishDate) { ?>
-										<p><b>Published:</b> <?php echo $publishDate; ?></p>
+									<?php if ($bookMeta["publishDate"]) { ?>
+										<p><b>Published:</b> <?php echo $bookMeta["publishDate"] ?></p>
 									<?php } ?>
-									<?php if ($totPage) { ?>
-										<p><b>Pages:</b> <?php echo $totPage; ?></p>
+									<?php if ($bookMeta["totalPage"]) { ?>
+										<p><b>Pages:</b> <?php echo $bookMeta["totalPage"] ?></p>
 									<?php } ?>
+								</div>
+								<div class="col-sm-2">
+									<div class="row">
+										<br><a target="_blank" href="<?php echo Yii::app()->params['reader_host']; ?>/content/details/<?php echo $book->contentId; ?>" class="col-sm-6 btn btn-lg btn-info"><i class="fa fa-globe"> </i> Web</a>
+									</div>
+									<div class="row">
+										<br><a target="_blank" href="<?php echo Yii::app()->params['android_reader']; ?>" class="col-sm-6 btn btn-lg btn-info"><i class="fa fa-android"> </i> Android</a>
+									</div>
+									<div class="row">
+										<br><a href="#" class="col-sm-6 btn btn-lg btn-inverse" disabled><i class="fa fa-apple"> </i> IOS</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -71,6 +82,11 @@ $this->pageTitle=Yii::app()->name;
 			</div>
 		</div>
 	</section>
+	<?php 
+	if ($bookMeta["tracking"]) {
+		echo stripcslashes(htmlspecialchars_decode($bookMeta["tracking"]));
+	}
+	?>
 	<script>
 		jQuery(document).ready(function() {		
 			App.setPage("search_results");  //Set current page

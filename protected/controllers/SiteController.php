@@ -40,17 +40,27 @@ class SiteController extends Controller
 	public function actionSearch($page=1,$key=null)
 	{
 		$books;
+		$totalPage=0;
+		$totalBooks=0;
 		$page--;
 		if ((isset($_POST['text']) || $key) AND $page >-1) {
-			$limit=10;
-			$offset=$limit*$page;
-			if (!$key) {
-				$key=$_POST['text'];
+			$detectSQLinjectionPost=new detectSQLinjection($_POST['text']);
+			$detectSQLinjectionKey=new detectSQLinjection($key);
+			if ($detectSQLinjectionPost->ok() AND $detectSQLinjectionKey->ok()) {
+				$limit=10;
+				$offset=$limit*$page;
+				if (!$key) {
+					$key=$_POST['text'];
+				}
+		 		$key = preg_replace("/[^a-z0-9_\s- ]/", "", $key);
+				$books=Content::model()->findAll('contentTitle LIKE "%'.$key.'%" OR contentExplanation LIKE "%'.$key.'%" OR author LIKE "%'.$key.'%" OR organisationName LIKE "%'.$key.'%" LIMIT '.$limit.' OFFSET '.$offset,array());
+				$pages=Yii::app()->db->createCommand('select count(*) as count,ceil(count(*)/10) as pages  from content where contentTitle LIKE "%'.$key.'%" OR contentExplanation LIKE "%'.$key.'%" OR author LIKE "%'.$key.'%" OR organisationName LIKE "%'.$key.'%"')->queryRow();
+				$totalPage=$pages['pages'];
+				$totalBooks=$pages['count'];
 			}
-			$books=Content::model()->findAll('contentTitle LIKE "%'.$key.'%" OR contentExplanation LIKE "%'.$key.'%" OR author LIKE "%'.$key.'%" OR organisationName LIKE "%'.$key.'%" LIMIT '.$limit.' OFFSET '.$offset,array());
-			$pages=Yii::app()->db->createCommand('select count(*) as count,ceil(count(*)/10) as pages  from content where contentTitle LIKE "%'.$key.'%" OR contentExplanation LIKE "%'.$key.'%" OR author LIKE "%'.$key.'%" OR organisationName LIKE "%'.$key.'%"')->queryRow();
-			$totalPage=$pages['pages'];
-			$totalBooks=$pages['count'];
+		}
+		else{
+			echo "sql error";
 		}
 
 	    $this->render('search', array(
@@ -90,8 +100,8 @@ class SiteController extends Controller
 		$meta->contentId=$id;
 		$meta->metaKey='nicename';
 
-		$bul = array('Ç', 'Ş', 'Ğ', 'Ü', 'İ', 'Ö', 'ç', 'ş', 'ğ', 'ü', 'ö', 'ı', ' ');
-		$yap = array('C', 'S', 'G', 'U', 'I', 'O', 'c', 's', 'g', 'u', 'o', 'i', '-');
+		$bul = array('Ç', 'Ş', 'Ğ', 'Ü', 'İ', 'Ö', 'ç', 'ş', 'ğ', 'ü', 'ö', 'ı', ' ','-');
+		$yap = array('C', 'S', 'G', 'U', 'I', 'O', 'c', 's', 'g', 'u', 'o', 'i', '_','_');
 		$perma = str_replace($bul, $yap, $content->contentTitle);
 		$perma = preg_replace("@[^A-Za-z0-9\.\-_]@i", '', $perma);
 		$nicename=strtolower($perma);
@@ -114,18 +124,20 @@ class SiteController extends Controller
 		
 	}
 
-	public function actionBook($name)
+	public function actionBook($id)
 	{
-		$meta=ContentMeta::model()->find('metaValue=:metaValue AND metaKey=:metaKey',array('metaValue'=>$name,'metaKey'=>'nicename'));
+		$meta=ContentMeta::model()->find('metaValue=:metaValue AND metaKey=:metaKey',array('metaValue'=>$id,'metaKey'=>'nicename'));
 		$id=$meta->contentId;
 		$book=Content::model()->findByPk($id);
-		$abstract=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'abstract','contentId'=>$id))->metaValue;
-		$publishDate=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'date','contentId'=>$id))->metaValue;
-		$totalPage=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'totalPage','contentId'=>$id))->metaValue;
-		$subject=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'subject','contentId'=>$id))->metaValue;
-		$language=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'language','contentId'=>$id))->metaValue;
-		$edition=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'edition','contentId'=>$id))->metaValue;
-		$translator=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'translator','contentId'=>$id))->metaValue;
+		$bookMeta=array();
+		$bookMeta['abstract']=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'abstract','contentId'=>$id))->metaValue;
+		$bookMeta['publishDate']=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'date','contentId'=>$id))->metaValue;
+		$bookMeta['totalPage']=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'totalPage','contentId'=>$id))->metaValue;
+		$bookMeta['subject']=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'subject','contentId'=>$id))->metaValue;
+		$bookMeta['language']=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'language','contentId'=>$id))->metaValue;
+		$bookMeta['edition']=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'edition','contentId'=>$id))->metaValue;
+		$bookMeta['translator']=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'translator','contentId'=>$id))->metaValue;
+		$bookMeta['tracking']=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'tracking','contentId'=>$id))->metaValue;
 		
 		if ($book->contentTitle) {
 			$this->metaTitle=$book->contentTitle;
@@ -145,7 +157,7 @@ class SiteController extends Controller
 		
 		$this->metaKeywords=$book->contentTitle.','.$book->author;
 		
-		$this->render("book",array('book'=>$book,'abstract'=>$abstract,'publishDate'=>$publishDate,'totPage'=>$totalPage,'subject'=>$subject,'language'=>$language,'edition'=>$edition,'translator'=>$translator));
+		$this->render("book",array('book'=>$book,'bookMeta'=>$bookMeta));
 	}
 
 	public function actionImport()
