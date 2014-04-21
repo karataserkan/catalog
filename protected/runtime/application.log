@@ -399,3 +399,123 @@ Stack trace:
 REQUEST_URI=/site/book/temel_muhasebe_esitligi_ve_hesap_kavrami_muhasebe_1_-_bolum_2_
 HTTP_REFERER=http://catalog.lindneo.com/site/search
 ---
+2014/04/21 09:57:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "leyleklerin_ucusu".' in /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('leyleklerin_ucu...')
+#1 /var/www/catalog/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/catalog/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/leyleklerin_ucusu
+---
+2014/04/21 09:57:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "leyleklerin_ucusu".' in /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('leyleklerin_ucu...')
+#1 /var/www/catalog/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/catalog/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=//leyleklerin_ucusu
+---
+2014/04/21 09:57:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "leyleklerin_ucusu".' in /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('leyleklerin_ucu...')
+#1 /var/www/catalog/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/catalog/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/leyleklerin_ucusu
+---
+2014/04/21 09:59:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('book')
+#4 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/book/leyle...')
+#5 /var/www/catalog/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/catalog/index.php(16): CApplication->run()
+#7 {main}
+REQUEST_URI=/leyleklerin_ucusu
+---
+2014/04/21 09:59:29 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('book')
+#4 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/book/leyle...')
+#5 /var/www/catalog/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/catalog/index.php(16): CApplication->run()
+#7 {main}
+REQUEST_URI=/leyleklerin_ucusu
+---
+2014/04/21 09:59:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('book')
+#4 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/book/leyle...')
+#5 /var/www/catalog/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/catalog/index.php(16): CApplication->run()
+#7 {main}
+REQUEST_URI=/leyleklerin_ucusu
+---
+2014/04/21 10:00:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('book')
+#4 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/book/leyle...')
+#5 /var/www/catalog/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/catalog/index.php(16): CApplication->run()
+#7 {main}
+REQUEST_URI=/leyleklerinucusu
+---
+2014/04/21 10:00:23 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('book')
+#4 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/book/denem...')
+#5 /var/www/catalog/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/catalog/index.php(16): CApplication->run()
+#7 {main}
+REQUEST_URI=/deneme
+---
+2014/04/21 10:00:37 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('book')
+#4 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/book/denem...')
+#5 /var/www/catalog/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/catalog/index.php(16): CApplication->run()
+#7 {main}
+REQUEST_URI=/deneme
+---
+2014/04/21 10:00:56 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('book')
+#4 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/book/leyle...')
+#5 /var/www/catalog/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/catalog/index.php(16): CApplication->run()
+#7 {main}
+REQUEST_URI=/leyleklerin_ucusu
+---
+2014/04/21 10:01:49 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('book')
+#4 /var/www/catalog/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/book/leyle...')
+#5 /var/www/catalog/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/catalog/index.php(16): CApplication->run()
+#7 {main}
+REQUEST_URI=/leyleklerin_ucusu
+---

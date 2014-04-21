@@ -208,7 +208,9 @@ class SiteController extends Controller
 			error_log("\nA022");
 		}
 		error_log("\nA03");
-		
+
+		Yii::app()->db->createCommand("DELETE FROM `contentMeta` WHERE `contentId`='".$contentId."'")->queryAll();
+
 		foreach ($hosts as $key => $host) {
 			$newHost = Host::model()->findByPk($host['id']);
 			if (!$newHost) {
