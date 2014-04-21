@@ -25,9 +25,9 @@ $this->pageTitle=Yii::app()->name;
 						  <div class="panel-body">
 							<div class="row">
 							   <div class="col-md-12">
-							   	<form action="<?php echo Yii::app()->request->baseUrl; ?>/site/search" method="POST">
+							   	<form action="<?php echo Yii::app()->request->baseUrl; ?>/site/search" method="GET">
 								  <div class="input-group">
-									<input class="form-control" type="text" placeholder="<?php echo ($criteria) ? $criteria : 'Search...' ;?>" value="<?php echo ($criteria) ? $criteria : '' ;?>" name="text">
+									<input class="form-control" type="text" placeholder="<?php echo ($criteria) ? $criteria : 'Search...' ;?>" value="<?php echo ($criteria) ? $criteria : '' ;?>" name="key">
 									<span class="input-group-btn">
 										<button class="btn btn-primary" type="button">Search <i class="fa fa-search"></i></button>
 									</span>

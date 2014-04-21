@@ -1170,3 +1170,15 @@
 [Mon Apr 21 10:14:16 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => bekir@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1398075256\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 1bac947361cd7fced2f3871c64f2010d71d1de92d0f4ad9075996b0d0a25b878\n)\n, referer: http://reader.lindneo.com/bekir/site/login
 [Mon Apr 21 10:14:16 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => bekir@linden-tech.com\n    [timestamp] => 1398075256\n)\n, referer: http://reader.lindneo.com/bekir/site/login
 [Mon Apr 21 10:14:16 2014] [error] [client 81.215.15.54] SENDING DATA..., referer: http://reader.lindneo.com/bekir/site/login
+[Mon Apr 21 11:08:05 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '{' in /var/www/catalog/protected/controllers/SiteController.php on line 38, referer: http://catalog.lindneo.com/
+[Mon Apr 21 11:08:14 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '{' in /var/www/catalog/protected/controllers/SiteController.php on line 38
+[Mon Apr 21 11:08:16 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '{' in /var/www/catalog/protected/controllers/SiteController.php on line 38
+[Mon Apr 21 11:08:33 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '{' in /var/www/catalog/protected/controllers/SiteController.php on line 38
+[Mon Apr 21 11:08:35 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '{' in /var/www/catalog/protected/controllers/SiteController.php on line 38
+[Mon Apr 21 11:08:35 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '{' in /var/www/catalog/protected/controllers/SiteController.php on line 38
+[Mon Apr 21 11:09:32 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '{' in /var/www/catalog/protected/controllers/SiteController.php on line 38
+[Mon Apr 21 12:20:25 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected ';' in /var/www/catalog/protected/controllers/SiteController.php on line 186
+[Mon Apr 21 12:20:27 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected ';' in /var/www/catalog/protected/controllers/SiteController.php on line 186
+[Mon Apr 21 12:20:28 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected ';' in /var/www/catalog/protected/controllers/SiteController.php on line 186
+[Mon Apr 21 12:20:29 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected ';' in /var/www/catalog/protected/controllers/SiteController.php on line 186
+[Mon Apr 21 12:20:38 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected ';' in /var/www/catalog/protected/controllers/SiteController.php on line 186

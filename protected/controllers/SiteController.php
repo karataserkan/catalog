@@ -34,6 +34,10 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
+			// if(isset($_POST['text']))
+			// {
+			// 	$this->redirect(Yii::app()->request->baseUrl.'/site/search?key='.$_POST['text']);
+			// }
 			$this->render('index');
 	}
 
@@ -43,20 +47,25 @@ class SiteController extends Controller
 		$totalPage=0;
 		$totalBooks=0;
 		$page--;
-		if ((isset($_POST['text']) || $key) AND $page >-1) {
-			$detectSQLinjectionPost=new detectSQLinjection($_POST['text']);
+		if ((isset($key) || $key) AND $page >-1) {
+			$detectSQLinjectionPost=new detectSQLinjection($key);
 			$detectSQLinjectionKey=new detectSQLinjection($key);
 			if ($detectSQLinjectionPost->ok() AND $detectSQLinjectionKey->ok()) {
 				$limit=10;
 				$offset=$limit*$page;
-				if (!$key) {
-					$key=$_POST['text'];
-				}
+				// if (!$key) {
+				// 	$key=$_GET['text'];
+				// }
 		 		$key = preg_replace("/[^a-z0-9_\s- ]/", "", $key);
 				$books=Content::model()->findAll('contentTitle LIKE "%'.$key.'%" OR contentExplanation LIKE "%'.$key.'%" OR author LIKE "%'.$key.'%" OR organisationName LIKE "%'.$key.'%" LIMIT '.$limit.' OFFSET '.$offset,array());
 				$pages=Yii::app()->db->createCommand('select count(*) as count,ceil(count(*)/10) as pages  from content where contentTitle LIKE "%'.$key.'%" OR contentExplanation LIKE "%'.$key.'%" OR author LIKE "%'.$key.'%" OR organisationName LIKE "%'.$key.'%"')->queryRow();
 				$totalPage=$pages['pages'];
 				$totalBooks=$pages['count'];
+
+				$xmlbooks=$books;
+
+
+
 			}
 		}
 		else{
@@ -126,7 +135,8 @@ class SiteController extends Controller
 
 	public function actionBook($id)
 	{
-		$meta=ContentMeta::model()->find('metaValue=:metaValue AND metaKey=:metaKey',array('metaValue'=>$id,'metaKey'=>'nicename'));
+		$nicename=$id;
+		$meta=ContentMeta::model()->find('metaValue=:metaValue AND metaKey=:metaKey',array('metaValue'=>$nicename,'metaKey'=>'nicename'));
 		$id=$meta->contentId;
 		$book=Content::model()->findByPk($id);
 		$bookMeta=array();
@@ -157,7 +167,32 @@ class SiteController extends Controller
 		
 		$this->metaKeywords=$book->contentTitle.','.$book->author;
 		
+		$this->updateSiteMapXml($nicename);
+
 		$this->render("book",array('book'=>$book,'bookMeta'=>$bookMeta));
+	}
+
+	public function updateSiteMapXml($book)
+	{
+		$XML=file_get_contents('sitemap.xml');
+		$robot=file_get_contents('robots.txt');
+		$robot_in = "Sitemap: ".Yii::app()->params['catalog_host']."/sitemap.xml\n";
+		$robot_in .="User-agent: *\n";
+		$robot_in .="Disallow:\n";
+		file_put_contents("robots.txt", $robot_in);
+		
+		if(!strpos($XML, $book))
+		{
+			$newUrl="<url>\n";
+			$newUrl.="  <loc>".Yii::app()->params['catalog_host']."/".$book."</loc>\n";
+			$newUrl.="</url>\n";
+		}
+		$XML_ex=explode('</urlset>', $XML);
+		$XML = $XML_ex[0];
+		$XML .=$newUrl;
+		$XML .='</urlset>';
+		file_put_contents('sitemap.xml', $XML);
+		
 	}
 
 	public function actionImport()
