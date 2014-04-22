@@ -25,19 +25,18 @@ $this->pageTitle=Yii::app()->name;
 						  <div class="panel-body">
 							<div class="row">
 							   <div class="col-md-12">
-							   	<form action="<?php echo Yii::app()->request->baseUrl; ?>/site/search" method="GET">
 								  <div class="input-group">
-									<input class="form-control" type="text" placeholder="<?php echo ($criteria) ? $criteria : 'Search...' ;?>" value="<?php echo ($criteria) ? $criteria : '' ;?>" name="key">
+									<input id="searchkey" class="form-control" type="text" placeholder="<?php echo ($criteria) ? $criteria : 'Search...' ;?>" value="<?php echo ($criteria) ? $criteria : '' ;?>" onkeypress="return runScript(event)" name="key">
 									<span class="input-group-btn">
-										<button class="btn btn-primary" type="button">Search <i class="fa fa-search"></i></button>
+										<button id="searchbutton" class="btn btn-primary" type="button">Search <i class="fa fa-search"></i></button>
 									</span>
 								  </div>
-								</form>
 							   </div>
 							</div>
 							<div class="divide-20"></div>
 							<?php if ($totalBooks) { ?>
-								<h4>Page <?php echo $currentPage; ?> / <?php echo $totalBooks; ?> Result<?php echo ($totalBooks>1) ? "s" : "" ;?></h4>
+								<h4><?php echo $totalBooks; ?> Result<?php echo ($totalBooks>1) ? "s" : "" ;?></h4>
+								<p>Page <?php echo $currentPage; ?> / <?php echo $totalPage; ?></p>
 							<?php }
 							else
 							{ ?>
@@ -61,7 +60,7 @@ $this->pageTitle=Yii::app()->name;
 								<div>
 										<ul class='pagination'>
 										  <li <?php echo ($currentPage==1) ? "class='disabled'" : "" ; ?>>
-											<a href='<?php echo ($currentPage>1) ? "/site/search?page=".($currentPage-1)."&key=".$criteria : "#" ; ?>' style="height:32px">
+											<a href='/q/<?php echo $criteria ?>/<?php echo ($currentPage>1) ? ($currentPage-1) : "#" ; ?>' style="height:32px">
 											  <i class='fa fa-caret-left'></i> Prev
 											</a>
 										  </li>
@@ -72,12 +71,12 @@ $this->pageTitle=Yii::app()->name;
 										  		}
 										  		else
 										  		{
-										  			echo "<li><a href='/site/search?page=".$i."&key=".$criteria."'>".$i."</a></li>";
+										  			echo "<li><a href='/q/".$criteria."/".$i."'>".$i."</a></li>";
 										  		}
 										  	}
 										  ?>
 										  <li <?php echo ($currentPage>=$totalPage) ? "class='disabled'" : "" ; ?>>
-											<a href='<?php echo ($currentPage!=$totalPage) ? "/site/search?page=".($currentPage+1)."&key=".$criteria : "#" ; ?>'>
+											<a href='/q/<?php echo $criteria ?>/<?php echo ($currentPage!=$totalPage) ? ($currentPage+1) : "#" ; ?>'>
 											  Next <i class='fa fa-caret-right'></i>
 											</a>
 										  </li>
@@ -101,3 +100,24 @@ $this->pageTitle=Yii::app()->name;
 			App.init(); //Initialise plugins and elements
 		});
 	</script>
+<script type="text/javascript">
+	var key;
+	function runScript(e)
+	{
+		if (e.keyCode == 13) {
+			key=$('#searchkey').val();
+			redirect(key);
+		};
+		console.log(key);
+	}
+
+	function redirect(key)
+	{
+		window.location.href="<?php echo Yii::app()->params['catalog_host'] ?>/q/"+key;
+	}
+
+	$('#searchbutton').click(function(){
+		key=$('#searchkey').val();
+		redirect(key);
+	});
+</script>

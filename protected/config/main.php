@@ -75,6 +75,9 @@ return array(
 			'showScriptName'=>false,
 			'rules'=>array(
 				array('KerberizedService/authenticate','pattern'=>'kerberizedservice/authenticate/','verb'=>'POST'),
+				'search|q'=>'site/search',
+				'search|q/<key:\w+>'=>'site/search',
+				'search|q/<key:\w+>/<page:\d+>'=>'site/search',
 				'<id:\w+>'=>'/site/book',
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\w+>'=>'<controller>/<action>',

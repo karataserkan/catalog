@@ -19,14 +19,12 @@ $this->pageTitle=Yii::app()->name;
 			<div class="col-md-6 not-found">
 			   <div class="content">
 				  <h3>Are you lost in the worlds?</h3>
-				  <form action="<?php echo Yii::app()->request->baseUrl; ?>/site/search" method="GET">
 					 <div class="input-group">
-						<input type="text" class="form-control" placeholder="search here..." name="key">
+						<input id="searchkey" type="text" class="form-control" placeholder="search here..." name="key" onkeypress="return runScript(event)">
 						<span class="input-group-btn">                   
-							<button type="submit" class="btn btn-danger" style="height:34px"><i class="fa fa-search"></i></button>
+							<button id="searchbutton" type="button" class="btn btn-danger" style="height:34px"><i class="fa fa-search"></i></button>
 						</span>
 					 </div>
-				  </form>
 			   </div>
 			</div>
 			</div>
@@ -37,4 +35,25 @@ $this->pageTitle=Yii::app()->name;
 			App.setPage("widgets_box");  //Set current page
 			App.init(); //Initialise plugins and elements
 		});
+</script>
+<script type="text/javascript">
+	var key;
+	function runScript(e)
+	{
+		if (e.keyCode == 13) {
+			key=$('#searchkey').val();
+			redirect(key);
+		};
+		console.log(key);
+	}
+
+	function redirect(key)
+	{
+		window.location.href="<?php echo Yii::app()->params['catalog_host'] ?>/q/"+key;
+	}
+
+	$('#searchbutton').click(function(){
+		key=$('#searchkey').val();
+		redirect(key);
+	});
 </script>

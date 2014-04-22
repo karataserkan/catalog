@@ -2,6 +2,11 @@
 
 class ApiController extends Controller
 {
+	public $metaTitle="";
+	public $metaDescription="OKUTUS farklı alt sektörlerde faaliyet gösteren (akademik, eğitim, gazete ve dergi, ders kitapları, vb) yayıncılık firmalarının, kurum ve kuruluşların (devlet kurumları, üniversiteler, vb) ve bireysel yazar, yayıncı ve çevirmenlerin etkileşimli, içeriği multimedya destekli elektronik yayınlarını (eYayın) kolaylıkla ePub3 formatında üretmelerini, güvenli Linden LDDS (Linden Digital Distribution System) sistemi ile dağıtmalarını ve Linden elektronik kaynak okuyucu yazılımlarında gelişmiş okuyucu deneyimleri ile tüketmelerini sağlayan bir yazılım teknolojisidir.";
+	public $metaKeywords="okutus, dijital yayıncılık,dijital yayıncılık,yayıncılık,ebook,ebooks,digital publishing,digital books,epub,epub3,dijital kitap,elektronik kitap,etkileşimli kitap,linden";
+	public $metaAuthor="linden-tech.com";
+	public $metaSubject="Digital Publishing";
 	public $response=null; 
 	public $errors=null; 
 
@@ -121,6 +126,10 @@ class ApiController extends Controller
 			return false;
 		}
 		$res=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'thumbnail'))->metaValue;
+		
+		if (!$res) {
+			$res = file_get_contents(Yii::app()->request->baseUrl.'/css/thumbnail.jpeg');
+		}
 		define('UPLOAD_DIR', 'images/');
 		$img = $res;
 		$exp=explode(";", $img);
@@ -134,6 +143,8 @@ class ApiController extends Controller
 		shell_exec("convert ".$file." -resize 270x390 ".$file);
 		$im = file_get_contents($file);
     	//$imdata = 'data:image/jpeg;base64,'.base64_encode($im);
+
+		
 
      	header('Content-Type: image/'.$extension);
 		 echo $im; 

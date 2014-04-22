@@ -41,35 +41,41 @@ class SiteController extends Controller
 			$this->render('index');
 	}
 
-	public function actionSearch($page=1,$key=null)
+	public function actionSearch()
 	{
+		$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+		$exploded=explode('/', $actual_link);
+
+		$page=($exploded[5]) ? $exploded[5] : 1 ;
+		$key = ($exploded[4]) ? $exploded[4] : 0 ;
+		// if (isset($_POST['page'])) {
+		// 	$page=$_POST['page'];
+		// }
+		// else
+		// {
+		// 	$page=1;
+		// }
 		$books;
 		$totalPage=0;
 		$totalBooks=0;
 		$page--;
-		if ((isset($key) || $key) AND $page >-1) {
-			$detectSQLinjectionPost=new detectSQLinjection($key);
+		
+		if (($key) AND $page >-1) {
+			//$key=$_POST['key'];
 			$detectSQLinjectionKey=new detectSQLinjection($key);
-			if ($detectSQLinjectionPost->ok() AND $detectSQLinjectionKey->ok()) {
+			if ($detectSQLinjectionKey->ok()) {
 				$limit=10;
 				$offset=$limit*$page;
-				// if (!$key) {
-				// 	$key=$_GET['text'];
-				// }
 		 		$key = preg_replace("/[^a-z0-9_\s- ]/", "", $key);
 				$books=Content::model()->findAll('contentTitle LIKE "%'.$key.'%" OR contentExplanation LIKE "%'.$key.'%" OR author LIKE "%'.$key.'%" OR organisationName LIKE "%'.$key.'%" LIMIT '.$limit.' OFFSET '.$offset,array());
 				$pages=Yii::app()->db->createCommand('select count(*) as count,ceil(count(*)/10) as pages  from content where contentTitle LIKE "%'.$key.'%" OR contentExplanation LIKE "%'.$key.'%" OR author LIKE "%'.$key.'%" OR organisationName LIKE "%'.$key.'%"')->queryRow();
 				$totalPage=$pages['pages'];
 				$totalBooks=$pages['count'];
-
-				$xmlbooks=$books;
-
-
-
+				$this->updateSiteMapXmlWithSearchKey($key,$totalPage);
 			}
-		}
-		else{
-			echo "sql error";
+			else{
+				echo "sql error";
+			}
 		}
 
 	    $this->render('search', array(
@@ -167,19 +173,64 @@ class SiteController extends Controller
 		
 		$this->metaKeywords=$book->contentTitle.','.$book->author;
 		
-		$this->updateSiteMapXml($nicename);
+		$this->updateSiteMapXmlWithBook($nicename);
 
 		$this->render("book",array('book'=>$book,'bookMeta'=>$bookMeta));
 	}
 
-	public function updateSiteMapXml($book)
+	public function updateSiteMapXmlWithSearchKey($key,$totalPage)
 	{
 		$XML=file_get_contents('sitemap.xml');
-		$robot=file_get_contents('robots.txt');
-		$robot_in = "Sitemap: ".Yii::app()->params['catalog_host']."/sitemap.xml\n";
-		$robot_in .="User-agent: *\n";
-		$robot_in .="Disallow:\n";
-		file_put_contents("robots.txt", $robot_in);
+		
+		if(!strpos($XML, "<loc>".Yii::app()->params['catalog_host']."/q/".$key."</loc>"))
+		{
+			$newUrl="<url>\n";
+			$newUrl.="  <loc>".Yii::app()->params['catalog_host']."/q/".$key."</loc>\n";
+			$newUrl.="</url>\n";
+			$XML_ex=explode('</urlset>', $XML);
+			$XML = $XML_ex[0];
+			$XML .=$newUrl;
+			$XML .='</urlset>';
+		}
+		
+		if ($totalPage==1) {
+			if (!strpos($XML, "  <loc>".Yii::app()->params['catalog_host']."/q/".$key."/1</loc>")) {
+				$newUrl="<url>\n";
+				$newUrl.="  <loc>".Yii::app()->params['catalog_host']."/q/".$key."/1</loc>\n";
+				$newUrl.="</url>\n";
+				$XML_ex=explode('</urlset>', $XML);
+				$XML = $XML_ex[0];
+				$XML .=$newUrl;
+				$XML .='</urlset>';
+			}
+		}
+		else{
+			for ($i=1; $i <= $totalPage; $i++) { 
+				if (!strpos($XML, "  <loc>".Yii::app()->params['catalog_host']."/q/".$key."/".$i."</loc>")) {
+					$newUrl="<url>\n";
+					$newUrl.="  <loc>".Yii::app()->params['catalog_host']."/q/".$key."/".$i."</loc>\n";
+					$newUrl.="</url>\n";
+					$XML_ex=explode('</urlset>', $XML);
+					$XML = $XML_ex[0];
+					$XML .=$newUrl;
+					$XML .='</urlset>';
+				}
+			}
+		}
+
+
+		file_put_contents('sitemap.xml', $XML);
+
+	}
+
+	public function updateSiteMapXmlWithBook($book)
+	{
+		$XML=file_get_contents('sitemap.xml');
+		// $robot=file_get_contents('robots.txt');
+		// $robot_in = "Sitemap: ".Yii::app()->params['catalog_host']."/sitemap.xml\n";
+		// $robot_in .="User-agent: *\n";
+		// $robot_in .="Disallow:\n";
+		// file_put_contents("robots.txt", $robot_in);
 		
 		if(!strpos($XML, $book))
 		{
@@ -244,7 +295,7 @@ class SiteController extends Controller
 		}
 		error_log("\nA03");
 
-		Yii::app()->db->createCommand("DELETE FROM `contentMeta` WHERE `contentId`='".$contentId."'")->queryAll();
+		//Yii::app()->db->createCommand("DELETE FROM contentMeta WHERE contentId='".$contentId."'")->queryAll();
 
 		foreach ($hosts as $key => $host) {
 			$newHost = Host::model()->findByPk($host['id']);

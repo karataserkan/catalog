@@ -70,6 +70,18 @@ $this->pageTitle=Yii::app()->name;
 									<div class="row">
 										<br><a href="#" class="col-sm-6 btn btn-lg btn-inverse" disabled><i class="fa fa-apple"> </i> IOS</a>
 									</div>
+									<div class="row">
+										<br><br>
+										<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/tr_TR/all.js#xfbml=1&appId=1427629194160426";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+											<div class="fb-share-button" data-href="<?php echo Yii::app()->params['catalog_host']; ?>/<?php echo $this->getNiceName($book->contentId); ?>" data-width="200" data-type="button_count"></div>
+									</div>
 								</div>
 							</div>
 						</div>
