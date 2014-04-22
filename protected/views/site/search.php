@@ -54,6 +54,7 @@ $this->pageTitle=Yii::app()->name;
 									   		<div class="url"><?php echo $book->organisationName; ?></div>
 									   		<div class="url"><?php echo $book->author; ?></div>
 									   		<p><?php echo $book->contentExplanation; ?></p>
+									   		<hr>
 										<?php } ?>
 									</div>
 								<?php } ?>
