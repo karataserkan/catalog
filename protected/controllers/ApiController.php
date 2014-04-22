@@ -127,8 +127,10 @@ class ApiController extends Controller
 		}
 		$res=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'thumbnail'))->metaValue;
 		
-		if (!$res) {
-			$res = file_get_contents(Yii::app()->request->baseUrl.'/css/thumbnail.jpeg');
+		if (empty($res)) {
+			$res = base64_encode(file_get_contents(Yii::app()->params['catalog_host'].'/css/thumbnail.jpg'));
+			$extension='jpg';
+			
 		}
 		define('UPLOAD_DIR', 'images/');
 		$img = $res;
@@ -147,8 +149,8 @@ class ApiController extends Controller
 		
 
      	header('Content-Type: image/'.$extension);
-		 echo $im; 
-		unlink($file);
+		  echo $im; 
+		 unlink($file);
 	}
 
 	public function actionGetCover($id)

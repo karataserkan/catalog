@@ -2374,3 +2374,148 @@
 [Tue Apr 22 12:33:18 2014] [error] [client 31.210.53.80] \nA09
 [Tue Apr 22 12:33:18 2014] [error] [client 31.210.53.80] \nA10
 [Tue Apr 22 12:33:20 2014] [error] [client 31.210.53.80] \nA11
+[Tue Apr 22 12:36:09 2014] [error] [client 31.210.53.80] \nA01
+[Tue Apr 22 12:36:09 2014] [error] [client 31.210.53.80] \nA02
+[Tue Apr 22 12:36:09 2014] [error] [client 31.210.53.80] \nA021
+[Tue Apr 22 12:36:09 2014] [error] [client 31.210.53.80] \nA03
+[Tue Apr 22 12:36:09 2014] [error] [client 31.210.53.80] \nA04
+[Tue Apr 22 12:36:09 2014] [error] [client 31.210.53.80] \nA05
+[Tue Apr 22 12:36:09 2014] [error] [client 31.210.53.80] \nA06
+[Tue Apr 22 12:36:09 2014] [error] [client 31.210.53.80] \nA07
+[Tue Apr 22 12:36:09 2014] [error] [client 31.210.53.80] \nA08
+[Tue Apr 22 12:36:09 2014] [error] [client 31.210.53.80] \nA09
+[Tue Apr 22 12:36:09 2014] [error] [client 31.210.53.80] \nA10
+[Tue Apr 22 12:36:11 2014] [error] [client 31.210.53.80] \nA11
+[Tue Apr 22 12:37:57 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:37:57 2014] [error] [client 81.215.15.54] U2FsdGVkX1/KskF5Ss71T+FTKAh44JVZFW/SDk/bcOYuozYtt72LGdrmcZnKh1iN\\nITYeim17Jv3ADqCz30K/q37wOrHPasLYN1FYdlZMN7Ea1XO/xuRTL9v1khnWzY69\\nYQbkp2Td/5xtyRQrW0p9EE7hQi20BTCYSoiNsInpmTMewjwYCD6osJCf7ffJ0DyR\\noWiH+nSlj4VaxjemXHUGw/OE5d2YQt1jrK+z9YEhN68VHySo2xIUjyW7OyUDUL4f\\n8xPBfxVWznIt09JoTxfS3xIX4HsesDaVz/pRclr+Uo832tvg5dGXYlhAWTSLCwj8\\n, referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:37:57 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:37:57 2014] [error] [client 81.215.15.54] U2FsdGVkX18vE+GtRwFgF54JfvJAcRCaNnD/8hxzz7boRaZiP2V1VPjuwKjMnCSF\\nw2ROsY2i6X3ucsWDZxzrGRDH0hFen+phqotLvKrj5F0=\\n, referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:37:57 2014] [error] [client 81.215.15.54] KERBERIZED, referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:37:57 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => egemen@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1398170277\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 34d6a7b39d9b179a6f49393ac2685892be474a4d83dbb7f8c5d2d1d0fe864407\n)\n, referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:37:57 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => egemen@linden-tech.com\n    [timestamp] => 1398170278\n)\n, referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:37:57 2014] [error] [client 81.215.15.54] SENDING DATA..., referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:38:33 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:38:33 2014] [error] [client 81.215.15.54] U2FsdGVkX1//BZ+hKwaqgUdUY4k2xO3r/yesPhLv+zKSbTOyIKFPff1rNQK+TOT/\\nYbRRHJj1A7nbD39EaYEEZy0nKbHi/BimuSujpEIpDU8N3kHvjFzOOaB46o7L8BBr\\nQrXtiHKdCYXqFHOrVzL4VGcrWrS14+DZuDpH8N0U8YUMyrjKkTjjw2JsZFqaVhZ5\\nTw/Zs9tQRyCaFck+FKuxGE7Jba6RfYR1VsqnlmKWdCjUr8ipxp/ahz/6J44yl+J0\\nm+6O4RdIg43yXbqU8GKD5Z6ZSc6t24BTaPMXESK/iSEJqnibuQsjlB7tqTkFmz2z\\n, referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:38:33 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:38:33 2014] [error] [client 81.215.15.54] U2FsdGVkX18tOwcOm04wKySPSXhwzCXUyFPwFk7fOQv+ktZMLROvNz1dAe2IoGu5\\nHpqgnKlWA8xJoH6xoJk24ujVJzwv/LH2yK6EOJHOgRw=\\n, referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:38:33 2014] [error] [client 81.215.15.54] KERBERIZED, referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:38:33 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => egemen@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1398170313\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => ad34c20cbce2150286f2e81773fc20332496c2825b60ec66f1ddc320df71870b\n)\n, referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:38:33 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => egemen@linden-tech.com\n    [timestamp] => 1398170314\n)\n, referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:38:33 2014] [error] [client 81.215.15.54] SENDING DATA..., referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:38:49 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:49 2014] [error] [client 81.215.15.54] U2FsdGVkX1//BZ+hKwaqgUdUY4k2xO3r/yesPhLv+zKSbTOyIKFPff1rNQK+TOT/\\nYbRRHJj1A7nbD39EaYEEZy0nKbHi/BimuSujpEIpDU8N3kHvjFzOOaB46o7L8BBr\\nQrXtiHKdCYXqFHOrVzL4VGcrWrS14+DZuDpH8N0U8YUMyrjKkTjjw2JsZFqaVhZ5\\nTw/Zs9tQRyCaFck+FKuxGE7Jba6RfYR1VsqnlmKWdCjUr8ipxp/ahz/6J44yl+J0\\nm+6O4RdIg43yXbqU8GKD5Z6ZSc6t24BTaPMXESK/iSEJqnibuQsjlB7tqTkFmz2z\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:49 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:49 2014] [error] [client 81.215.15.54] U2FsdGVkX18Aj1nMIrQBAxBjzCOVfgO5T/BDPOvybXscW2zjFZOIzCn5Diatdjbk\\nhqlRzTXBhv0wHPIW/Y8s0n1CHUnse5QNq8kfaEoCQow=\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:49 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:49 2014] [error] [client 81.215.15.54] U2FsdGVkX1//BZ+hKwaqgUdUY4k2xO3r/yesPhLv+zKSbTOyIKFPff1rNQK+TOT/\\nYbRRHJj1A7nbD39EaYEEZy0nKbHi/BimuSujpEIpDU8N3kHvjFzOOaB46o7L8BBr\\nQrXtiHKdCYXqFHOrVzL4VGcrWrS14+DZuDpH8N0U8YUMyrjKkTjjw2JsZFqaVhZ5\\nTw/Zs9tQRyCaFck+FKuxGE7Jba6RfYR1VsqnlmKWdCjUr8ipxp/ahz/6J44yl+J0\\nm+6O4RdIg43yXbqU8GKD5Z6ZSc6t24BTaPMXESK/iSEJqnibuQsjlB7tqTkFmz2z\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:49 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:49 2014] [error] [client 81.215.15.54] U2FsdGVkX18Aj1nMIrQBAxBjzCOVfgO5T/BDPOvybXscW2zjFZOIzCn5Diatdjbk\\nhqlRzTXBhv0wHPIW/Y8s0n1CHUnse5QNq8kfaEoCQow=\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:49 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:49 2014] [error] [client 81.215.15.54] U2FsdGVkX1//BZ+hKwaqgUdUY4k2xO3r/yesPhLv+zKSbTOyIKFPff1rNQK+TOT/\\nYbRRHJj1A7nbD39EaYEEZy0nKbHi/BimuSujpEIpDU8N3kHvjFzOOaB46o7L8BBr\\nQrXtiHKdCYXqFHOrVzL4VGcrWrS14+DZuDpH8N0U8YUMyrjKkTjjw2JsZFqaVhZ5\\nTw/Zs9tQRyCaFck+FKuxGE7Jba6RfYR1VsqnlmKWdCjUr8ipxp/ahz/6J44yl+J0\\nm+6O4RdIg43yXbqU8GKD5Z6ZSc6t24BTaPMXESK/iSEJqnibuQsjlB7tqTkFmz2z\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:49 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:49 2014] [error] [client 81.215.15.54] U2FsdGVkX18Aj1nMIrQBAxBjzCOVfgO5T/BDPOvybXscW2zjFZOIzCn5Diatdjbk\\nhqlRzTXBhv0wHPIW/Y8s0n1CHUnse5QNq8kfaEoCQow=\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:50 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:50 2014] [error] [client 81.215.15.54] U2FsdGVkX1//BZ+hKwaqgUdUY4k2xO3r/yesPhLv+zKSbTOyIKFPff1rNQK+TOT/\\nYbRRHJj1A7nbD39EaYEEZy0nKbHi/BimuSujpEIpDU8N3kHvjFzOOaB46o7L8BBr\\nQrXtiHKdCYXqFHOrVzL4VGcrWrS14+DZuDpH8N0U8YUMyrjKkTjjw2JsZFqaVhZ5\\nTw/Zs9tQRyCaFck+FKuxGE7Jba6RfYR1VsqnlmKWdCjUr8ipxp/ahz/6J44yl+J0\\nm+6O4RdIg43yXbqU8GKD5Z6ZSc6t24BTaPMXESK/iSEJqnibuQsjlB7tqTkFmz2z\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:50 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:50 2014] [error] [client 81.215.15.54] U2FsdGVkX18Aj1nMIrQBAxBjzCOVfgO5T/BDPOvybXscW2zjFZOIzCn5Diatdjbk\\nhqlRzTXBhv0wHPIW/Y8s0n1CHUnse5QNq8kfaEoCQow=\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:50 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:50 2014] [error] [client 81.215.15.54] U2FsdGVkX1//BZ+hKwaqgUdUY4k2xO3r/yesPhLv+zKSbTOyIKFPff1rNQK+TOT/\\nYbRRHJj1A7nbD39EaYEEZy0nKbHi/BimuSujpEIpDU8N3kHvjFzOOaB46o7L8BBr\\nQrXtiHKdCYXqFHOrVzL4VGcrWrS14+DZuDpH8N0U8YUMyrjKkTjjw2JsZFqaVhZ5\\nTw/Zs9tQRyCaFck+FKuxGE7Jba6RfYR1VsqnlmKWdCjUr8ipxp/ahz/6J44yl+J0\\nm+6O4RdIg43yXbqU8GKD5Z6ZSc6t24BTaPMXESK/iSEJqnibuQsjlB7tqTkFmz2z\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:50 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:50 2014] [error] [client 81.215.15.54] U2FsdGVkX18Aj1nMIrQBAxBjzCOVfgO5T/BDPOvybXscW2zjFZOIzCn5Diatdjbk\\nhqlRzTXBhv0wHPIW/Y8s0n1CHUnse5QNq8kfaEoCQow=\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:50 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:50 2014] [error] [client 81.215.15.54] U2FsdGVkX1//BZ+hKwaqgUdUY4k2xO3r/yesPhLv+zKSbTOyIKFPff1rNQK+TOT/\\nYbRRHJj1A7nbD39EaYEEZy0nKbHi/BimuSujpEIpDU8N3kHvjFzOOaB46o7L8BBr\\nQrXtiHKdCYXqFHOrVzL4VGcrWrS14+DZuDpH8N0U8YUMyrjKkTjjw2JsZFqaVhZ5\\nTw/Zs9tQRyCaFck+FKuxGE7Jba6RfYR1VsqnlmKWdCjUr8ipxp/ahz/6J44yl+J0\\nm+6O4RdIg43yXbqU8GKD5Z6ZSc6t24BTaPMXESK/iSEJqnibuQsjlB7tqTkFmz2z\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:50 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:50 2014] [error] [client 81.215.15.54] U2FsdGVkX18Aj1nMIrQBAxBjzCOVfgO5T/BDPOvybXscW2zjFZOIzCn5Diatdjbk\\nhqlRzTXBhv0wHPIW/Y8s0n1CHUnse5QNq8kfaEoCQow=\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:51 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:51 2014] [error] [client 81.215.15.54] U2FsdGVkX1//BZ+hKwaqgUdUY4k2xO3r/yesPhLv+zKSbTOyIKFPff1rNQK+TOT/\\nYbRRHJj1A7nbD39EaYEEZy0nKbHi/BimuSujpEIpDU8N3kHvjFzOOaB46o7L8BBr\\nQrXtiHKdCYXqFHOrVzL4VGcrWrS14+DZuDpH8N0U8YUMyrjKkTjjw2JsZFqaVhZ5\\nTw/Zs9tQRyCaFck+FKuxGE7Jba6RfYR1VsqnlmKWdCjUr8ipxp/ahz/6J44yl+J0\\nm+6O4RdIg43yXbqU8GKD5Z6ZSc6t24BTaPMXESK/iSEJqnibuQsjlB7tqTkFmz2z\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:51 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:51 2014] [error] [client 81.215.15.54] U2FsdGVkX18Aj1nMIrQBAxBjzCOVfgO5T/BDPOvybXscW2zjFZOIzCn5Diatdjbk\\nhqlRzTXBhv0wHPIW/Y8s0n1CHUnse5QNq8kfaEoCQow=\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:51 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:51 2014] [error] [client 81.215.15.54] U2FsdGVkX1//BZ+hKwaqgUdUY4k2xO3r/yesPhLv+zKSbTOyIKFPff1rNQK+TOT/\\nYbRRHJj1A7nbD39EaYEEZy0nKbHi/BimuSujpEIpDU8N3kHvjFzOOaB46o7L8BBr\\nQrXtiHKdCYXqFHOrVzL4VGcrWrS14+DZuDpH8N0U8YUMyrjKkTjjw2JsZFqaVhZ5\\nTw/Zs9tQRyCaFck+FKuxGE7Jba6RfYR1VsqnlmKWdCjUr8ipxp/ahz/6J44yl+J0\\nm+6O4RdIg43yXbqU8GKD5Z6ZSc6t24BTaPMXESK/iSEJqnibuQsjlB7tqTkFmz2z\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:51 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:51 2014] [error] [client 81.215.15.54] U2FsdGVkX18Aj1nMIrQBAxBjzCOVfgO5T/BDPOvybXscW2zjFZOIzCn5Diatdjbk\\nhqlRzTXBhv0wHPIW/Y8s0n1CHUnse5QNq8kfaEoCQow=\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:51 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:51 2014] [error] [client 81.215.15.54] U2FsdGVkX1//BZ+hKwaqgUdUY4k2xO3r/yesPhLv+zKSbTOyIKFPff1rNQK+TOT/\\nYbRRHJj1A7nbD39EaYEEZy0nKbHi/BimuSujpEIpDU8N3kHvjFzOOaB46o7L8BBr\\nQrXtiHKdCYXqFHOrVzL4VGcrWrS14+DZuDpH8N0U8YUMyrjKkTjjw2JsZFqaVhZ5\\nTw/Zs9tQRyCaFck+FKuxGE7Jba6RfYR1VsqnlmKWdCjUr8ipxp/ahz/6J44yl+J0\\nm+6O4RdIg43yXbqU8GKD5Z6ZSc6t24BTaPMXESK/iSEJqnibuQsjlB7tqTkFmz2z\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:51 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:51 2014] [error] [client 81.215.15.54] U2FsdGVkX18Aj1nMIrQBAxBjzCOVfgO5T/BDPOvybXscW2zjFZOIzCn5Diatdjbk\\nhqlRzTXBhv0wHPIW/Y8s0n1CHUnse5QNq8kfaEoCQow=\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:52 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:52 2014] [error] [client 81.215.15.54] U2FsdGVkX1//BZ+hKwaqgUdUY4k2xO3r/yesPhLv+zKSbTOyIKFPff1rNQK+TOT/\\nYbRRHJj1A7nbD39EaYEEZy0nKbHi/BimuSujpEIpDU8N3kHvjFzOOaB46o7L8BBr\\nQrXtiHKdCYXqFHOrVzL4VGcrWrS14+DZuDpH8N0U8YUMyrjKkTjjw2JsZFqaVhZ5\\nTw/Zs9tQRyCaFck+FKuxGE7Jba6RfYR1VsqnlmKWdCjUr8ipxp/ahz/6J44yl+J0\\nm+6O4RdIg43yXbqU8GKD5Z6ZSc6t24BTaPMXESK/iSEJqnibuQsjlB7tqTkFmz2z\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:52 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:52 2014] [error] [client 81.215.15.54] U2FsdGVkX18Aj1nMIrQBAxBjzCOVfgO5T/BDPOvybXscW2zjFZOIzCn5Diatdjbk\\nhqlRzTXBhv0wHPIW/Y8s0n1CHUnse5QNq8kfaEoCQow=\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:52 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:52 2014] [error] [client 81.215.15.54] U2FsdGVkX1//BZ+hKwaqgUdUY4k2xO3r/yesPhLv+zKSbTOyIKFPff1rNQK+TOT/\\nYbRRHJj1A7nbD39EaYEEZy0nKbHi/BimuSujpEIpDU8N3kHvjFzOOaB46o7L8BBr\\nQrXtiHKdCYXqFHOrVzL4VGcrWrS14+DZuDpH8N0U8YUMyrjKkTjjw2JsZFqaVhZ5\\nTw/Zs9tQRyCaFck+FKuxGE7Jba6RfYR1VsqnlmKWdCjUr8ipxp/ahz/6J44yl+J0\\nm+6O4RdIg43yXbqU8GKD5Z6ZSc6t24BTaPMXESK/iSEJqnibuQsjlB7tqTkFmz2z\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:52 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:52 2014] [error] [client 81.215.15.54] U2FsdGVkX18Aj1nMIrQBAxBjzCOVfgO5T/BDPOvybXscW2zjFZOIzCn5Diatdjbk\\nhqlRzTXBhv0wHPIW/Y8s0n1CHUnse5QNq8kfaEoCQow=\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:52 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:52 2014] [error] [client 81.215.15.54] U2FsdGVkX1//BZ+hKwaqgUdUY4k2xO3r/yesPhLv+zKSbTOyIKFPff1rNQK+TOT/\\nYbRRHJj1A7nbD39EaYEEZy0nKbHi/BimuSujpEIpDU8N3kHvjFzOOaB46o7L8BBr\\nQrXtiHKdCYXqFHOrVzL4VGcrWrS14+DZuDpH8N0U8YUMyrjKkTjjw2JsZFqaVhZ5\\nTw/Zs9tQRyCaFck+FKuxGE7Jba6RfYR1VsqnlmKWdCjUr8ipxp/ahz/6J44yl+J0\\nm+6O4RdIg43yXbqU8GKD5Z6ZSc6t24BTaPMXESK/iSEJqnibuQsjlB7tqTkFmz2z\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:52 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:52 2014] [error] [client 81.215.15.54] U2FsdGVkX18Aj1nMIrQBAxBjzCOVfgO5T/BDPOvybXscW2zjFZOIzCn5Diatdjbk\\nhqlRzTXBhv0wHPIW/Y8s0n1CHUnse5QNq8kfaEoCQow=\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:53 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:53 2014] [error] [client 81.215.15.54] U2FsdGVkX1//BZ+hKwaqgUdUY4k2xO3r/yesPhLv+zKSbTOyIKFPff1rNQK+TOT/\\nYbRRHJj1A7nbD39EaYEEZy0nKbHi/BimuSujpEIpDU8N3kHvjFzOOaB46o7L8BBr\\nQrXtiHKdCYXqFHOrVzL4VGcrWrS14+DZuDpH8N0U8YUMyrjKkTjjw2JsZFqaVhZ5\\nTw/Zs9tQRyCaFck+FKuxGE7Jba6RfYR1VsqnlmKWdCjUr8ipxp/ahz/6J44yl+J0\\nm+6O4RdIg43yXbqU8GKD5Z6ZSc6t24BTaPMXESK/iSEJqnibuQsjlB7tqTkFmz2z\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:53 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:53 2014] [error] [client 81.215.15.54] U2FsdGVkX18Aj1nMIrQBAxBjzCOVfgO5T/BDPOvybXscW2zjFZOIzCn5Diatdjbk\\nhqlRzTXBhv0wHPIW/Y8s0n1CHUnse5QNq8kfaEoCQow=\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:53 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:53 2014] [error] [client 81.215.15.54] U2FsdGVkX1//BZ+hKwaqgUdUY4k2xO3r/yesPhLv+zKSbTOyIKFPff1rNQK+TOT/\\nYbRRHJj1A7nbD39EaYEEZy0nKbHi/BimuSujpEIpDU8N3kHvjFzOOaB46o7L8BBr\\nQrXtiHKdCYXqFHOrVzL4VGcrWrS14+DZuDpH8N0U8YUMyrjKkTjjw2JsZFqaVhZ5\\nTw/Zs9tQRyCaFck+FKuxGE7Jba6RfYR1VsqnlmKWdCjUr8ipxp/ahz/6J44yl+J0\\nm+6O4RdIg43yXbqU8GKD5Z6ZSc6t24BTaPMXESK/iSEJqnibuQsjlB7tqTkFmz2z\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:53 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:53 2014] [error] [client 81.215.15.54] U2FsdGVkX18Aj1nMIrQBAxBjzCOVfgO5T/BDPOvybXscW2zjFZOIzCn5Diatdjbk\\nhqlRzTXBhv0wHPIW/Y8s0n1CHUnse5QNq8kfaEoCQow=\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:53 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:53 2014] [error] [client 81.215.15.54] U2FsdGVkX1//BZ+hKwaqgUdUY4k2xO3r/yesPhLv+zKSbTOyIKFPff1rNQK+TOT/\\nYbRRHJj1A7nbD39EaYEEZy0nKbHi/BimuSujpEIpDU8N3kHvjFzOOaB46o7L8BBr\\nQrXtiHKdCYXqFHOrVzL4VGcrWrS14+DZuDpH8N0U8YUMyrjKkTjjw2JsZFqaVhZ5\\nTw/Zs9tQRyCaFck+FKuxGE7Jba6RfYR1VsqnlmKWdCjUr8ipxp/ahz/6J44yl+J0\\nm+6O4RdIg43yXbqU8GKD5Z6ZSc6t24BTaPMXESK/iSEJqnibuQsjlB7tqTkFmz2z\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:53 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:53 2014] [error] [client 81.215.15.54] U2FsdGVkX18Aj1nMIrQBAxBjzCOVfgO5T/BDPOvybXscW2zjFZOIzCn5Diatdjbk\\nhqlRzTXBhv0wHPIW/Y8s0n1CHUnse5QNq8kfaEoCQow=\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] U2FsdGVkX1//BZ+hKwaqgUdUY4k2xO3r/yesPhLv+zKSbTOyIKFPff1rNQK+TOT/\\nYbRRHJj1A7nbD39EaYEEZy0nKbHi/BimuSujpEIpDU8N3kHvjFzOOaB46o7L8BBr\\nQrXtiHKdCYXqFHOrVzL4VGcrWrS14+DZuDpH8N0U8YUMyrjKkTjjw2JsZFqaVhZ5\\nTw/Zs9tQRyCaFck+FKuxGE7Jba6RfYR1VsqnlmKWdCjUr8ipxp/ahz/6J44yl+J0\\nm+6O4RdIg43yXbqU8GKD5Z6ZSc6t24BTaPMXESK/iSEJqnibuQsjlB7tqTkFmz2z\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] U2FsdGVkX18Aj1nMIrQBAxBjzCOVfgO5T/BDPOvybXscW2zjFZOIzCn5Diatdjbk\\nhqlRzTXBhv0wHPIW/Y8s0n1CHUnse5QNq8kfaEoCQow=\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] U2FsdGVkX1//BZ+hKwaqgUdUY4k2xO3r/yesPhLv+zKSbTOyIKFPff1rNQK+TOT/\\nYbRRHJj1A7nbD39EaYEEZy0nKbHi/BimuSujpEIpDU8N3kHvjFzOOaB46o7L8BBr\\nQrXtiHKdCYXqFHOrVzL4VGcrWrS14+DZuDpH8N0U8YUMyrjKkTjjw2JsZFqaVhZ5\\nTw/Zs9tQRyCaFck+FKuxGE7Jba6RfYR1VsqnlmKWdCjUr8ipxp/ahz/6J44yl+J0\\nm+6O4RdIg43yXbqU8GKD5Z6ZSc6t24BTaPMXESK/iSEJqnibuQsjlB7tqTkFmz2z\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] U2FsdGVkX18Aj1nMIrQBAxBjzCOVfgO5T/BDPOvybXscW2zjFZOIzCn5Diatdjbk\\nhqlRzTXBhv0wHPIW/Y8s0n1CHUnse5QNq8kfaEoCQow=\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] U2FsdGVkX1//BZ+hKwaqgUdUY4k2xO3r/yesPhLv+zKSbTOyIKFPff1rNQK+TOT/\\nYbRRHJj1A7nbD39EaYEEZy0nKbHi/BimuSujpEIpDU8N3kHvjFzOOaB46o7L8BBr\\nQrXtiHKdCYXqFHOrVzL4VGcrWrS14+DZuDpH8N0U8YUMyrjKkTjjw2JsZFqaVhZ5\\nTw/Zs9tQRyCaFck+FKuxGE7Jba6RfYR1VsqnlmKWdCjUr8ipxp/ahz/6J44yl+J0\\nm+6O4RdIg43yXbqU8GKD5Z6ZSc6t24BTaPMXESK/iSEJqnibuQsjlB7tqTkFmz2z\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] U2FsdGVkX18Aj1nMIrQBAxBjzCOVfgO5T/BDPOvybXscW2zjFZOIzCn5Diatdjbk\\nhqlRzTXBhv0wHPIW/Y8s0n1CHUnse5QNq8kfaEoCQow=\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] U2FsdGVkX1//BZ+hKwaqgUdUY4k2xO3r/yesPhLv+zKSbTOyIKFPff1rNQK+TOT/\\nYbRRHJj1A7nbD39EaYEEZy0nKbHi/BimuSujpEIpDU8N3kHvjFzOOaB46o7L8BBr\\nQrXtiHKdCYXqFHOrVzL4VGcrWrS14+DZuDpH8N0U8YUMyrjKkTjjw2JsZFqaVhZ5\\nTw/Zs9tQRyCaFck+FKuxGE7Jba6RfYR1VsqnlmKWdCjUr8ipxp/ahz/6J44yl+J0\\nm+6O4RdIg43yXbqU8GKD5Z6ZSc6t24BTaPMXESK/iSEJqnibuQsjlB7tqTkFmz2z\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] U2FsdGVkX18Aj1nMIrQBAxBjzCOVfgO5T/BDPOvybXscW2zjFZOIzCn5Diatdjbk\\nhqlRzTXBhv0wHPIW/Y8s0n1CHUnse5QNq8kfaEoCQow=\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] U2FsdGVkX1//BZ+hKwaqgUdUY4k2xO3r/yesPhLv+zKSbTOyIKFPff1rNQK+TOT/\\nYbRRHJj1A7nbD39EaYEEZy0nKbHi/BimuSujpEIpDU8N3kHvjFzOOaB46o7L8BBr\\nQrXtiHKdCYXqFHOrVzL4VGcrWrS14+DZuDpH8N0U8YUMyrjKkTjjw2JsZFqaVhZ5\\nTw/Zs9tQRyCaFck+FKuxGE7Jba6RfYR1VsqnlmKWdCjUr8ipxp/ahz/6J44yl+J0\\nm+6O4RdIg43yXbqU8GKD5Z6ZSc6t24BTaPMXESK/iSEJqnibuQsjlB7tqTkFmz2z\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] U2FsdGVkX18Aj1nMIrQBAxBjzCOVfgO5T/BDPOvybXscW2zjFZOIzCn5Diatdjbk\\nhqlRzTXBhv0wHPIW/Y8s0n1CHUnse5QNq8kfaEoCQow=\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] U2FsdGVkX1//BZ+hKwaqgUdUY4k2xO3r/yesPhLv+zKSbTOyIKFPff1rNQK+TOT/\\nYbRRHJj1A7nbD39EaYEEZy0nKbHi/BimuSujpEIpDU8N3kHvjFzOOaB46o7L8BBr\\nQrXtiHKdCYXqFHOrVzL4VGcrWrS14+DZuDpH8N0U8YUMyrjKkTjjw2JsZFqaVhZ5\\nTw/Zs9tQRyCaFck+FKuxGE7Jba6RfYR1VsqnlmKWdCjUr8ipxp/ahz/6J44yl+J0\\nm+6O4RdIg43yXbqU8GKD5Z6ZSc6t24BTaPMXESK/iSEJqnibuQsjlB7tqTkFmz2z\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:38:54 2014] [error] [client 81.215.15.54] U2FsdGVkX18Aj1nMIrQBAxBjzCOVfgO5T/BDPOvybXscW2zjFZOIzCn5Diatdjbk\\nhqlRzTXBhv0wHPIW/Y8s0n1CHUnse5QNq8kfaEoCQow=\\n, referer: http://reader.lindneo.com/egemen/index.php/content/list
+[Tue Apr 22 12:41:34 2014] [error] [client 81.215.15.54] PHP Fatal error:  Class 'error' not found in /var/www/catalog/protected/controllers/ApiController.php on line 27
+[Tue Apr 22 12:45:48 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:45:48 2014] [error] [client 81.215.15.54] U2FsdGVkX18RBclDJcMPHImOaSMsqyaK+lEiStpZm+NjAVEGGby3EWjgccNyu/i3\\ntxynelwCFTTbv9eGaTl2fCfrTGmXJZ1PzIXNeZrXn1BwJYe7VqnKUBYjzFfCsf8M\\niI2YHWAtxxHbII/Y0KS2on86EZ9s2FSVR9WIkep6OPXaYdHQAlhxhXVIHvTqQ2f9\\nVO6WkC/RXr9IFBF3GZhrnWu/BK6OQjXNdhoFhz307cZI4m2wtoNOpIM4DWI7/wZl\\nJNiO1iJlfC9yXMF2peT4S5rmnA9UhWkG9rbkAtpSNL3VOoXoTrMYik0/5Zpa/aAY\\n, referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:45:48 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:45:48 2014] [error] [client 81.215.15.54] U2FsdGVkX1+bh0XRauWP+TZchAFPJ9Sq6YsYpfdzGJJSaGuypEZGBWe/UDoult9c\\nfEvjHaV9bhsjYvE7zXZnmP0AF3J3oAALwMw1w95WQ4c=\\n, referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:45:48 2014] [error] [client 81.215.15.54] KERBERIZED, referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:45:48 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => egemen@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1398170748\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => fceeeaa61139d5fb9c204821e2c12489583ba49a5fbdb104ab9d9087cb869278\n)\n, referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:45:48 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => egemen@linden-tech.com\n    [timestamp] => 1398170749\n)\n, referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:45:48 2014] [error] [client 81.215.15.54] SENDING DATA..., referer: http://reader.lindneo.com/egemen/site/login
+[Tue Apr 22 12:55:35 2014] [error] [client 31.210.53.80] \nA01
+[Tue Apr 22 12:55:35 2014] [error] [client 31.210.53.80] \nA02
+[Tue Apr 22 12:55:35 2014] [error] [client 31.210.53.80] \nA021
+[Tue Apr 22 12:55:35 2014] [error] [client 31.210.53.80] \nA03
+[Tue Apr 22 12:55:35 2014] [error] [client 31.210.53.80] \nA04
+[Tue Apr 22 12:55:35 2014] [error] [client 31.210.53.80] \nA05
+[Tue Apr 22 12:55:35 2014] [error] [client 31.210.53.80] \nA06
+[Tue Apr 22 12:55:35 2014] [error] [client 31.210.53.80] \nA07
+[Tue Apr 22 12:55:35 2014] [error] [client 31.210.53.80] \nA08
+[Tue Apr 22 12:55:35 2014] [error] [client 31.210.53.80] \nA09
+[Tue Apr 22 12:55:35 2014] [error] [client 31.210.53.80] \nA10
+[Tue Apr 22 12:57:42 2014] [error] [client 31.210.53.80] \nA11
+[Tue Apr 22 13:00:07 2014] [error] [client 31.210.53.80] \nA01
+[Tue Apr 22 13:00:07 2014] [error] [client 31.210.53.80] \nA02
+[Tue Apr 22 13:00:07 2014] [error] [client 31.210.53.80] \nA021
+[Tue Apr 22 13:00:07 2014] [error] [client 31.210.53.80] \nA03
+[Tue Apr 22 13:00:07 2014] [error] [client 31.210.53.80] \nA04
+[Tue Apr 22 13:00:07 2014] [error] [client 31.210.53.80] \nA05
+[Tue Apr 22 13:00:07 2014] [error] [client 31.210.53.80] \nA06
+[Tue Apr 22 13:00:07 2014] [error] [client 31.210.53.80] \nA07
+[Tue Apr 22 13:00:07 2014] [error] [client 31.210.53.80] \nA08
+[Tue Apr 22 13:00:07 2014] [error] [client 31.210.53.80] \nA09
+[Tue Apr 22 13:00:07 2014] [error] [client 31.210.53.80] \nA10
+[Tue Apr 22 13:00:10 2014] [error] [client 31.210.53.80] \nA11
