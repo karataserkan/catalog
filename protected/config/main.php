@@ -22,6 +22,21 @@ $db_config_list=array(
                 			)
 );
 
+$params=array(
+	"walleye"=>array(
+			'adminEmail'=>'webmaster@example.com',
+			'reader_host'=>'http://reader.okutus.com',
+			'catalog_host'=>'http://bigcat.okutus.com',
+			'android_reader'=>'https://play.google.com/store/apps/details?id=com.linden.story.keloglan',
+		),
+	"lindneo"=>array(
+			'adminEmail'=>'webmaster@example.com',
+			'reader_host'=>'http://reader.lindneo.com/ekaratas',
+			'catalog_host'=>'http://catalog.lindneo.com',
+			'android_reader'=>'https://play.google.com/store/apps/details?id=com.linden.story.keloglan',
+		),
+	);
+
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Catalog Application',
@@ -98,11 +113,5 @@ return array(
 
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
-	'params'=>array(
-		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
-		'reader_host'=>'http://reader.lindneo.com/ekaratas',
-		'catalog_host'=>'http://catalog.lindneo.com',
-		'android_reader'=>'https://play.google.com/store/apps/details?id=com.noyan.sesomen',
-	),
+	'params'=>$params[gethostname()],
 );
