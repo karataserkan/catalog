@@ -49,12 +49,14 @@ $this->pageTitle=Yii::app()->name;
 									<div class="search-results">
 										<?php
 										foreach ($books as $k => $book) {?>
-									   		<img class="pull-left" src="<?php echo Yii::app()->request->baseUrl; ?>/api/getThumbnail?id=<?php echo $book->contentId ?>" height="80">
+											<div class="row">
+									   		<img class="pull-left" src="<?php echo Yii::app()->request->baseUrl; ?>/api/getThumbnail?id=<?php echo $book->contentId ?>" height="90">
 									   		<h4><a href="<?php echo Yii::app()->request->baseUrl; ?>/<?php echo $this->getNiceName($book->contentId); ?>"><?php echo $book->contentTitle; ?></a></h4>
 									   		<div class="url"><?php echo $book->organisationName; ?></div>
 									   		<div class="url"><?php echo $book->author; ?></div>
 									   		<p><?php echo $book->contentExplanation; ?></p>
 									   		<hr>
+									   		</div>
 										<?php } ?>
 									</div>
 								<?php } ?>

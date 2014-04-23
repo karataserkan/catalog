@@ -318,9 +318,9 @@ class ApiController extends Controller
 
 	public function actionList()
 	{
-		// if (!$this->authenticate()) {
-		// 	return "auth error";
-		// }
+		if (!$this->authenticate()) {
+			return "auth error";
+		}
 
 		if (!CHttpRequest::getIsPostRequest()) {
 			$this->error("AC-L","Wrong Request",func_get_args(),CHttpRequest::getIsPostRequest());
