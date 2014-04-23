@@ -71,7 +71,7 @@ $this->pageTitle=Yii::app()->name;
 										<br><a href="#" class="col-sm-6 btn btn-lg btn-inverse" disabled><i class="fa fa-apple"> </i> IOS</a>
 									</div>
 									<div class="row">
-										<br><br>
+										<br>
 										<div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -81,6 +81,18 @@ $this->pageTitle=Yii::app()->name;
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 											<div class="fb-share-button" data-href="<?php echo Yii::app()->params['catalog_host']; ?>/<?php echo $this->getNiceName($book->contentId); ?>" data-width="200" data-type="button_count"></div>
+											<br>
+											<!-- Place this tag where you want the share button to render. -->
+											<div class="g-plus" data-action="share"></div>
+
+											<!-- Place this tag after the last share tag. -->
+											<script type="text/javascript">
+											  (function() {
+											    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+											    po.src = 'https://apis.google.com/js/platform.js';
+											    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+											  })();
+											</script>
 									</div>
 								</div>
 							</div>
