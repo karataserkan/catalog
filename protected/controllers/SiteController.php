@@ -141,11 +141,11 @@ class SiteController extends Controller
 
 	public function actionBook($id)
 	{
-		$this->exportRisFile();
 		$nicename=$id;
 		$meta=ContentMeta::model()->find('metaValue=:metaValue AND metaKey=:metaKey',array('metaValue'=>$nicename,'metaKey'=>'nicename'));
 		$id=$meta->contentId;
 		$book=Content::model()->findByPk($id);
+		$this->exportRisFile($id);
 		$bookMeta=array();
 		$bookMeta['abstract']=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'abstract','contentId'=>$id))->metaValue;
 		$bookMeta['publishDate']=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'date','contentId'=>$id))->metaValue;
@@ -252,14 +252,23 @@ class SiteController extends Controller
 		if (!$id) {
 			return 0;
 		}
+		$book=Content::model()->findByPk($id);
+		if (! $book) {
+			return 0;
+		}
 		$file="ris/".$book->contentId.".ris";
 		if (!file_exists($file)) {
 			fopen($file, 'w');
-			
+		}
+		else
+		{
+			return 0;
 		}
 		$content=file_get_contents($file);
-		$book=Content::model()->findByPk($id);
+		$content="TY - EBOOK\r\n";
+		
 		$authors=$book->author;
+		$authorId=0;
 		if ($authors) {
 			$author_ex=explode(',', $authors);
 			$authors_ris=array();
@@ -273,56 +282,71 @@ class SiteController extends Controller
 				$authors_ris[]=$author_surname.$author_name;
 			}
 			
+			foreach ($authors_ris as $key => $author_ris) {
+				if ($key==0) {
+					$content .= 'AU - '.$author_ris."\r\n";
+				}
+				else
+				{
+					$content .= 'A'.($key+1).' - '.$author_ris."\r\n";
+					$authorId=$key;
+				}
+			}
+
 		}
 		
-		$content="TY - EBOOK\r\n";
 
-		$authorId=0;
-		foreach ($authors_ris as $key => $author_ris) {
-			if ($key==0) {
-				$content .= 'AU - '.$author_ris."\r\n";
+
+		$translator=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'translator','contentId'=>$id))->metaValue;
+		if ($translator) {
+			$author=explode(' ', $translator);
+			$author_surname=$author[count($author)-1].',';
+			$author_name='';
+			for ($i=0; $i < (count($author)-1) ; $i++) { 
+				$author_name .= substr($author[$i], 0,1).'.';
+			}
+			if ($authorId==0) {
+				$content.="AU - ".$author_surname.$author_name."\r\n";
 			}
 			else
 			{
-				$content .= 'A'.($key+1).' - '.$author_ris."\r\n";
-				$authorId=$key;
+				$content.="A".($authorId+1)." - ".$author_surname.$author_name."\r\n";
 			}
 		}
-
-		$translator=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'translator','contentId'=>$id))->metaValue;
-		$author=explode(' ', $translator);
-		$author_surname=$author[count($author)-1].',';
-		$author_name='';
-		for ($i=0; $i < (count($author)-1) ; $i++) { 
-			$author_name .= substr($author[$i], 0,1).'.';
-		}
-		$content.="A".($authorId+1)." - ".$author_surname.$author_name."\r\n";
 
 		$content.="TI - ".$book->contentTitle."\r\n";
 		$content.="J2 - ".$book->contentTitle."\r\n";
 
 		$abstract=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'abstract','contentId'=>$id))->metaValue;
-		$content.="AB - ".$abstract."\r\n";
+		if ($abstract) {
+			$content.="AB - ".$abstract."\r\n";
+		}
 
 		$content.="CY - Ankara\r\n";
 
 		$date=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'date','contentId'=>$id))->metaValue;
-		$date_ex=explode('/', $date);
-		$content.="DA - ".$date_ex[2]."/".$date_ex[1]."/".$date_ex[0]."\r\n";
-		$content.="PY - ".$date_ex[2]."\r\n";
+		if ($date) {
+			$date_ex=explode('/', $date);
+			$content.="DA - ".$date_ex[2]."/".$date_ex[1]."/".$date_ex[0]."\r\n";
+			$content.="PY - ".$date_ex[2]."\r\n";
+		}
 
 		$content.="DB - OKUTUS\r\n";
 		$content.="DP - Linden Digital Publishing\r\n";
 
 		$edition=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'edition','contentId'=>$id))->metaValue;
-		$content.="ET - ".$edition."\r\n";
+		if ($edition) {
+			$content.="ET - ".$edition."\r\n";
+		}
 
 		$content.="KW - ".$book->contentTitle."\r\n";
 		$content.="KW - ".$book->organisationName."\r\n";
 		$content.="KW - ".$book->author."\r\n";
 
 		$language=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'language','contentId'=>$id))->metaValue;
-		$content.="LA - ".$language."\r\n";
+		if ($language) {
+			$content.="LA - ".$language."\r\n";
+		}
 		
 		$content.="LB - ".$book->contentTitle."\r\n";
 
@@ -331,7 +355,7 @@ class SiteController extends Controller
 		$content.="ER -";
 
 		//echo $content;
-			file_put_contents($file, $content);
+		file_put_contents($file, $content);
 
 
 	}
