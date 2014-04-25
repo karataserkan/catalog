@@ -52,8 +52,8 @@ $this->pageTitle=Yii::app()->name;
 											<div class="row">
 									   		<img class="pull-left" src="<?php echo Yii::app()->request->baseUrl; ?>/api/getThumbnail?id=<?php echo $book->contentId ?>" height="90">
 									   		<h4><a href="<?php echo Yii::app()->request->baseUrl; ?>/<?php echo $this->getNiceName($book->contentId); ?>"><?php echo $book->contentTitle; ?></a></h4>
-									   		<div class="url"><?php echo $book->organisationName; ?></div>
-									   		<div class="url"><?php echo $book->author; ?></div>
+									   		<div class="url"><a href="<?php echo Yii::app()->request->baseUrl; ?>/q/publisher:<?php echo $book->organisationName; ?>"><?php echo $book->organisationName; ?></a></div>
+									   		<div class="url"><a href="<?php echo Yii::app()->request->baseUrl; ?>/q/author:<?php echo $book->author; ?>"><?php echo $book->author; ?></a></div>
 									   		<p><?php echo $book->contentExplanation; ?></p>
 									   		<hr>
 									   		</div>
