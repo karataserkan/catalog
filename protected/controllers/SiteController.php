@@ -541,16 +541,6 @@ class SiteController extends Controller
 			$contentMeta->save();
 		}
 
-<<<<<<< HEAD
-		// if ($_POST['tracking']) {
-		// 	$contentMeta=new ContentMeta;
-		// 	$contentMeta->contentId=$content->contentId;
-		// 	$contentMeta->metaKey="tracking";
-		// 	$contentMeta->metaValue=$_POST['tracking'];
-		// 	$contentMeta->metaCreationDate=$content->created;
-		// 	$contentMeta->save();
-		//}
-=======
 		if ($_POST['tracking']) {
 			$contentMeta=new ContentMeta;
 			$contentMeta->contentId=$content->contentId;
@@ -559,7 +549,7 @@ class SiteController extends Controller
 			$contentMeta->metaCreationDate=$content->created;
 			$contentMeta->save();
 		}
->>>>>>> 02d4f7317afc21759f042dfd52c637aa5e2b75fa
+
 
 		//book MARC
 		if ($_POST['abstract']) {
