@@ -3,6 +3,9 @@ error_reporting(E_ERROR  | E_PARSE);
 // change the following paths if necessary
 $yii=dirname(__FILE__).'/yii-1.1.14.f0fee9/framework/yii.php';
 $config=dirname(__FILE__).'/protected/config/main.php';
+$detectinjection=dirname(__FILE__).'/protected/security/detectinjection.php';
+
+require_once($detectinjection);
 
 // remove the following lines when in production mode
 defined('YII_DEBUG') or define('YII_DEBUG',true);

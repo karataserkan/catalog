@@ -2,6 +2,11 @@
 
 class SiteController extends Controller
 {
+	public $metaTitle="";
+	public $metaDescription="OKUTUS farklı alt sektörlerde faaliyet gösteren (akademik, eğitim, gazete ve dergi, ders kitapları, vb) yayıncılık firmalarının, kurum ve kuruluşların (devlet kurumları, üniversiteler, vb) ve bireysel yazar, yayıncı ve çevirmenlerin etkileşimli, içeriği multimedya destekli elektronik yayınlarını (eYayın) kolaylıkla ePub3 formatında üretmelerini, güvenli Linden LDDS (Linden Digital Distribution System) sistemi ile dağıtmalarını ve Linden elektronik kaynak okuyucu yazılımlarında gelişmiş okuyucu deneyimleri ile tüketmelerini sağlayan bir yazılım teknolojisidir.";
+	public $metaKeywords="okutus, dijital yayıncılık,dijital yayıncılık,yayıncılık,ebook,ebooks,digital publishing,digital books,epub,epub3,dijital kitap,elektronik kitap,etkileşimli kitap,linden";
+	public $metaAuthor="linden-tech.com";
+	public $metaSubject="Digital Publishing";
 	/**
 	 * Declares class-based actions.
 	 */
@@ -21,13 +26,338 @@ class SiteController extends Controller
 		);
 	}
 
+	
+
 	/**
 	 * This is the default 'index' action that is invoked
 	 * when an action is not explicitly requested by users.
 	 */
 	public function actionIndex()
 	{
-		$this->render('index');
+			// if(isset($_POST['text']))
+			// {
+			// 	$this->redirect(Yii::app()->request->baseUrl.'/site/search?key='.$_POST['text']);
+			// }
+			$this->render('index');
+	}
+
+	public function actionSearch()
+	{
+		$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+		$exploded=explode('/', $actual_link);
+
+		$page=($exploded[5]) ? $exploded[5] : 1 ;
+		$key = ($exploded[4]) ? $exploded[4] : 0 ;
+		// if (isset($_POST['page'])) {
+		// 	$page=$_POST['page'];
+		// }
+		// else
+		// {
+		// 	$page=1;
+		// }
+		$books;
+		$totalPage=0;
+		$totalBooks=0;
+		$page--;
+		
+		if (($key) AND $page >-1) {
+			//$key=$_POST['key'];
+			$detectSQLinjectionKey=new detectSQLinjection($key);
+			if ($detectSQLinjectionKey->ok()) {
+				$limit=10;
+				$offset=$limit*$page;
+		 		$key = preg_replace("/[^a-z0-9_\s- ]/", "", $key);
+				$books=Content::model()->findAll('contentTitle LIKE "%'.$key.'%" OR contentExplanation LIKE "%'.$key.'%" OR author LIKE "%'.$key.'%" OR organisationName LIKE "%'.$key.'%" LIMIT '.$limit.' OFFSET '.$offset,array());
+				$pages=Yii::app()->db->createCommand('select count(*) as count,ceil(count(*)/10) as pages  from content where contentTitle LIKE "%'.$key.'%" OR contentExplanation LIKE "%'.$key.'%" OR author LIKE "%'.$key.'%" OR organisationName LIKE "%'.$key.'%"')->queryRow();
+				$totalPage=$pages['pages'];
+				$totalBooks=$pages['count'];
+				$this->updateSiteMapXmlWithSearchKey($key,$totalPage);
+			}
+			else{
+				echo "sql error";
+			}
+		}
+
+	    $this->render('search', array(
+	    'books' => $books,
+	    'criteria' =>$key,
+	    'totalPage'=>$totalPage,
+	    'currentPage'=>++$page,
+	    'totalBooks'=>$totalBooks
+	    ));
+	}
+
+	public function getNiceName($id)
+	{
+		$meta=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'nicename'));
+		if (!$meta) {
+			$this->setNiceName($id);
+			$meta=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'nicename'));
+		}
+		return $meta->metaValue;
+	}
+
+	public function generateRandomString($length = 10) {
+	    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+	    $randomString = '';
+	    for ($i = 0; $i < $length; $i++) {
+	        $randomString .= $characters[rand(0, strlen($characters) - 1)];
+	    }
+	    return $randomString;
+	}
+
+	public function setNiceName($id){
+		$content=Content::model()->findByPk($id);
+		$meta=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'nicename'));
+		if (!$meta) {
+			$meta=new ContentMeta;
+		}
+		$meta->contentId=$id;
+		$meta->metaKey='nicename';
+
+		$bul = array('Ç', 'Ş', 'Ğ', 'Ü', 'İ', 'Ö', 'ç', 'ş', 'ğ', 'ü', 'ö', 'ı', ' ','-');
+		$yap = array('C', 'S', 'G', 'U', 'I', 'O', 'c', 's', 'g', 'u', 'o', 'i', '_','_');
+		$perma = str_replace($bul, $yap, $content->contentTitle);
+		$perma = preg_replace("@[^A-Za-z0-9\.\-_]@i", '', $perma);
+		$nicename=strtolower($perma);
+		$i=0;
+		while (!$i) {
+			$i=0;
+			$hasNiceName=ContentMeta::model()->find('metaValue=:metaValue AND metaKey=:metaKey',array('metaValue'=>$nicename,'metaKey'=>'nicename'));
+			if ($hasNiceName) {
+				$nicename=$nicename.'-'.$this->generateRandomString(3);
+			}
+			else
+			{
+				$i++;
+			}
+		}
+
+		$meta->metaCreationDate=date('Y-n-d g:i:s',time());
+		$meta->metaValue=$nicename;
+		$meta->save();
+		
+	}
+
+	public function actionBook($id)
+	{
+		$nicename=$id;
+		$meta=ContentMeta::model()->find('metaValue=:metaValue AND metaKey=:metaKey',array('metaValue'=>$nicename,'metaKey'=>'nicename'));
+		$id=$meta->contentId;
+		$book=Content::model()->findByPk($id);
+		$this->exportRisFile($id);
+		$bookMeta=array();
+		$bookMeta['abstract']=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'abstract','contentId'=>$id))->metaValue;
+		$bookMeta['publishDate']=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'date','contentId'=>$id))->metaValue;
+		$bookMeta['totalPage']=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'totalPage','contentId'=>$id))->metaValue;
+		$bookMeta['subject']=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'subject','contentId'=>$id))->metaValue;
+		$bookMeta['language']=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'language','contentId'=>$id))->metaValue;
+		$bookMeta['edition']=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'edition','contentId'=>$id))->metaValue;
+		$bookMeta['translator']=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'translator','contentId'=>$id))->metaValue;
+		$bookMeta['tracking']=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'tracking','contentId'=>$id))->metaValue;
+		
+		if ($book->contentTitle) {
+			$this->metaTitle=$book->contentTitle;
+		}
+		
+		if ($book->author) {
+			$this->metaAuthor=$book->author;
+		}
+		
+		if ($subject) {
+			$this->metaSubject=$subject;
+		}
+
+		if ($book->contentExplanation) {
+			$this->metaDescription=$book->contentExplanation;
+		}
+		
+		$this->metaKeywords=$book->contentTitle.','.$book->author;
+		
+		$this->updateSiteMapXmlWithBook($nicename);
+
+		$this->render("book",array('book'=>$book,'bookMeta'=>$bookMeta));
+	}
+
+	public function updateSiteMapXmlWithSearchKey($key,$totalPage)
+	{
+		$XML=file_get_contents('sitemap.xml');
+		
+		if(!strpos($XML, "<loc>".Yii::app()->params['catalog_host']."/q/".$key."</loc>"))
+		{
+			$newUrl="<url>\n";
+			$newUrl.="  <loc>".Yii::app()->params['catalog_host']."/q/".$key."</loc>\n";
+			$newUrl.="</url>\n";
+			$XML_ex=explode('</urlset>', $XML);
+			$XML = $XML_ex[0];
+			$XML .=$newUrl;
+			$XML .='</urlset>';
+		}
+		
+		if ($totalPage==1) {
+			if (!strpos($XML, "  <loc>".Yii::app()->params['catalog_host']."/q/".$key."/1</loc>")) {
+				$newUrl="<url>\n";
+				$newUrl.="  <loc>".Yii::app()->params['catalog_host']."/q/".$key."/1</loc>\n";
+				$newUrl.="</url>\n";
+				$XML_ex=explode('</urlset>', $XML);
+				$XML = $XML_ex[0];
+				$XML .=$newUrl;
+				$XML .='</urlset>';
+			}
+		}
+		else{
+			for ($i=1; $i <= $totalPage; $i++) { 
+				if (!strpos($XML, "  <loc>".Yii::app()->params['catalog_host']."/q/".$key."/".$i."</loc>")) {
+					$newUrl="<url>\n";
+					$newUrl.="  <loc>".Yii::app()->params['catalog_host']."/q/".$key."/".$i."</loc>\n";
+					$newUrl.="</url>\n";
+					$XML_ex=explode('</urlset>', $XML);
+					$XML = $XML_ex[0];
+					$XML .=$newUrl;
+					$XML .='</urlset>';
+				}
+			}
+		}
+
+
+		file_put_contents('sitemap.xml', $XML);
+
+	}
+
+	public function updateSiteMapXmlWithBook($book)
+	{
+		$XML=file_get_contents('sitemap.xml');
+		// $robot=file_get_contents('robots.txt');
+		// $robot_in = "Sitemap: ".Yii::app()->params['catalog_host']."/sitemap.xml\n";
+		// $robot_in .="User-agent: *\n";
+		// $robot_in .="Disallow:\n";
+		// file_put_contents("robots.txt", $robot_in);
+		
+		if(!strpos($XML, $book))
+		{
+			$newUrl="<url>\n";
+			$newUrl.="  <loc>".Yii::app()->params['catalog_host']."/".$book."</loc>\n";
+			$newUrl.="</url>\n";
+		}
+		$XML_ex=explode('</urlset>', $XML);
+		$XML = $XML_ex[0];
+		$XML .=$newUrl;
+		$XML .='</urlset>';
+		file_put_contents('sitemap.xml', $XML);
+		
+	}
+
+	public function exportRisFile($id)
+	{
+		if (!$id) {
+			return 0;
+		}
+		$book=Content::model()->findByPk($id);
+		if (! $book) {
+			return 0;
+		}
+		$file="ris/".$book->contentId.".ris";
+		if (!file_exists($file)) {
+			fopen($file, 'w');
+		}
+		else
+		{
+			return 0;
+		}
+		$content=file_get_contents($file);
+		$content="TY - EBOOK\r\n";
+		
+		$authors=$book->author;
+		$authorId=0;
+		if ($authors) {
+			$author_ex=explode(',', $authors);
+			$authors_ris=array();
+			foreach ($author_ex as $key => $author) {
+				$author=explode(' ', $author);
+				$author_surname=$author[count($author)-1].',';
+				$author_name='';
+				for ($i=0; $i < (count($author)-1) ; $i++) { 
+					$author_name .= substr($author[$i], 0,1).'.';
+				}
+				$authors_ris[]=$author_surname.$author_name;
+			}
+			
+			foreach ($authors_ris as $key => $author_ris) {
+				if ($key==0) {
+					$content .= 'AU - '.$author_ris."\r\n";
+				}
+				else
+				{
+					$content .= 'A'.($key+1).' - '.$author_ris."\r\n";
+					$authorId=$key;
+				}
+			}
+
+		}
+		
+
+
+		$translator=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'translator','contentId'=>$id))->metaValue;
+		if ($translator) {
+			$author=explode(' ', $translator);
+			$author_surname=$author[count($author)-1].',';
+			$author_name='';
+			for ($i=0; $i < (count($author)-1) ; $i++) { 
+				$author_name .= substr($author[$i], 0,1).'.';
+			}
+			if ($authorId==0) {
+				$content.="AU - ".$author_surname.$author_name."\r\n";
+			}
+			else
+			{
+				$content.="A".($authorId+1)." - ".$author_surname.$author_name."\r\n";
+			}
+		}
+
+		$content.="TI - ".$book->contentTitle."\r\n";
+		$content.="J2 - ".$book->contentTitle."\r\n";
+
+		$abstract=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'abstract','contentId'=>$id))->metaValue;
+		if ($abstract) {
+			$content.="AB - ".$abstract."\r\n";
+		}
+
+		$content.="CY - Ankara\r\n";
+
+		$date=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'date','contentId'=>$id))->metaValue;
+		if ($date) {
+			$date_ex=explode('/', $date);
+			$content.="DA - ".$date_ex[2]."/".$date_ex[1]."/".$date_ex[0]."\r\n";
+			$content.="PY - ".$date_ex[2]."\r\n";
+		}
+
+		$content.="DB - OKUTUS\r\n";
+		$content.="DP - Linden Digital Publishing\r\n";
+
+		$edition=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'edition','contentId'=>$id))->metaValue;
+		if ($edition) {
+			$content.="ET - ".$edition."\r\n";
+		}
+
+		$content.="KW - ".$book->contentTitle."\r\n";
+		$content.="KW - ".$book->organisationName."\r\n";
+		$content.="KW - ".$book->author."\r\n";
+
+		$language=ContentMeta::model()->find('metaKey=:metaKey AND contentId=:contentId',array('metaKey'=>'language','contentId'=>$id))->metaValue;
+		if ($language) {
+			$content.="LA - ".$language."\r\n";
+		}
+		
+		$content.="LB - ".$book->contentTitle."\r\n";
+
+		$content.="PB - Linden Digital Publishing\r\n";
+
+		$content.="ER -";
+
+		//echo $content;
+		file_put_contents($file, $content);
+
+
 	}
 
 	public function actionImport()
@@ -79,7 +409,9 @@ class SiteController extends Controller
 			error_log("\nA022");
 		}
 		error_log("\nA03");
-		
+
+		//Yii::app()->db->createCommand("DELETE FROM contentMeta WHERE contentId='".$contentId."'")->queryAll();
+
 		foreach ($hosts as $key => $host) {
 			$newHost = Host::model()->findByPk($host['id']);
 			if (!$newHost) {
@@ -209,6 +541,7 @@ class SiteController extends Controller
 			$contentMeta->save();
 		}
 
+<<<<<<< HEAD
 		// if ($_POST['tracking']) {
 		// 	$contentMeta=new ContentMeta;
 		// 	$contentMeta->contentId=$content->contentId;
@@ -217,6 +550,16 @@ class SiteController extends Controller
 		// 	$contentMeta->metaCreationDate=$content->created;
 		// 	$contentMeta->save();
 		//}
+=======
+		if ($_POST['tracking']) {
+			$contentMeta=new ContentMeta;
+			$contentMeta->contentId=$content->contentId;
+			$contentMeta->metaKey="tracking";
+			$contentMeta->metaValue=$_POST['tracking'];
+			$contentMeta->metaCreationDate=$content->created;
+			$contentMeta->save();
+		}
+>>>>>>> 02d4f7317afc21759f042dfd52c637aa5e2b75fa
 
 		//book MARC
 		if ($_POST['abstract']) {

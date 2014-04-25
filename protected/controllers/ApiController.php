@@ -2,6 +2,11 @@
 
 class ApiController extends Controller
 {
+	public $metaTitle="";
+	public $metaDescription="OKUTUS farklı alt sektörlerde faaliyet gösteren (akademik, eğitim, gazete ve dergi, ders kitapları, vb) yayıncılık firmalarının, kurum ve kuruluşların (devlet kurumları, üniversiteler, vb) ve bireysel yazar, yayıncı ve çevirmenlerin etkileşimli, içeriği multimedya destekli elektronik yayınlarını (eYayın) kolaylıkla ePub3 formatında üretmelerini, güvenli Linden LDDS (Linden Digital Distribution System) sistemi ile dağıtmalarını ve Linden elektronik kaynak okuyucu yazılımlarında gelişmiş okuyucu deneyimleri ile tüketmelerini sağlayan bir yazılım teknolojisidir.";
+	public $metaKeywords="okutus, dijital yayıncılık,dijital yayıncılık,yayıncılık,ebook,ebooks,digital publishing,digital books,epub,epub3,dijital kitap,elektronik kitap,etkileşimli kitap,linden";
+	public $metaAuthor="linden-tech.com";
+	public $metaSubject="Digital Publishing";
 	public $response=null; 
 	public $errors=null; 
 
@@ -121,20 +126,31 @@ class ApiController extends Controller
 			return false;
 		}
 		$res=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'thumbnail'))->metaValue;
+		
+		if (empty($res)) {
+			$res = base64_encode(file_get_contents(Yii::app()->params['catalog_host'].'/css/thumbnail.jpg'));
+			$extension='jpg';
+			
+		}
 		define('UPLOAD_DIR', 'images/');
 		$img = $res;
-		$img = str_replace('data:image/jpeg;base64,', '', $img);
+		$exp=explode(";", $img);
+		$ext=explode("/", $exp[0]);
+		$extension = $ext[1]; 
+		$img = str_replace('data:image/'.$extension.';base64,', '', $img);
 		$img = str_replace(' ', '+', $img);
 		$data = base64_decode($img);
-		$file = UPLOAD_DIR . uniqid() . '.jpeg';
+		$file = UPLOAD_DIR . uniqid() . '.'.$extension;
 		$success = file_put_contents($file, $data);
 		shell_exec("convert ".$file." -resize 270x390 ".$file);
 		$im = file_get_contents($file);
     	//$imdata = 'data:image/jpeg;base64,'.base64_encode($im);
 
-    	header('Content-Type: image/jpg');
-		echo $im; 
-		unlink($file);
+		
+
+     	header('Content-Type: image/'.$extension);
+		  echo $im; 
+		 unlink($file);
 	}
 
 	public function actionGetCover($id)
@@ -164,9 +180,12 @@ class ApiController extends Controller
 		// $file = UPLOAD_DIR . uniqid() . '.jpeg';
 		// $success = file_put_contents($file, $data);
 		// //shell_exec("convert ".$file." -resize 270x390 ".$file);
-		 $im = file_get_contents($res);
+		$exp=explode(";", $res);
+		$ext=explode("/", $exp[0]);
+		$extension = $ext[1];
+		$im = file_get_contents($res);
 
-		header('Content-Type: image/jpg');
+		header('Content-Type: image/'.$extension);
 		echo $im;
 
   //   	$imdata = 'data:image/jpeg;base64,'.base64_encode($im);
@@ -299,9 +318,9 @@ class ApiController extends Controller
 
 	public function actionList()
 	{
-		// if (!$this->authenticate()) {
-		// 	return "auth error";
-		// }
+		if (!$this->authenticate()) {
+			return "auth error";
+		}
 
 		if (!CHttpRequest::getIsPostRequest()) {
 			$this->error("AC-L","Wrong Request",func_get_args(),CHttpRequest::getIsPostRequest());
