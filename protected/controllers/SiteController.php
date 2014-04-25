@@ -68,6 +68,7 @@ class SiteController extends Controller
 		$content->created=$_POST['created'];
 		$content->organisationName=$_POST['organisationName'];
 		$content->author=$_POST['author'];
+		error_log(print_r($content,1));
 		if ($content->save()) {
 			$uploadRes->catalog=0;
 			error_log("\nA021");
@@ -215,7 +216,7 @@ class SiteController extends Controller
 		// 	$contentMeta->metaValue=$_POST['tracking'];
 		// 	$contentMeta->metaCreationDate=$content->created;
 		// 	$contentMeta->save();
-		}
+		//}
 
 		//book MARC
 		if ($_POST['abstract']) {

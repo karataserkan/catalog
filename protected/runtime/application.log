@@ -6479,3 +6479,174 @@ Stack trace:
 REQUEST_URI=/api/list
 HTTP_REFERER=http://reader.lindneo.com/bekir/index.php/content/list
 ---
+2014/04/15 13:33:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/catalog.oldies/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/04/15 13:33:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "content/list".' in /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('content/list')
+#1 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/catalog.oldies/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/content/list
+---
+2014/04/15 13:34:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "contents/list".' in /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('contents/list')
+#1 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/catalog.oldies/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/contents/list
+---
+2014/04/17 07:35:16 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`catalog`.`content_host`, CONSTRAINT `content_host_ibfk_1` FOREIGN KEY (`content_id`) REFERENCES `content` (`contentId`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `content_host` (`host_id`, `content_id`) VALUES (:yp0, :yp1).
+in /var/www/catalog.oldies/protected/controllers/SiteController.php (96)
+in /var/www/catalog.oldies/index.php (13)
+2014/04/17 07:35:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`catalog`.`content_host`, CONSTRAINT `content_host_ibfk_1` FOREIGN KEY (`content_id`) REFERENCES `content` (`contentId`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `content_host` (`host_id`, `content_id`) VALUES (:yp0, :yp1)' in /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1077): CDbCommand->execute()
+#1 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 /var/www/catalog.oldies/protected/controllers/SiteController.php(96): CActiveRecord->save()
+#3 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): SiteController->actionImport()
+#4 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('import')
+#8 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/import')
+#9 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/catalog.oldies/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/site/import
+---
+2014/04/17 07:44:36 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`catalog`.`content_host`, CONSTRAINT `content_host_ibfk_1` FOREIGN KEY (`content_id`) REFERENCES `content` (`contentId`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `content_host` (`host_id`, `content_id`) VALUES (:yp0, :yp1).
+in /var/www/catalog.oldies/protected/controllers/SiteController.php (96)
+in /var/www/catalog.oldies/index.php (13)
+2014/04/17 07:44:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`catalog`.`content_host`, CONSTRAINT `content_host_ibfk_1` FOREIGN KEY (`content_id`) REFERENCES `content` (`contentId`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `content_host` (`host_id`, `content_id`) VALUES (:yp0, :yp1)' in /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1077): CDbCommand->execute()
+#1 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 /var/www/catalog.oldies/protected/controllers/SiteController.php(96): CActiveRecord->save()
+#3 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): SiteController->actionImport()
+#4 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('import')
+#8 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/import')
+#9 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/catalog.oldies/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/site/import
+---
+2014/04/17 07:54:36 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`catalog`.`content_host`, CONSTRAINT `content_host_ibfk_1` FOREIGN KEY (`content_id`) REFERENCES `content` (`contentId`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `content_host` (`host_id`, `content_id`) VALUES (:yp0, :yp1).
+in /var/www/catalog.oldies/protected/controllers/SiteController.php (96)
+in /var/www/catalog.oldies/index.php (13)
+2014/04/17 07:54:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`catalog`.`content_host`, CONSTRAINT `content_host_ibfk_1` FOREIGN KEY (`content_id`) REFERENCES `content` (`contentId`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `content_host` (`host_id`, `content_id`) VALUES (:yp0, :yp1)' in /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1077): CDbCommand->execute()
+#1 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 /var/www/catalog.oldies/protected/controllers/SiteController.php(96): CActiveRecord->save()
+#3 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): SiteController->actionImport()
+#4 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('import')
+#8 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/import')
+#9 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/catalog.oldies/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/site/import
+---
+2014/04/17 08:13:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "import".' in /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('import')
+#1 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('import')
+#2 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/import')
+#3 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/catalog.oldies/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/api/import
+---
+2014/04/17 08:13:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/catalog.oldies/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/04/17 08:14:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/catalog.oldies/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/04/17 09:30:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/catalog.oldies/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/04/17 12:00:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/catalog.oldies/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/04/21 11:19:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/catalog.oldies/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/04/22 07:45:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/catalog.oldies/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/04/22 10:08:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/catalog.oldies/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/04/22 10:08:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/catalog.oldies/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/04/24 18:32:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/catalog.oldies/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/04/25 08:00:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/catalog.oldies/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
