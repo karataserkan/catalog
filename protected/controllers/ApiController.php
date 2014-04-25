@@ -318,15 +318,19 @@ class ApiController extends Controller
 
 	public function actionList()
 	{
+		/*
 		if (!$this->authenticate()) {
 			return "auth error";
-		}
-
+		}*/
+		
+		error_log("POST:VALUES".print_r($_POST,1));
+		error_log("GET:VALUES".print_r($GET,1));
 		if (!CHttpRequest::getIsPostRequest()) {
 			$this->error("AC-L","Wrong Request",func_get_args(),CHttpRequest::getIsPostRequest());
 			$this->response("");
 			return "not post request";			
 		}
+		//print_r("sdfsdfdsf");die();
 
 		$attributes=CHttpRequest::getPost('attributes',0);
 		$as=json_decode($attributes);
