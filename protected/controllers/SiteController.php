@@ -41,13 +41,19 @@ class SiteController extends Controller
 			$this->render('index');
 	}
 
+	public function addTurkishChars($text)
+	{
+
+	}
+
 	public function actionSearch()
 	{
 		$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 		$exploded=explode('/', $actual_link);
-
 		$page=($exploded[5]) ? $exploded[5] : 1 ;
 		$key = ($exploded[4]) ? $exploded[4] : 0 ;
+		$key=urldecode($key);
+
 		// if (isset($_POST['page'])) {
 		// 	$page=$_POST['page'];
 		// }
@@ -59,23 +65,38 @@ class SiteController extends Controller
 		$totalPage=0;
 		$totalBooks=0;
 		$page--;
-		
 		if (($key) AND $page >-1) {
 			//$key=$_POST['key'];
-			$detectSQLinjectionKey=new detectSQLinjection($key);
-			if ($detectSQLinjectionKey->ok()) {
+			// $detectSQLinjectionKey=new detectSQLinjection($key);
+			// if ($detectSQLinjectionKey->ok()) {
 				$limit=10;
 				$offset=$limit*$page;
-		 		$key = preg_replace("/[^a-z0-9_\s- ]/", "", $key);
-				$books=Content::model()->findAll('contentTitle LIKE "%'.$key.'%" OR contentExplanation LIKE "%'.$key.'%" OR author LIKE "%'.$key.'%" OR organisationName LIKE "%'.$key.'%" LIMIT '.$limit.' OFFSET '.$offset,array());
-				$pages=Yii::app()->db->createCommand('select count(*) as count,ceil(count(*)/10) as pages  from content where contentTitle LIKE "%'.$key.'%" OR contentExplanation LIKE "%'.$key.'%" OR author LIKE "%'.$key.'%" OR organisationName LIKE "%'.$key.'%"')->queryRow();
+		 		//$key = preg_replace("/[^a-z0-9_\s- ]/", "", $key);
+		 		if (strpos($key, "author:") !== false) {
+		 			$key_exp=explode(":", $key);
+		 			$key=$key_exp[1];
+					$books=Content::model()->findAll('author="'.$key.'" LIMIT '.$limit.' OFFSET '.$offset,array());
+					$pages=Yii::app()->db->createCommand('select count(*) as count,ceil(count(*)/10) as pages  from content where author="'.$key.'"')->queryRow();
+					$key = "author:".$key;
+		 		}elseif (strpos($key, "publisher:") !== false) {
+		 			$key_exp=explode(":", $key);
+		 			$key=$key_exp[1];
+					$books=Content::model()->findAll('organisationName="'.$key.'" LIMIT '.$limit.' OFFSET '.$offset,array());
+					$pages=Yii::app()->db->createCommand('select count(*) as count,ceil(count(*)/10) as pages  from content where organisationName="'.$key.'"')->queryRow();
+					$key = "publisher:".$key;
+		 		}
+		 		else{
+					$books=Content::model()->findAll('contentTitle LIKE "%'.$key.'%" OR contentExplanation LIKE "%'.$key.'%" OR author LIKE "%'.$key.'%" OR organisationName LIKE "%'.$key.'%" LIMIT '.$limit.' OFFSET '.$offset,array());
+					$pages=Yii::app()->db->createCommand('select count(*) as count,ceil(count(*)/10) as pages  from content where contentTitle LIKE "%'.$key.'%" OR contentExplanation LIKE "%'.$key.'%" OR author LIKE "%'.$key.'%" OR organisationName LIKE "%'.$key.'%"')->queryRow();
+		 		}
+		 		
 				$totalPage=$pages['pages'];
 				$totalBooks=$pages['count'];
 				$this->updateSiteMapXmlWithSearchKey($key,$totalPage);
-			}
-			else{
-				echo "sql error";
-			}
+			// }
+			// else{
+			// 	echo "sql error";
+			// }
 		}
 
 	    $this->render('search', array(

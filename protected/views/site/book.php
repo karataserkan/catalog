@@ -30,13 +30,13 @@ $this->pageTitle=Yii::app()->name;
 								</div>
 								<div class="col-sm-6">
 									<h3><?php echo $book->contentTitle; ?></h3>
-									<p><b>Author:</b> <?php echo $book->author; ?></p>
+									<p><b>Author:</b> <a href="<?php echo Yii::app()->request->baseUrl; ?>/q/author:<?php echo $book->author; ?>"><?php echo $book->author; ?></a></p>
 									<?php if ($bookMeta["translator"]) { ?>
 										<p><b>Translator:</b> <?php echo $bookMeta["translator"]; ?></p>
 									<?php }?>
 
 									<?php if ($book->organisationName) { ?>
-										<p><b>Publisher:</b> <?php echo $book->organisationName; ?></p>
+										<p><b>Publisher:</b> <a href="<?php echo Yii::app()->request->baseUrl; ?>/q/publisher:<?php echo $book->organisationName; ?>"><?php echo $book->organisationName; ?></a></p>
 									<?php } ?>
 									<?php if ($bookMeta["subject"]) { ?>
 										<p><b>Subject:</b> <?php echo $bookMeta["subject"]; ?></p>
@@ -73,13 +73,13 @@ $this->pageTitle=Yii::app()->name;
 									<div class="row">
 										<br>
 										<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/tr_TR/all.js#xfbml=1&appId=1427629194160426";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+											<script>(function(d, s, id) {
+											  var js, fjs = d.getElementsByTagName(s)[0];
+											  if (d.getElementById(id)) return;
+											  js = d.createElement(s); js.id = id;
+											  js.src = "//connect.facebook.net/tr_TR/all.js#xfbml=1&appId=1427629194160426";
+											  fjs.parentNode.insertBefore(js, fjs);
+											}(document, 'script', 'facebook-jssdk'));</script>
 											<div class="fb-share-button" data-href="<?php echo Yii::app()->params['catalog_host']; ?>/<?php echo $this->getNiceName($book->contentId); ?>" data-width="200" data-type="button_count"></div>
 											<br>
 											<!-- Place this tag where you want the share button to render. -->
