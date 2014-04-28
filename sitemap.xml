@@ -167,6 +167,15 @@
   <loc>http://catalog.lindneo.com/q/x/1</loc>
 </url>
 <url>
+<<<<<<< HEAD
+  <loc>http://bigcat.okutus.com/q/49448</loc>
+</url>
+<url>
+  <loc>http://bigcat.okutus.com/q/digital</loc>
+</url>
+<url>
+  <loc>http://bigcat.okutus.com/q/peygamberler</loc>
+=======
   <loc>http://catalog.lindneo.com/q/9879</loc>
 </url>
 <url>
@@ -339,6 +348,7 @@
 </url>
 <url>
   <loc>http://catalog.lindneo.com/q/author:Ahmet Kayan/1</loc>
+>>>>>>> 74425356990220b524e33c4bcd3806d339639de7
 </url>
 <url>
   <loc>http://catalog.lindneo.com/q/author:Canan Karayay</loc>
