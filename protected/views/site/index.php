@@ -10,15 +10,18 @@ $this->pageTitle=Yii::app()->name;
 			</div>
 		</div>
 		<div class="row">
+			<br><br><br><br><br>
+		<div>
+		<div class="row">
 			<div class="container">
-			<div class="col-md-12 not-found">
+			<div class="col-md-3 not-found">
 			   <div class="error">
-				  Linden
+				  <img src="<?php echo Yii::app()->request->baseUrl; ?>/css/bigcat_white.png" style="opacity:.3" width="200px">
 			   </div>
 			</div>
 			<div class="col-md-6 not-found">
-			   <div class="content">
-				  <h3>Are you lost in the worlds?</h3>
+			   <div class="content"><br><br><br><br>
+				  <h3>Are you lost in the words?</h3>
 					 <div class="input-group">
 						<input id="searchkey" type="text" class="form-control" placeholder="search here..." name="key" onkeypress="return runScript(event)">
 						<span class="input-group-btn">                   
@@ -26,6 +29,8 @@ $this->pageTitle=Yii::app()->name;
 						</span>
 					 </div>
 			   </div>
+			</div>
+			<div class="col-md-3">
 			</div>
 			</div>
 		</div>
