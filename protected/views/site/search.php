@@ -3,6 +3,7 @@
 
 $this->pageTitle=Yii::app()->name;
 ?>
+
 <section id="page">
 			<div class="container">
 				<div class="row">

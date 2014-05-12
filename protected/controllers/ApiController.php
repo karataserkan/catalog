@@ -316,6 +316,85 @@ class ApiController extends Controller
 		$this->render('index');
 	}
 
+	public function actionListIos()
+	{
+		
+		error_log("POST:VALUES".print_r($_POST,1));
+		error_log("GET:VALUES".print_r($GET,1));
+		if (!CHttpRequest::getIsPostRequest()) {
+			$this->error("AC-L","Wrong Request",func_get_args(),CHttpRequest::getIsPostRequest());
+			$this->response("");
+			return "not post request";			
+		}
+		//print_r("sdfsdfdsf");die();
+
+		$json=CHttpRequest::getPost('attributes',0);
+		
+		$newArray=array();
+		$ar=json_decode($json,true);
+		foreach ($ar as $key2 => $v) {
+			foreach ($v as $key => $v2) {
+				$newArray[$key]=$v2;
+			}
+		}
+		$as=$newArray;
+		$criteriaValues=array();
+		$criteria='';
+
+		if (!empty($as)) {
+			
+			foreach ($as as $k1 => $q) {
+				if (is_array($q) && !empty($q)) {
+					$criteria.='(';
+					if ($k1=='contentTitle'||$k1=='contentExplanation'||$k1=='author') {
+						foreach ($q as $k2 => $t) {
+							$criteria.=$k1.' LIKE :'.$t.$k1.' OR ';
+							$criteriaValues[$t.$k1]='%'.$t.'%';
+						}	
+					}
+					elseif ($k1=='categories') {
+						foreach ($q as $k2 => $t) {
+							$criteria.='categories.category_id=:category_id'.$t.$k1.' OR ';
+							$criteriaValues['category_id'.$t.$k1]=$t;
+						}
+					}
+					elseif ($k1=='organisationId'||$k1=='contentType'||$k1=='contentIsForSale')
+					{
+						foreach ($q as $k2 => $t) {
+							$criteria.=$k1.'=:'.$t.$k1.' AND';
+							$criteriaValues[$t.$k1]=$t;
+						}
+					}
+					
+					$criteria=substr($criteria,0, -3);
+					$criteria.=') AND';	
+				}
+			}
+			$criteria=substr($criteria,0, -4);
+		//.' AND host.id=content_host.host_id AND content_host.content_id=content.contentId'
+	    	$list=Content::model()->with('categories')->findAll($criteria,$criteriaValues);
+		}
+		else
+		{
+			$list=Content::model()->findAll(array('limit'=>10));
+		}
+		//$list=Content::model()->findAll("author=:author",array('author'=>'Canan Karayay'));
+		//var_dump($criteriaValues);die();
+
+	 //    if(!$list)  {
+		// 	$this->error("AC-L","Catalogs Not Found",func_get_args());
+		// 	return false;
+		// }
+		if ($list) {
+			foreach ($list as $key => &$items) {
+				$items=$items->attributes;
+			}
+		}
+
+		$this->response($list);
+
+	}
+
 	public function actionList()
 	{
 		/*
@@ -614,15 +693,15 @@ class ApiController extends Controller
 
 	public function actionDeneme()
 	{
-		$url = 'http://catalog.lindneo.com/api/getMainInfo';
-		$a="8EBlYseeD0kaSrtFVNymJEjEr9FrVzxNPxHyv4AME2ww";
+		$url = 'http://catalog.lindneo.com/api/listIos';
+		$a='[{"organisationId": ["seviye","qwertyu"]},{"contentType":["epub"]}]';
 		//$a="VgWaWF8DQ3J8U7tAiGqQuRHucsA6uyWLQjk1Qm0Ibz5e";
 		//$b="556633";
 		// $c="1234";
 		// $d="asd";
 		
 		$params = array(
-						'id'=>$a,
+						'attributes'=>$a,
 						//'book_id'=>$b,
 						// 'notes'=>json_encode(array(
 						// 			array('book_id'=>'12345','page_id'=>'8','note'=>'asd'),
