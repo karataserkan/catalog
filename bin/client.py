@@ -41,7 +41,31 @@ def ListCatalog(client,params=[]):
    client.send ('ListCatalog')
    print client.recv ( 1024 )
 def DeleteFromCatalog(client,params=[]):
-    pass
+   print "Deleting from catalog..."
+   client.send ('DeleteFromCatalog')
+   print "message sent...."
+   try:
+      params[0]
+   except Exception, e:
+      print "DeleteFromCatalog:No file path specified"
+      client.close()
+      sys.exit(3)
+      return
+   else:
+      response = client.recv ( 1024 )
+      print "Response is"+response
+      if response == 'DeleteFromCatalogStarted':
+      	filepath=params[0]
+	print filepath
+	client.send(filepath)
+	response = client.recv ( 1024 )
+	if response == '1':
+		return 1
+	else:
+		return 0
+
+
+    
 def UpdateCatalogList(client,params=[]):
     pass
 
@@ -159,7 +183,9 @@ methods = {
         'UpdateCatalogList': UpdateCatalogList,
         'AddToCatalog': AddToCatalog,
         'ServeFileToReader': ServeFileToReader ,
-        'GetFileChuncked': GetFileChuncked
+        'GetFileChuncked': GetFileChuncked,
+        'DeleteFromCatalog': DeleteFromCatalog
+
     }
 
 

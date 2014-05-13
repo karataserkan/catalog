@@ -310,3 +310,27 @@
 [Mon May 12 04:56:26 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => egemen@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1399870586\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 7a9bcbc4314cbfef36503caa8af27ebb3eedef48ad7e614a965402368ab7b3de\n)\n, referer: http://reader.lindneo.com/ekaratas/site/login
 [Mon May 12 04:56:26 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => egemen@linden-tech.com\n    [timestamp] => 1399870587\n)\n, referer: http://reader.lindneo.com/ekaratas/site/login
 [Mon May 12 04:56:26 2014] [error] [client 81.215.15.54] SENDING DATA..., referer: http://reader.lindneo.com/ekaratas/site/login
+[Tue May 13 04:49:25 2014] [error] [client 31.210.53.80] id: KljXeA8k21E8Culh2lyASwL2WDsld7Xu1ReAI8UXtfr0
+[Tue May 13 04:49:25 2014] [error] [client 31.210.53.80] after delete
+[Tue May 13 04:49:25 2014] [error] [client 31.210.53.80] empty hosts
+[Tue May 13 04:57:24 2014] [error] [client 31.210.53.80] id: 6INkQnzE22fxPQtXPSyUQRzqvhH6c4xJJQdrZol2xFat
+[Tue May 13 04:57:24 2014] [error] [client 31.210.53.80] after delete
+[Tue May 13 04:57:24 2014] [error] [client 31.210.53.80] python bin/client.py '{"host":,"port":}' DeleteFromCatalog 6INkQnzE22fxPQtXPSyUQRzqvhH6c4xJJQdrZol2xFat
+[Tue May 13 05:00:53 2014] [error] [client 31.210.53.80] id: 6INkQnzE22fxPQtXPSyUQRzqvhH6c4xJJQdrZol2xFat
+[Tue May 13 05:00:53 2014] [error] [client 31.210.53.80] empty hosts
+[Tue May 13 05:00:53 2014] [error] [client 31.210.53.80] PHP Fatal error:  Call to a member function delete() on a non-object in /var/www/catalog/protected/controllers/ApiController.php on line 110
+[Tue May 13 05:09:38 2014] [error] [client 81.215.15.54] id: koLBvQxYCJDXh7tENfkKy6BnSxDLHdrdqmPs3NIHkWlZ
+[Tue May 13 05:09:38 2014] [error] [client 81.215.15.54] python bin/client.py '{"host":,"port":}' DeleteFromCatalog koLBvQxYCJDXh7tENfkKy6BnSxDLHdrdqmPs3NIHkWlZ
+[Tue May 13 05:09:38 2014] [error] [client 81.215.15.54] after delete
+[Tue May 13 05:20:13 2014] [error] [client 81.215.15.54] id: koLBvQxYCJDXh7tENfkKy6BnSxDLHdrdqmPs3NIHkWlZ
+[Tue May 13 05:20:13 2014] [error] [client 81.215.15.54] empty hosts
+[Tue May 13 05:20:13 2014] [error] [client 81.215.15.54] PHP Fatal error:  Call to a member function delete() on a non-object in /var/www/catalog/protected/controllers/ApiController.php on line 111
+[Tue May 13 05:23:38 2014] [error] [client 81.215.15.54] id: FxcpsSMVQ7cb2oF33NAki23obPc2P6r1a00ei59rYKn0
+[Tue May 13 05:23:38 2014] [error] [client 81.215.15.54] python bin/client.py '{"host":,"port":}' DeleteFromCatalog FxcpsSMVQ7cb2oF33NAki23obPc2P6r1a00ei59rYKn0
+[Tue May 13 05:23:38 2014] [error] [client 81.215.15.54] after delete
+[Tue May 13 05:25:06 2014] [error] [client 81.215.15.54] id: FxcpsSMVQ7cb2oF33NAki23obPc2P6r1a00ei59rYKn0
+[Tue May 13 05:25:06 2014] [error] [client 81.215.15.54] python bin/client.py '{"host":cloud.okutus.com,"port":2222}' DeleteFromCatalog FxcpsSMVQ7cb2oF33NAki23obPc2P6r1a00ei59rYKn0
+[Tue May 13 05:25:06 2014] [error] [client 81.215.15.54] after delete
+[Tue May 13 05:26:27 2014] [error] [client 81.215.15.54] id: MNXzzhookWsy0SbyyIfK3uuMcNY4wGzABtLekJZ0RJo0
+[Tue May 13 05:26:27 2014] [error] [client 81.215.15.54] python bin/client.py '{"host":cloud.lindneo.com,"port":2222}' DeleteFromCatalog MNXzzhookWsy0SbyyIfK3uuMcNY4wGzABtLekJZ0RJo0
+[Tue May 13 05:26:28 2014] [error] [client 81.215.15.54] after delete
