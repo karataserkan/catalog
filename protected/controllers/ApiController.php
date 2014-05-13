@@ -79,6 +79,38 @@ class ApiController extends Controller
 		$this->render('documentation');
 	}
 
+	public function actionRemove()
+	{
+		if (!CHttpRequest::getIsPostRequest()) {
+			$this->error("AC-GMI","Wrong Request",func_get_args(),CHttpRequest::getIsPostRequest());
+			$this->response("");
+			return null;			
+		}
+		
+		$id=CHttpRequest::getPost('id',0);
+		 error_log('id: '.$id);
+
+		$hosts= Yii::app()->db->createCommand()
+    		->select('h.*')
+    		->from('content c,host h,content_host ch')
+    		->where('c.contentId=:content AND h.id=ch.host_id AND c.contentId=ch.content_id',array('content'=>$id))
+    		->queryAll();
+
+    	foreach ($hosts as $key => $host) {
+			$deleteFromCloud="python bin/client.py '{\"host\":".$host["address"].",\"port\":".$host["port"]."}' DeleteFromCatalog ".$id;
+			shell_exec($deleteFromCloud);
+    	}
+
+		$content=Content::model()->find('contentId=:contentId',array('contentId'=>$id));
+		$content->delete();
+
+
+		//$deleteFromCloud="python bin/client.py DeleteFromCatalog'" .$id;
+
+
+
+	}
+
 	public function actionGetMainInfo()
 	{
 		if (!CHttpRequest::getIsPostRequest()) {
