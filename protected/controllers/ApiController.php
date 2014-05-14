@@ -97,7 +97,7 @@ class ApiController extends Controller
     		->queryAll();
 
     	foreach ($hosts as $key => $host) {
-			$deleteFromCloud="python bin/client.py '{\"host\":".$host["address"].",\"port\":".$host["port"]."}' DeleteFromCatalog ".$id;
+			$deleteFromCloud="python bin/client.py '{\"host\":\"".$host["address"]."\",\"port\":".$host["port"]."}' DeleteFromCatalog ".$id;
 			shell_exec($deleteFromCloud);
     	}
 
@@ -137,6 +137,7 @@ class ApiController extends Controller
 		$data['contentDate']=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'date'))->metaValue;
 		$data['contentAuthor']=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'author'))->metaValue;
 		$data['contentTotalPage']=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'totalPage'))->metaValue;
+		$data['created']=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'date'))->metaValue;
 
 
 		$host=Yii::app()->db->createCommand("SELECT h.address FROM host h, content_host c where c.content_id='".$id."' AND h.id=c.host_id")->queryRow();
