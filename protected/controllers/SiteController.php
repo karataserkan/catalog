@@ -419,7 +419,7 @@ class SiteController extends Controller
 		$content->created=$_POST['created'];
 		$content->organisationName=$_POST['organisationName'];
 		$content->author=$_POST['author'];
-		error_log(print_r($content,1));
+		//error_log(print_r($content,1));
 		if ($content->save()) {
 			$uploadRes->catalog=0;
 			error_log("\nA021");
@@ -669,7 +669,8 @@ class SiteController extends Controller
 
 		error_log("\nA07");
 
-		$uploaddir = '/var/www/catalog/catalog_files/';
+		//$uploaddir = '/var/www/catalog/catalog_files/';
+		$uploaddir = 'catalog_files/';
 		$uploadfile = $uploaddir . $uploadRes->contentId;
 		error_log("\nA08");
 
@@ -711,6 +712,9 @@ class SiteController extends Controller
 
 		$uploadRes->shell_output=$output;
 		$uploadRes->shell_signal=$signal;
+
+		error_log("shell_output:".json_encode($output));
+		error_log("shell_signal:".$signal);
 
 		if ($uploadRes->shell_signal == 0){
 			$sendFileToHostCommand="python bin/client.py '" .json_encode($host). "' ListCatalog" ;

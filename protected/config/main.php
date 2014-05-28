@@ -19,6 +19,13 @@ $db_config_list=array(
 									'username' => 'db_catalog',
 									'password' => 'ZqUVExpdps4tjmnG',
 									'charset' => 'utf8',
+                			),
+			"ulgen"=>array(
+                        			'connectionString' => 'mysql:host=datamaster.private.services.lindneo.com;port=3306;dbname=catalog',
+									'emulatePrepare' => true,
+									'username' => 'db_catalog',
+									'password' => 'ZqUVExpdps4tjmnG',
+									'charset' => 'utf8',
                 			)
 );
 
@@ -35,6 +42,12 @@ $params=array(
 			'catalog_host'=>'http://catalog.lindneo.com',
 			'android_reader'=>'https://play.google.com/store/apps/details?id=com.linden.story.keloglan',
 		),
+	"ulgen"=>array(
+			'adminEmail'=>'webmaster@example.com',
+			'reader_host'=>'http://reader.lindneo.com/',
+			'catalog_host'=>'http://catalog.lindneo.com',
+			'android_reader'=>'https://play.google.com/store/apps/details?id=com.linden.story.keloglan',
+		)
 	);
 
 return array(
@@ -74,7 +87,8 @@ return array(
 			'urlFormat'=>'path',
 			'showScriptName'=>false,
 			'rules'=>array(
-				array('KerberizedService/authenticate','pattern'=>'kerberizedservice/authenticate/','verb'=>'POST'),
+				array(
+				'kerberizedService/authenticate','pattern'=>'kerberizedservice/authenticate','verb'=>'POST'),
 				'search|q'=>'site/search',
 				'search|q/<key:[A-Za-z0-9\_\.\,\-\:uığüşöçÇÖŞİÜĞ ]+>'=>'site/search',
 				'search|q/<key:[A-Za-z0-9\_\.\,\-\:uığüşöçÇÖŞİÜĞ ]+>/<page:\d+>'=>'site/search',

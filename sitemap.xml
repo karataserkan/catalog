@@ -442,4 +442,37 @@
 <url>
   <loc>http://catalog.lindneo.com/remove</loc>
 </url>
+<url>
+  <loc>/q/egemen</loc>
+</url>
+<url>
+  <loc>/q/bekir</loc>
+</url>
+<url>
+  <loc>/q/ekaratas</loc>
+</url>
+<url>
+  <loc>/q/adam</loc>
+</url>
+<url>
+  <loc>/q/adıyaman</loc>
+</url>
+<url>
+  <loc>/q/adıyaman/1</loc>
+</url>
+<url>
+  <loc>/q/ege</loc>
+</url>
+<url>
+  <loc>/q/seviye</loc>
+</url>
+<url>
+  <loc>/q/seviye/1</loc>
+</url>
+<url>
+  <loc>/kerberizedservice</loc>
+</url>
+<url>
+  <loc>/q/getThumbnail</loc>
+</url>
 </urlset>
