@@ -179,7 +179,6 @@ methods = {
         'Ping': Ping ,
         'Help': Help ,
         'ListCatalog': ListCatalog,
-        'DeleteFromCatalog': DeleteFromCatalog,
         'UpdateCatalogList': UpdateCatalogList,
         'AddToCatalog': AddToCatalog,
         'ServeFileToReader': ServeFileToReader ,
@@ -194,7 +193,7 @@ methods = {
 class ConnectionThread ( threading.Thread ):
 
    def run ( self ):
-
+      #print "client basladi"
       # Connect to the server:
       client = socket.socket ( socket.AF_INET, socket.SOCK_STREAM )
       ssl_sock = ssl.wrap_socket(client,

@@ -95,10 +95,11 @@ class ApiController extends Controller
     		->from('content c,host h,content_host ch')
     		->where('c.contentId=:content AND h.id=ch.host_id AND c.contentId=ch.content_id',array('content'=>$id))
     		->queryAll();
-
+		
     	foreach ($hosts as $key => $host) {
-			$deleteFromCloud="python bin/client.py '{\"host\":".$host["address"].",\"port\":".$host["port"]."}' DeleteFromCatalog ".$id;
+			$deleteFromCloud="python bin/client.py '{\"host\":\"".$host["address"]."\",\"port\":".$host["port"]."}' DeleteFromCatalog ".$id;
 			shell_exec($deleteFromCloud);
+			error_log($deleteFromCloud);
     	}
 
 		$content=Content::model()->find('contentId=:contentId',array('contentId'=>$id));
