@@ -136,8 +136,8 @@ class SiteController extends Controller
 		$meta->contentId=$id;
 		$meta->metaKey='nicename';
 
-		$bul = array('Ç', 'Ş', 'Ğ', 'Ü', 'İ', 'Ö', 'ç', 'ş', 'ğ', 'ü', 'ö', 'ı', ' ','-');
-		$yap = array('C', 'S', 'G', 'U', 'I', 'O', 'c', 's', 'g', 'u', 'o', 'i', '_','_');
+		$bul = array('Ç', 'Ş', 'Ğ', 'Ü', 'İ', 'Ö', 'ç', 'ş', 'ğ', 'ü', 'ö', 'ı', ' ','-','.');
+		$yap = array('C', 'S', 'G', 'U', 'I', 'O', 'c', 's', 'g', 'u', 'o', 'i', '_','_','');
 		$perma = str_replace($bul, $yap, $content->contentTitle);
 		$perma = preg_replace("@[^A-Za-z0-9\.\-_]@i", '', $perma);
 		$nicename=strtolower($perma);

@@ -374,7 +374,7 @@ class ApiController extends Controller
 		$criteriaValues=array();
 		$criteria='';
 
-		if (!empty($as)) {
+		if ($as) {
 			
 			foreach ($as as $k1 => $q) {
 				if (is_array($q) && !empty($q)) {
