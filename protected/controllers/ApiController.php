@@ -538,9 +538,9 @@ class ApiController extends Controller
 
 	public function actionGetOrganisationCategories()
 	{
-		// if (!$this->authenticate()) {
-		// 	return null;
-		// }
+		if (!$this->authenticate()) {
+			return null;
+		}
 
 		if (!CHttpRequest::getIsPostRequest()) {
 			$this->error("AC-GC","Wrong Request",func_get_args(),CHttpRequest::getIsPostRequest());
@@ -556,7 +556,7 @@ class ApiController extends Controller
 			return false;
 		}
 
-		$categories=Categories::model()->findAll('organisation_id=:organisation_id ORDER BY category_name DESC',array('organisation_id'=>$id));
+		$categories=Categories::model()->findAll('organisation_id=:organisation_id ORDER BY category_name ASC',array('organisation_id'=>$id));
 
 		foreach ($categories as $key => &$items) {
 			$items=$items->attributes;
@@ -573,7 +573,7 @@ class ApiController extends Controller
 		if (!$this->authenticate()) {
 			return null;
 		}
-		$categories=Categories::model()->findAll();
+		$categories=Categories::model()->findAll(array('order'=>'category_name'));
 		if(!$categories)  {
 			$this->error("AC-LC","Categories Not Found",func_get_args());
 			return false;
