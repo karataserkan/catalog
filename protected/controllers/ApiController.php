@@ -142,6 +142,7 @@ class ApiController extends Controller
 
 		$host=Yii::app()->db->createCommand("SELECT h.address FROM host h, content_host c where c.content_id='".$id."' AND h.id=c.host_id")->queryRow();
 		$data['host_address']=$host['address'];
+		$data['host_port']=$host['port'];
 		// if ($res) {
 		// 	foreach ($res as $key => &$items) {
 		// 		$items=$items->attributes;
@@ -251,9 +252,9 @@ class ApiController extends Controller
 
 	public function actionGetContentHost()
 	{
-		if (!$this->authenticate()) {
-			return "authenticate error!";
-		}
+		// if (!$this->authenticate()) {
+		// 	return "authenticate error!";
+		// }
 
 		if (!CHttpRequest::getIsPostRequest()) {
 			$this->error("AC-GD","Wrong Request",func_get_args(),CHttpRequest::getIsPostRequest());
@@ -554,7 +555,7 @@ class ApiController extends Controller
 			return false;
 		}
 
-		$categories=Categories::model()->findAll('organisation_id=:organisation_id',array('organisation_id'=>$id));
+		$categories=Categories::model()->findAll('organisation_id=:organisation_id ORDER BY category_name DESC',array('organisation_id'=>$id));
 
 		foreach ($categories as $key => &$items) {
 			$items=$items->attributes;
