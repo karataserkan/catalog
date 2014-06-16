@@ -488,14 +488,15 @@ class ApiController extends Controller
 		error_log("criteria:".$criteria);
 		error_log("criteriaValues:".json_encode($criteriaValues));
 			if (!$criteria || $criteria==")") {
-				$list=Content::model()->with('categories')->findAll(array('limit'=>10));
+				//$list=Content::model()->with('categories')->findAll(array('limit'=>10));
+				$list=Content::model()->with('categories')->findAll();
 			}else{
 	    		$list=Content::model()->with('categories')->findAll($criteria,$criteriaValues);
 			}
 		}
 		else
 		{
-				$list=Content::model()->with('categories')->findAll(array('limit'=>10));
+				$list=Content::model()->with('categories')->findAll();
 		}
 		//$list=Content::model()->findAll("author=:author",array('author'=>'Canan Karayay'));
 		//var_dump($criteriaValues);die();
