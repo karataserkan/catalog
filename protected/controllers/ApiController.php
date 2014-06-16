@@ -491,6 +491,7 @@ class ApiController extends Controller
 		}
 		else
 		{
+				$list=Content::model()->with('categories')->findAll(array('limit'=>10));
 		}
 		//$list=Content::model()->findAll("author=:author",array('author'=>'Canan Karayay'));
 		//var_dump($criteriaValues);die();
