@@ -482,12 +482,15 @@ class ApiController extends Controller
 			}
 			$criteria=substr($criteria,0, -4);
 		//.' AND host.id=content_host.host_id AND content_host.content_id=content.contentId'
-			
-	    	$list=Content::model()->with('categories')->findAll($criteria,$criteriaValues);
+		//
+			if ($criteria) {
+	    		$list=Content::model()->with('categories')->findAll($criteria,$criteriaValues);
+			}else{
+				$list=Content::model()->with('categories')->findAll(array('limit'=>10));
+			}
 		}
 		else
 		{
-			$list=Content::model()->findAll(array('limit'=>10));
 		}
 		//$list=Content::model()->findAll("author=:author",array('author'=>'Canan Karayay'));
 		//var_dump($criteriaValues);die();
