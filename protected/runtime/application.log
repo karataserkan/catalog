@@ -1,0 +1,763 @@
+2014/06/10 07:34:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/06/10 09:14:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/06/10 15:48:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/06/10 15:50:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/06/10 15:51:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://catalog.lindneo.com/
+---
+2014/06/10 15:51:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ui/js/jquery/jquery-2.0.3.min.map".' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ui/js/jquer...')
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ui/js/jquery/jquery-2.0.3.min.map
+HTTP_REFERER=http://catalog.lindneo.com/
+---
+2014/06/16 11:26:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (486)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:26:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(486): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:29:40 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (486)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:29:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(486): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:30:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (492)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:30:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(492): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:32:45 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (499)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:32:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(499): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:32:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (499)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:32:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(499): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:32:59 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (499)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:32:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(499): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:33:38 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (499)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:33:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(499): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:33:43 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (494)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:33:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(494): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:34:13 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (494)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:34:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(494): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:34:22 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (494)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:34:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(494): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:34:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (494)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:34:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(494): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:34:24 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (494)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:34:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(494): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:34:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (494)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:34:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(494): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:34:53 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (494)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:34:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(494): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:35:38 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (493)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:35:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(493): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:35:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (493)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:35:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(493): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:36:04 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (493)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:36:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(493): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:36:06 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (493)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:36:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(493): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:36:22 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (493)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:36:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(493): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:36:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (493)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:36:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(493): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:37:48 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (493)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:37:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(493): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:37:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (493)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:37:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(493): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:38:53 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (493)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:38:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(493): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:39:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (491)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:39:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(491): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:39:47 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (491)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:39:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(491): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:39:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (491)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:39:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(491): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:39:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (491)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:39:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(491): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:39:59 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (491)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:39:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(491): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:40:00 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (491)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:40:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(491): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:40:38 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (486)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:40:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(486): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
+2014/06/16 11:41:13 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ().
+in /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php (486)
+in /var/www/lindneo.com/subs/catalog/htdocs/index.php (16)
+2014/06/16 11:41:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`contentId` AS `t0_c0`, `t`.`organisationId` AS `t0_c1`, `t`.`contentType` AS `t0_c2`, `t`.`contentTitle` AS `t0_c3`, `t`.`contentExplanation` AS `t0_c4`, `t`.`contentIsForSale` AS `t0_c5`, `t`.`contentPrice` AS `t0_c6`, `t`.`contentPriceCurrencyCode` AS `t0_c7`, `t`.`contentReaderGroup` AS `t0_c8`, `t`.`created` AS `t0_c9`, `t`.`organisationName` AS `t0_c10`, `t`.`author` AS `t0_c11`, `categories`.`category_id` AS `t1_c0`, `categories`.`category_name` AS `t1_c1`, `categories`.`organisation_id` AS `t1_c2`, `categories`.`periodical` AS `t1_c3` FROM `content` `t`  LEFT OUTER JOIN `content_categories` `categories_categories` ON (`t`.`contentId`=`categories_categories`.`content_id`) LEFT OUTER JOIN `categories` `categories` ON (`categories`.`category_id`=`categories_categories`.`category_id`)  WHERE ()' in /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/lindneo.com/subs/catalog/htdocs/protected/controllers/ApiController.php(486): CActiveRecord->findAll(false, Array)
+#7 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionList()
+#8 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/list')
+#13 /var/www/lindneo.com/subs/catalog/htdocs/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/lindneo.com/subs/catalog/htdocs/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/api/list
+---
