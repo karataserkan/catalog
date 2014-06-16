@@ -471,8 +471,10 @@ class ApiController extends Controller
 					elseif ($k1=='organisationId'||$k1=='contentType'||$k1=='contentIsForSale')
 					{
 						foreach ($q as $k2 => $t) {
-							$criteria.=$k1.'=:'.$t.$k1.' AND';
-							$criteriaValues[$t.$k1]=$t;
+							if ($t) {
+								$criteria.=$k1.'=:'.$t.$k1.' AND';
+								$criteriaValues[$t.$k1]=$t;
+							}
 						}
 					}
 					
@@ -482,11 +484,12 @@ class ApiController extends Controller
 			}
 			$criteria=substr($criteria,0, -4);
 		//.' AND host.id=content_host.host_id AND content_host.content_id=content.contentId'
-		//
-			if ($criteria) {
-	    		$list=Content::model()->with('categories')->findAll($criteria,$criteriaValues);
-			}else{
+		error_log("criteria:".$criteria);
+		error_log("criteriaValues:".json_encode($criteriaValues));
+			if (!$criteria || $criteria==")") {
 				$list=Content::model()->with('categories')->findAll(array('limit'=>10));
+			}else{
+	    		$list=Content::model()->with('categories')->findAll($criteria,$criteriaValues);
 			}
 		}
 		else
