@@ -2514,3 +2514,15 @@
 [Mon Jun 16 12:11:14 2014] [error] [client 81.215.15.54] GET:VALUES, referer: http://reader.okutus.com/index.php/content/list
 [Mon Jun 16 12:14:07 2014] [error] [client 81.215.15.54] POST:VALUESArray\n(\n    [attributes] => {"organisationId":[""]}\n)\n
 [Mon Jun 16 12:14:07 2014] [error] [client 81.215.15.54] GET:VALUES
+[Mon Jun 16 12:16:24 2014] [error] [client 81.215.15.54] POST:VALUESArray\n(\n    [attributes] => {"organisationId":[""]}\n)\n
+[Mon Jun 16 12:16:24 2014] [error] [client 81.215.15.54] GET:VALUES
+[Mon Jun 16 12:16:24 2014] [error] [client 81.215.15.54] criteria:)
+[Mon Jun 16 12:16:24 2014] [error] [client 81.215.15.54] criteriaValues:[]
+[Mon Jun 16 12:16:33 2014] [error] [client 81.215.15.54] POST:VALUESArray\n(\n    [attributes] => {"organisationId":[""]}\n)\n
+[Mon Jun 16 12:16:33 2014] [error] [client 81.215.15.54] GET:VALUES
+[Mon Jun 16 12:16:33 2014] [error] [client 81.215.15.54] criteria:)
+[Mon Jun 16 12:16:33 2014] [error] [client 81.215.15.54] criteriaValues:[]
+[Mon Jun 16 12:16:42 2014] [error] [client 81.215.15.54] POST:VALUESArray\n(\n    [attributes] => {"organisationId":[""]}\n    [auth] => U2FsdGVkX1930ikttoBSSABANEP9lR4yZQz+0ZxdQjpt6Irg0hQwn6vTxNHGhdpiHmb2dGMQRVkjJlwECxnwYhpkxoGaFyc+mCeMgEN9MvI=\n    [http_service_ticket] => U2FsdGVkX19kELxKqlT3J23KQdTk2O698L0wYItjQFSIhpTcG8HPcJ4+5RQVSp3PsCBcWdxlUZ7rQIWDTFR21vwrE2D7wELfPgoZlnm7Cd/bRXnyCKGwmFNW2MVJ+hfQo2LjDf/8nkx+u7zcJijwyBihylrKuQvLBEDQcDVvHFc3YT1NqkPOXG9kYBsZEdnUceFuUwpTCLDSn+j9rN6g7UH6cEzVahGN1F6QQp4ukFntf0n92/Kt++JDi2mHlYO/CjG+VB+b2bYHQ2LkxhLRtvCmNmokkmCGBsDCIt04Mn/EJXguyUTRLHaW/kdOxrMe\n    [type] => web\n)\n, referer: http://reader.okutus.com/index.php/content/list
+[Mon Jun 16 12:16:42 2014] [error] [client 81.215.15.54] GET:VALUES, referer: http://reader.okutus.com/index.php/content/list
+[Mon Jun 16 12:16:42 2014] [error] [client 81.215.15.54] criteria:), referer: http://reader.okutus.com/index.php/content/list
+[Mon Jun 16 12:16:42 2014] [error] [client 81.215.15.54] criteriaValues:[], referer: http://reader.okutus.com/index.php/content/list
