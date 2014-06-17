@@ -545,9 +545,9 @@ class ApiController extends Controller
 
 	public function actionGetOrganisationCategories()
 	{
-		if (!$this->authenticate()) {
-			return null;
-		}
+		// if (!$this->authenticate()) {
+		// 	return null;
+		// }
 
 		if (!CHttpRequest::getIsPostRequest()) {
 			$this->error("AC-GC","Wrong Request",func_get_args(),CHttpRequest::getIsPostRequest());
@@ -577,9 +577,9 @@ class ApiController extends Controller
 
 	public function actionListAllCategories()
 	{
-		if (!$this->authenticate()) {
-			return null;
-		}
+		// if (!$this->authenticate()) {
+		// 	return null;
+		// }
 		$categories=Categories::model()->findAll(array('order'=>'category_name'));
 		if(!$categories)  {
 			$this->error("AC-LC","Categories Not Found",func_get_args());
