@@ -581,7 +581,8 @@ class ApiController extends Controller
 		// if (!$this->authenticate()) {
 		// 	return null;
 		// }
-		$categories=Categories::model()->findAll(array('order'=>'category_name'));
+		
+		$categories=Categories::model()->findAll('organisation_id=:organisation_id ORDER BY category_name ASC',array('organisation_id'=>'general'));
 		if(!$categories)  {
 			$this->error("AC-LC","Categories Not Found",func_get_args());
 			return false;
