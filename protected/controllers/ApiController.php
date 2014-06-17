@@ -162,7 +162,7 @@ class ApiController extends Controller
 		$res=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'thumbnail'))->metaValue;
 		
 		if (empty($res)) {
-			$res = base64_encode(file_get_contents(Yii::app()->params['catalog_host'].'/css/thumbnail.jpg'));
+			$res = base64_encode(file_get_contents(Yii::app()->params['catalog_host'].'/css/thumbnail2.jpg'));
 			$extension='jpg';
 			
 		}
