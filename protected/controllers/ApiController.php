@@ -159,8 +159,8 @@ class ApiController extends Controller
 			echo "Not Found";
 			return false;
 		}
-		$res=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'thumbnail'))->metaValue;
-		
+		$Meta=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'thumbnail'));
+		$res = $Meta->metaValue;
 		if (empty($res)) {
 			$res = base64_encode(file_get_contents(Yii::app()->params['catalog_host'].'/css/thumbnail2.jpg'));
 			$extension='jpg';
@@ -168,23 +168,29 @@ class ApiController extends Controller
 		}
 		define('UPLOAD_DIR', 'images/');
 		$img = $res;
+
+		if (strlen($img) > 10000 ){
+				$img = functions::compressBase64Image($img,4000,100,20000);
+				if ($Meta->metaValue){
+					$Meta->metaValue =$img;
+					$Meta->save();
+				}
+		}
+
 		$exp=explode(";", $img);
 		$ext=explode("/", $exp[0]);
 		$extension = $ext[1]; 
 		$img = str_replace('data:image/'.$extension.';base64,', '', $img);
 		$img = str_replace(' ', '+', $img);
 		$data = base64_decode($img);
-		$file = UPLOAD_DIR . uniqid() . '.'.$extension;
-		$success = file_put_contents($file, $data);
-		shell_exec("convert ".$file." -resize 270x390 ".$file);
-		$im = file_get_contents($file);
+
     	//$imdata = 'data:image/jpeg;base64,'.base64_encode($im);
 
 		
 
      	header('Content-Type: image/'.$extension);
-		  echo $im; 
-		 unlink($file);
+		  echo $data; 
+		 
 	}
 
 	public function actionGetCover($id)
