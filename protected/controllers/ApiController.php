@@ -20,7 +20,7 @@ class ApiController extends Controller
 
 		header('Content-type: plain/text');
 		header("Content-length: " . strlen($response_string) ); // tells file size
-		echo $response_string;
+		echo $response_string; die;
 	}
  
 	public function error($domain='EditorActions',$explanation='Error', $arguments=null,$debug_vars=null ){
