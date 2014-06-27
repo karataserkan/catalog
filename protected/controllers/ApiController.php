@@ -162,7 +162,7 @@ class ApiController extends Controller
 			$data = $this->mainInfo($id);
 		}
 		else{
-			$data = [];
+			$data = array();
 			foreach ($ids as $key => $value) {
 				$data[]=$this->mainInfo($value);
 			}
