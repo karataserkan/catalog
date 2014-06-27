@@ -10406,3 +10406,336 @@
 [Fri Jun 27 09:57:31 2014] [error] [client 81.215.15.54] criteriaValues:{"linden_techorganisationId":"linden_tech"}, referer: http://reader.linden-tech.com/index.php/content/list
 [Fri Jun 27 09:59:59 2014] [error] [client 94.103.35.20] id: oaE92f4qW2Cevi0T7zH7VRgft6Fytf13ANJQZHnzpMbS
 [Fri Jun 27 09:59:59 2014] [error] [client 94.103.35.20] python bin/client.py '{"host":"cloud.okutus.com","port":2222}' DeleteFromCatalog oaE92f4qW2Cevi0T7zH7VRgft6Fytf13ANJQZHnzpMbS
+[Fri Jun 27 10:07:29 2014] [error] [client 94.103.35.20] \nA01
+[Fri Jun 27 10:07:29 2014] [error] [client 94.103.35.20] \nA02
+[Fri Jun 27 10:07:29 2014] [error] [client 94.103.35.20] \nA021
+[Fri Jun 27 10:07:29 2014] [error] [client 94.103.35.20] \nA03
+[Fri Jun 27 10:07:29 2014] [error] [client 94.103.35.20] \nA04
+[Fri Jun 27 10:07:29 2014] [error] [client 94.103.35.20] \nA05
+[Fri Jun 27 10:07:29 2014] [error] [client 94.103.35.20] \nA06
+[Fri Jun 27 10:07:29 2014] [error] [client 94.103.35.20] \nA07
+[Fri Jun 27 10:07:29 2014] [error] [client 94.103.35.20] \nA08
+[Fri Jun 27 10:07:29 2014] [error] [client 94.103.35.20] \nA09
+[Fri Jun 27 10:07:29 2014] [error] [client 94.103.35.20] \nA10
+[Fri Jun 27 10:07:30 2014] [error] [client 94.103.35.20] shell_output:["100","File sent as oaE92f4qW2Cevi0T7zH7VRgft6Fytf13ANJQZHnzpMbS"]
+[Fri Jun 27 10:07:30 2014] [error] [client 94.103.35.20] shell_signal:0
+[Fri Jun 27 10:07:30 2014] [error] [client 94.103.35.20] \nA11
+[Fri Jun 27 10:08:08 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:08:08 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:08:15 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:08:15 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:14:18 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:14:18 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:15:55 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:15:55 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:17:18 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:17:18 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853490\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => cc64bcb597569f624335d144a65da928b66d9307a8a3b8339cc19eabb26f514b\n)\n
+[Fri Jun 27 10:17:18 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853490\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:17:18 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:17:18 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:17:18 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853490\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 18c8e287a66c0a261a91e369c741f65cdf4786740b2f9ae88c53b7bb4674b6b8\n)\n
+[Fri Jun 27 10:17:18 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853490\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:17:18 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:17:18 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:17:19 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:17:19 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853491\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 438e299a9e40872b5ca6260fe5dff0cb58fb0e77b3376adaab53a778d532f9f2\n)\n
+[Fri Jun 27 10:17:19 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853491\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:17:19 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:17:19 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:17:23 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:17:23 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853495\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => ec9785984858d6f49f48520b7326e7d48c8b9a06dce35ce86ed14e35d655315f\n)\n
+[Fri Jun 27 10:17:23 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853495\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:17:23 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:17:23 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853495\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 884a8ec24371f6e499a47614cce7271ab27fd0cf6c88a192a1c0a2d681fd66bf\n)\n
+[Fri Jun 27 10:17:23 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853495\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:17:23 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:17:23 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:17:23 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:17:24 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:17:24 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853496\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 89ebe52b8d8bd6f9fc8e336e0fe91e81b06a3da9c4c7dcbc9f2cb91cd9ea4591\n)\n
+[Fri Jun 27 10:17:24 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853496\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:17:24 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:17:24 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:17:31 2014] [error] [client 94.103.35.20] \nA01
+[Fri Jun 27 10:17:31 2014] [error] [client 94.103.35.20] \nA02
+[Fri Jun 27 10:17:31 2014] [error] [client 94.103.35.20] \nA021
+[Fri Jun 27 10:17:31 2014] [error] [client 94.103.35.20] \nA03
+[Fri Jun 27 10:17:31 2014] [error] [client 94.103.35.20] \nA04
+[Fri Jun 27 10:17:31 2014] [error] [client 94.103.35.20] \nA05
+[Fri Jun 27 10:17:31 2014] [error] [client 94.103.35.20] \nA06
+[Fri Jun 27 10:17:31 2014] [error] [client 94.103.35.20] \nA07
+[Fri Jun 27 10:17:31 2014] [error] [client 94.103.35.20] \nA08
+[Fri Jun 27 10:17:31 2014] [error] [client 94.103.35.20] \nA09
+[Fri Jun 27 10:17:31 2014] [error] [client 94.103.35.20] \nA10
+[Fri Jun 27 10:17:33 2014] [error] [client 94.103.35.20] shell_output:["100","File sent as KokDJSsPNkx6IPoZQ3PtZUCZeNWMeNDvZozgh8RARGXi"]
+[Fri Jun 27 10:17:33 2014] [error] [client 94.103.35.20] shell_signal:0
+[Fri Jun 27 10:17:33 2014] [error] [client 94.103.35.20] \nA11
+[Fri Jun 27 10:17:33 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:17:33 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853505\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 971e1bacd0219f3fd01d7fe83feeb8a4e07f23282ae74781e4a9eabe0ad9d6bb\n)\n
+[Fri Jun 27 10:17:33 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853505\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:17:33 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:17:33 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853505\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 89785e7a81f71c3c45421a59906f7486ffd144f1a626d39c02f73bad26a36489\n)\n
+[Fri Jun 27 10:17:33 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853505\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:17:33 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:17:33 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:17:34 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:17:34 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:17:34 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853506\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 6d6bdb01897f1855d3add788a2ad48945d60f00aaea5c13f81a29226e70119a4\n)\n
+[Fri Jun 27 10:17:34 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853506\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:17:34 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:17:35 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:17:37 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:17:37 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853509\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 5a448c50d594151947f6b553386b49ce3d7809492ced5cba97a1103f6faef75c\n)\n
+[Fri Jun 27 10:17:37 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853509\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:17:37 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:17:37 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853509\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 800763391e389e53756578842377bc1b47b06be73d049011770f40585f16c44a\n)\n
+[Fri Jun 27 10:17:37 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853509\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:17:37 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:17:37 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:17:37 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:17:38 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:17:38 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853510\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 5f8f4721411f5d644d85c8326edc0cbe060bf9a1cbed43095dac6c9e811a60bd\n)\n
+[Fri Jun 27 10:17:38 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853510\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:17:38 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:17:38 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:17:39 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:17:39 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853511\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => cad1ae476f6d870f085a0f2033b5f8da087184d2f45600cf21170d35d3d2bd04\n)\n
+[Fri Jun 27 10:17:39 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853511\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:17:39 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:17:40 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:17:40 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853511\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 790009e389291bc86582e50b1715a0f874ca2130f57533c7f24c42a2148fa6f7\n)\n
+[Fri Jun 27 10:17:40 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853511\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:17:40 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:17:40 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:17:40 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:17:40 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853512\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 991dc916015ed76c0660abdbcf07d3e8360a071a5116557d5791b3a35d80e78f\n)\n
+[Fri Jun 27 10:17:40 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853512\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:17:40 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:17:41 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:17:44 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:17:44 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853516\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 2e805497a730e86fc242be2e2bb28ef97e9feacd643bca01bdb3da37646080ca\n)\n
+[Fri Jun 27 10:17:44 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853516\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:17:44 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:17:44 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853516\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 7889a01e5f48750e9abaaeaf201f86e39185eb069e5b4fb8e321c8d0b5f162d7\n)\n
+[Fri Jun 27 10:17:44 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853516\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:17:44 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:17:44 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:17:44 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:17:45 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:17:45 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853517\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 9f0e967ddbd71870e5a9db007ef60d60841fe73a806232379b25d6ea35ea08b3\n)\n
+[Fri Jun 27 10:17:45 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853517\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:17:45 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:17:45 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:18:02 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:18:02 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853533\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 72228103af53efb70644b15dd32e390c024c9ee6b5cc215fa74503732752689d\n)\n
+[Fri Jun 27 10:18:02 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853534\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:18:02 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:18:02 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:18:02 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853533\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => cbec9a01b9b8d6fc4b04b534a698004b178ecd7d097eea5982c401b56f59fd2d\n)\n
+[Fri Jun 27 10:18:02 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853534\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:18:02 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:18:02 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:18:03 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:18:03 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853534\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 84e89851e7431c29fc7cd2b64ac48ca7ec051fc088285d301646d366ea89b543\n)\n
+[Fri Jun 27 10:18:03 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853535\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:18:03 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:18:03 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:18:12 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:18:12 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:18:22 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:18:22 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853554\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 19b15ae7d83c740563a2015ff0023e99857771e6061361b3116fbadf3f49fe86\n)\n
+[Fri Jun 27 10:18:22 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853554\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:18:22 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:18:24 2014] [error] [client 94.103.35.20] \nA01
+[Fri Jun 27 10:18:24 2014] [error] [client 94.103.35.20] \nA02
+[Fri Jun 27 10:18:24 2014] [error] [client 94.103.35.20] \nA021
+[Fri Jun 27 10:18:24 2014] [error] [client 94.103.35.20] \nA03
+[Fri Jun 27 10:18:24 2014] [error] [client 94.103.35.20] \nA04
+[Fri Jun 27 10:18:24 2014] [error] [client 94.103.35.20] \nA05
+[Fri Jun 27 10:18:24 2014] [error] [client 94.103.35.20] \nA06
+[Fri Jun 27 10:18:24 2014] [error] [client 94.103.35.20] \nA07
+[Fri Jun 27 10:18:24 2014] [error] [client 94.103.35.20] \nA08
+[Fri Jun 27 10:18:24 2014] [error] [client 94.103.35.20] \nA09
+[Fri Jun 27 10:18:24 2014] [error] [client 94.103.35.20] \nA10
+[Fri Jun 27 10:18:25 2014] [error] [client 94.103.35.20] shell_output:["100","File sent as oaE92f4qW2Cevi0T7zH7VRgft6Fytf13ANJQZHnzpMbS"]
+[Fri Jun 27 10:18:25 2014] [error] [client 94.103.35.20] shell_signal:0
+[Fri Jun 27 10:18:25 2014] [error] [client 94.103.35.20] \nA11
+[Fri Jun 27 10:18:26 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:18:26 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853558\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 6f8bf3b839a3e275203caf570819317739559ac4f4884635759b6cd70c18c34b\n)\n
+[Fri Jun 27 10:18:26 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853558\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:18:26 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:18:26 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853558\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => e315966b443ffbf00e2bd8c2e30e643c939cb35c308ecbac426a69f456fb8b85\n)\n
+[Fri Jun 27 10:18:26 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853558\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:18:26 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:18:26 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:18:27 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:18:28 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:18:28 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853559\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => c687cff170635964b79d24775e35e0bf8ca719b6eb823af8d3477be05f4e94b7\n)\n
+[Fri Jun 27 10:18:28 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853560\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:18:28 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:18:28 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:18:31 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:18:31 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:18:45 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:18:45 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:19:46 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:19:46 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853638\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => a300a8a93f0043bc26046f5afe6a5af5c5f1e556df4e5601e02b438e7746e37e\n)\n
+[Fri Jun 27 10:19:46 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853638\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:19:46 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:19:46 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:19:46 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853638\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => ce4a98035d3048bfca6ecca86bf09b0c5b53512dc4a977223ff58925e849a071\n)\n
+[Fri Jun 27 10:19:46 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853638\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:19:46 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:19:46 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:19:47 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:19:47 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853639\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => e3d6e544c4d46a0f2fb0699d65a0764056cae4ef2ac0dcb349538f4e2b1a1f14\n)\n
+[Fri Jun 27 10:19:47 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853639\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:19:47 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:19:47 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:19:49 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:19:49 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853641\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => a78303bedb2a0ec3f917ed328dbf14448e7eb66f61b791ad0549ba58637172c1\n)\n
+[Fri Jun 27 10:19:49 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853641\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:19:49 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:19:49 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:19:49 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853641\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 83709ef6bea2db7266c19f038616ef339b52a026166f7bbdb8d15fa2fef20a97\n)\n
+[Fri Jun 27 10:19:49 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853641\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:19:49 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:19:50 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:19:51 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:19:51 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853642\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => f5bd066954a8f6e56a5afef06cc59da941d9236bf38591001ddb3b5df1c81d25\n)\n
+[Fri Jun 27 10:19:51 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853642\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:19:51 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:19:51 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:20:01 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:20:01 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853653\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 158c2ea5d25b87ad00e987dce01206881baf0a41d944393c25a15269917c4e8d\n)\n
+[Fri Jun 27 10:20:01 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853653\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:20:01 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:20:01 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853653\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => acf9599c40c0a9a73e12e6001275f7475837554c75578a0f5cae7362ff8ee510\n)\n
+[Fri Jun 27 10:20:01 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853653\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:20:01 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:20:01 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:20:01 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:20:02 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:20:02 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853654\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => c1f222897bb6e57d9f5b13484b1b766492359e81bee921f465d25ae75dff7753\n)\n
+[Fri Jun 27 10:20:02 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853654\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:20:02 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:20:02 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:20:20 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:20:20 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853672\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 94a7c43dd12d67c026850e2088ce5e8c1cd874c06541402ad927e6b8066632df\n)\n
+[Fri Jun 27 10:20:20 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853668\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:20:20 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:20:20 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853672\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 8f8f225a65b64e9bb4517b369294b34c4e0fd910eea319d4421f1d2135c28ee2\n)\n
+[Fri Jun 27 10:20:20 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853668\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:20:20 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:20:20 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:20:21 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:20:22 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:20:22 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853673\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 445311e6874632dbe58bb31db58a2bbc448f6cab88ce7921f85eabffba4b3112\n)\n
+[Fri Jun 27 10:20:22 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853669\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:20:22 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:20:22 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:21:07 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166, referer: http://bigcat.okutus.com/q/gn
+[Fri Jun 27 10:21:13 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:21:13 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:21:18 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:21:18 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853730\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 0e9a7576b8c828f7e7048fb4942f8eca42213948d156f1c7eafc6576b35ef16f\n)\n
+[Fri Jun 27 10:21:18 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853726\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:21:18 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:21:18 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853730\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => a81db3d85c5b7d363f902cf972e183a9711e668963c3a0bf0ae078109e8567d6\n)\n
+[Fri Jun 27 10:21:18 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853726\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:21:18 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:21:18 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:21:18 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:21:19 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:21:19 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853731\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => ba2fa5485eabbc6f58309937b61cc8b95471b484bb8bd0998d35265ed99481ae\n)\n
+[Fri Jun 27 10:21:19 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853727\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:21:19 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:21:19 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:21:26 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:21:26 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853738\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => f5d92ee4df31df611f86f855c10880882f20b2710e30442d7f20efc25ce82ef9\n)\n
+[Fri Jun 27 10:21:26 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853734\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:21:26 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:21:26 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:21:26 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853738\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => ca734ff7b39ad948045fc0d553e7a2a322106126757e32279395265fe2d732fe\n)\n
+[Fri Jun 27 10:21:26 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853734\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:21:26 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:21:27 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:21:27 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:21:27 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853739\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => af3e34b74dced2b8a20b02bb86f8b4e8ed4f6f66e558f6292c17d73d5ca20f88\n)\n
+[Fri Jun 27 10:21:27 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853735\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:21:27 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:21:28 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:21:47 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166, referer: http://bigcat.okutus.com/gn_corp
+[Fri Jun 27 10:22:33 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.okutus.com/site/login
+[Fri Jun 27 10:22:33 2014] [error] [client 81.215.15.54] U2FsdGVkX18LH/05noKu+PliJ3BzMahrl4DBeTIKmNPkGjUqCiVA5qg+lZMif1cQ\\nYnFLpROAf9Uc8slDdNXJKMrxOleo46vvx1TX0miCYGBN2P3f+q9G5+3zZqvCes8V\\nNl7l9OdPRKLpJkk5Ea+jEJmB63xWnNU710jephI2UM05AOmvlAUngxidR3N42b8k\\nFZyxLhZpKdAiD97xOw/11mtMOmUdt+SXJbTqGoBxlrtZMwj5V3tHyqLL08ltqXRu\\nT/8vguL7c01zqP+sv90Lkm42Q1jCGKVSNsgUR11KuXWPnxYxEpxVZgm4+hBbGj12\\n, referer: http://reader.okutus.com/site/login
+[Fri Jun 27 10:22:33 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.okutus.com/site/login
+[Fri Jun 27 10:22:33 2014] [error] [client 81.215.15.54] U2FsdGVkX1+Uww9boMcKCbBGbfmXECa27vZ6nuDe6vBd/iGxmxozwPeRjiLyLgoc\\n6YYTaJgyJdvSWyF08e44ECjKUkAUFsVojzoofLs75Rs=\\n, referer: http://reader.okutus.com/site/login
+[Fri Jun 27 10:22:33 2014] [error] [client 81.215.15.54] KERBERIZED, referer: http://reader.okutus.com/site/login
+[Fri Jun 27 10:22:33 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => bekir@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853805\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 41b481480838472783c0cc3b79fbf5d601932d420623f23175db02b44c62f4f9\n)\n, referer: http://reader.okutus.com/site/login
+[Fri Jun 27 10:22:33 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => bekir@linden-tech.com\n    [timestamp] => 1403853806\n)\n, referer: http://reader.okutus.com/site/login
+[Fri Jun 27 10:22:33 2014] [error] [client 81.215.15.54] SENDING DATA..., referer: http://reader.okutus.com/site/login
+[Fri Jun 27 10:22:37 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166, referer: http://reader.okutus.com/site/library
+[Fri Jun 27 10:23:06 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.okutus.com/site/login
+[Fri Jun 27 10:23:06 2014] [error] [client 81.215.15.54] U2FsdGVkX1/ajlr7GG4JqtP18AggJS8sxz8qigSNGyXOG5zdUft5/9rcKC5hoWli\\n9SZKEg0mtuQOgJwQslXhTnmypWvYwq8omxn+qeaicRl20+KImLaf0+JXubveAf89\\n9HRsYswhBeplADGIDDBpZLHI8ddhEF8tbq7HX5QO+9MobBh17wVtO3AoU3X7vtiW\\nvZELYc8WasXi5b3oLOc0XoGop3M4f3FY9lo4JQKQfSxXG4V7zl6xi3l8EAOaW9UK\\nqcNGZ7n3HhMV1uHwpbNquILp9WQe+VSDEq1VmZeXjFo+nulfnEKHrS8sMqrN+UlN\\n, referer: http://reader.okutus.com/site/login
+[Fri Jun 27 10:23:06 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.okutus.com/site/login
+[Fri Jun 27 10:23:06 2014] [error] [client 81.215.15.54] U2FsdGVkX19uNJSZc8MHZIMBd2LTuOYscWR5UZfE1AonPsv8V9b0LaGwSY2YnUt7\\nU6JG0QrBZ/VwGXbULNKvG2nSoBATOZoVNZrax6TEmK4=\\n, referer: http://reader.okutus.com/site/login
+[Fri Jun 27 10:23:06 2014] [error] [client 81.215.15.54] KERBERIZED, referer: http://reader.okutus.com/site/login
+[Fri Jun 27 10:23:06 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => bekir@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853838\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 57d469ca5416518efb30951b287a62e7f4503d3a935b27af05741ab64eaacbb9\n)\n, referer: http://reader.okutus.com/site/login
+[Fri Jun 27 10:23:06 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => bekir@linden-tech.com\n    [timestamp] => 1403853839\n)\n, referer: http://reader.okutus.com/site/login
+[Fri Jun 27 10:23:06 2014] [error] [client 81.215.15.54] SENDING DATA..., referer: http://reader.okutus.com/site/login
+[Fri Jun 27 10:23:09 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166, referer: http://reader.okutus.com/site/library
+[Fri Jun 27 10:23:12 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:23:23 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:23:23 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853855\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 2c2a9c900d5c77593e07b85ff38edf0c74bb7ae328fd6428ed221218e16b182f\n)\n
+[Fri Jun 27 10:23:23 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853855\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:23:23 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:23:23 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:23:23 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853855\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 6fbe3183f546c13fffbf9d65b86e8f3cbf0a0dd7e6a6e3d669c7528f16404784\n)\n
+[Fri Jun 27 10:23:23 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853855\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:23:23 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:23:24 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:23:24 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:23:24 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403853856\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => e16f3a0b07a85484613cfa1733c7c0182572aef91bec81a1b477d22854c8947c\n)\n
+[Fri Jun 27 10:23:24 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403853856\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:23:25 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:23:25 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:23:44 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:24:26 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166, referer: http://reader.okutus.com/content/list
+[Fri Jun 27 10:24:27 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166, referer: http://reader.okutus.com/content/list
+[Fri Jun 27 10:24:33 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166, referer: http://reader.okutus.com/content/list
+[Fri Jun 27 10:24:33 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166, referer: http://reader.okutus.com/content/list
+[Fri Jun 27 10:24:36 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166, referer: http://reader.okutus.com/content/list
+[Fri Jun 27 10:24:36 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166, referer: http://reader.okutus.com/content/list
+[Fri Jun 27 10:24:42 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:24:55 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:25:12 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:25:47 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:26:25 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:26:37 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:26:41 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:26:55 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166, referer: http://bigcat.okutus.com/q/gn
+[Fri Jun 27 10:27:16 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:27:56 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:28:20 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:28:46 2014] [error] [client 94.103.35.20] \nA01
+[Fri Jun 27 10:28:46 2014] [error] [client 94.103.35.20] \nA02
+[Fri Jun 27 10:28:46 2014] [error] [client 94.103.35.20] \nA021
+[Fri Jun 27 10:28:46 2014] [error] [client 94.103.35.20] \nA03
+[Fri Jun 27 10:28:46 2014] [error] [client 94.103.35.20] \nA04
+[Fri Jun 27 10:28:46 2014] [error] [client 94.103.35.20] \nA05
+[Fri Jun 27 10:28:46 2014] [error] [client 94.103.35.20] \nA06
+[Fri Jun 27 10:28:46 2014] [error] [client 94.103.35.20] \nA07
+[Fri Jun 27 10:28:46 2014] [error] [client 94.103.35.20] \nA08
+[Fri Jun 27 10:28:46 2014] [error] [client 94.103.35.20] \nA09
+[Fri Jun 27 10:28:46 2014] [error] [client 94.103.35.20] \nA10
+[Fri Jun 27 10:28:48 2014] [error] [client 94.103.35.20] shell_output:["100","File sent as oaE92f4qW2Cevi0T7zH7VRgft6Fytf13ANJQZHnzpMbS"]
+[Fri Jun 27 10:28:48 2014] [error] [client 94.103.35.20] shell_signal:0
+[Fri Jun 27 10:28:48 2014] [error] [client 94.103.35.20] \nA11
+[Fri Jun 27 10:29:25 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:29:26 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:29:27 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:30:13 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:30:16 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:30:16 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:30:16 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:30:16 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
