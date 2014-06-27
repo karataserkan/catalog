@@ -113,27 +113,42 @@ class ApiController extends Controller
 	}
 
 	public function mainInfo($id){
-		//$res=ContentMeta::model()->findAll('contentId=:contentId',array('contentId'=>$id));
-		$content=Content::model()->find('contentId=:contentId',array('contentId'=>$id));
 
-		$data['contentId']=$content->contentId;
-		$data['contentTitle']=$content->contentTitle;
-		$data['contentExplanation']=$content->contentExplanation;
-		$data['contentIsForSale']=$content->contentIsForSale;
-		$data['contentPriceCurrencyCode']=$content->contentPriceCurrencyCode;
-		$data['contentPrice']=$content->contentPrice;
-		$data['contentDate']=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'date'))->metaValue;
-		$data['contentAuthor']=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'author'))->metaValue;
-		$data['contentTotalPage']=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'totalPage'))->metaValue;
-		$data['created']=$content->created;//ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'date'))->metaValue;
+		
+		$dataArray =  array();
 
-
-		$host=Yii::app()->db->createCommand("SELECT h.address FROM host h, content_host c where c.content_id='".$id."' AND h.id=c.host_id")->queryRow();
-		$data['host_address']=$host['address'];
-		$data['host_port']=$host['port'];
+		if (is_array($id)){
+			$criteria = new CDbCriteria();
+			$criteria->addInCondition("contentId", $id);
+			$contents=Content::model()->findAll($criteria);
+		}
+		else {
+			$contents=ContentMeta::model()->findAll('contentId=:contentId',array('contentId'=>$id));
+		}
 
 
-		return $data;
+		foreach ($contents as $key => $content) {
+			# code...
+			$data['contentId']=$content->contentId;
+			$data['contentTitle']=$content->contentTitle;
+			$data['contentExplanation']=$content->contentExplanation;
+			$data['contentIsForSale']=$content->contentIsForSale;
+			$data['contentPriceCurrencyCode']=$content->contentPriceCurrencyCode;
+			$data['contentPrice']=$content->contentPrice;
+			$data['contentDate']=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'date'))->metaValue;
+			$data['contentAuthor']=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'author'))->metaValue;
+			$data['contentTotalPage']=ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'totalPage'))->metaValue;
+			$data['created']=$content->created;//ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'date'))->metaValue;
+
+
+			$host=Yii::app()->db->createCommand("SELECT h.address FROM host h, content_host c where c.content_id='".$id."' AND h.id=c.host_id")->queryRow();
+			$data['host_address']=$host['address'];
+			$data['host_port']=$host['port'];
+			$dataArray[]=$data;
+		}
+
+
+		return $dataArray;
 	}
 
 	public function actionGetMainInfo()
@@ -152,6 +167,7 @@ class ApiController extends Controller
 			$multiple=true;
 		} else {
 			$multiple=false;
+			$ids= array($id);
 		}
 		// $id="VgWaWF8DQ3J8U7tAiGqQuRHucsA6uyWLQjk1Qm0Ibz5e";
 		if (!$id) {
@@ -161,20 +177,16 @@ class ApiController extends Controller
 
 
 		if (!$multiple){
-			$data = $this->mainInfo($id);
+			$data = $this->mainInfo((array)$ids);
+			$this->response($data[0]);
 		}
 		else{
-			$data = array();
-			foreach ($ids as $key => $value) {
-				$data[]=$this->mainInfo($value);
-			}
+			$data=$this->mainInfo((array)$ids);
+			$this->response($data);
 		}
+		return;
 
 
-		
-
-
-		$this->response($data);
 
 	}
 
