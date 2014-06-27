@@ -1,0 +1,16 @@
+2014/06/27 10:21:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/catalog.oldies/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/06/27 10:30:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/catalog.oldies/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/catalog.oldies/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---

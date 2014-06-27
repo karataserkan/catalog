@@ -10739,3 +10739,259 @@
 [Fri Jun 27 10:30:16 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
 [Fri Jun 27 10:30:16 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
 [Fri Jun 27 10:30:16 2014] [error] [client 81.215.15.54] PHP Parse error:  syntax error, unexpected '[' in /var/www/catalog.oldies/protected/controllers/ApiController.php on line 166
+[Fri Jun 27 10:35:18 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.linden-tech.com/site/login
+[Fri Jun 27 10:35:18 2014] [error] [client 81.215.15.54] U2FsdGVkX1+O/TvrbwOQMunBYeCLk3DH+itj7xbRbv1/i8hVc8Ogv1r8f8zM0+tk\\n8+dqRfG2rgbTC/EXenhe2AkwXKWnmIAjIP6xfKEJZ+jwMlSKerekAnIE626US4oG\\nvSwv3/xAKOhjeQm4nKPeGgxV2eqO2uAwQQOeox9b5IY9QOcs4lgw1uLzCwVIZV0A\\nAku7lb7O6xkh1BUACLOZ4Iz1CnMcwHYHfx8BByWmNeWkOGXXWulMy6KA5ygw5QYz\\ns/IQppXZhh+/tcV2ZF6KOws9z8EmENXJre0JlQfodzS1GlVuiZplG8kL8wQCoAd9\\n, referer: http://reader.linden-tech.com/site/login
+[Fri Jun 27 10:35:18 2014] [error] [client 81.215.15.54] SLICED, referer: http://reader.linden-tech.com/site/login
+[Fri Jun 27 10:35:18 2014] [error] [client 81.215.15.54] U2FsdGVkX1/e4GgRrlpcxm1QLQbGHA2MR23ic3f0yjAreprb9y/ahx9yctEMmViv\\neUxhVXtuTIftnycB70e4hxRcrY9E/RduOlO9I+2d0Kw=\\n, referer: http://reader.linden-tech.com/site/login
+[Fri Jun 27 10:35:18 2014] [error] [client 81.215.15.54] KERBERIZED, referer: http://reader.linden-tech.com/site/login
+[Fri Jun 27 10:35:18 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403854570\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => e0aa4437a850c1ac5570c67d2c894c9699bf77f4acbe3deb9d4062b3b5f0ed5f\n)\n, referer: http://reader.linden-tech.com/site/login
+[Fri Jun 27 10:35:18 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [timestamp] => 1403854571\n)\n, referer: http://reader.linden-tech.com/site/login
+[Fri Jun 27 10:35:18 2014] [error] [client 81.215.15.54] SENDING DATA..., referer: http://reader.linden-tech.com/site/login
+[Fri Jun 27 10:36:02 2014] [error] [client 81.215.15.54] POST:VALUESArray\n(\n    [attributes] => {"organisationId":["linden_tech"]}\n    [auth] => U2FsdGVkX19xqKGDvWsQd0vhdl2EcR8D+N8yRE0qUXrGf23GbpVD/ggNo3lYoWYgqe4niMmzCGHOISZqr3Lq8Y1Gs1dSCU56j3sADh0fiQc=\n    [http_service_ticket] => U2FsdGVkX1+O/TvrbwOQMunBYeCLk3DH+itj7xbRbv1/i8hVc8Ogv1r8f8zM0+tk8+dqRfG2rgbTC/EXenhe2AkwXKWnmIAjIP6xfKEJZ+jwMlSKerekAnIE626US4oGvSwv3/xAKOhjeQm4nKPeGgxV2eqO2uAwQQOeox9b5IY9QOcs4lgw1uLzCwVIZV0AAku7lb7O6xkh1BUACLOZ4Iz1CnMcwHYHfx8BByWmNeWkOGXXWulMy6KA5ygw5QYzs/IQppXZhh+/tcV2ZF6KOws9z8EmENXJre0JlQfodzS1GlVuiZplG8kL8wQCoAd9\n    [type] => web\n)\n, referer: http://reader.linden-tech.com/index.php/content/list
+[Fri Jun 27 10:36:02 2014] [error] [client 81.215.15.54] GET:VALUES, referer: http://reader.linden-tech.com/index.php/content/list
+[Fri Jun 27 10:36:02 2014] [error] [client 81.215.15.54] criteria:(organisationId=:linden_techorganisationId ), referer: http://reader.linden-tech.com/index.php/content/list
+[Fri Jun 27 10:36:02 2014] [error] [client 81.215.15.54] criteriaValues:{"linden_techorganisationId":"linden_tech"}, referer: http://reader.linden-tech.com/index.php/content/list
+[Fri Jun 27 10:36:28 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:36:28 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403854640\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 218f74311ba557241b7c98b75792b56536dde9c942cd4862a81b2bf246a70e14\n)\n
+[Fri Jun 27 10:36:28 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403854635\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:36:28 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:36:28 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:36:28 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403854640\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => da4fb27b901f5681646745139ff2d03728e575301fdc41f42b11600bd855b7cd\n)\n
+[Fri Jun 27 10:36:28 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403854635\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:36:28 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:36:29 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:36:29 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403854641\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 7d4a02adb67afdf33271f2a47bdd9d445ffd373c54ca17f606ffe93ac01b1767\n)\n
+[Fri Jun 27 10:36:29 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403854637\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:36:29 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:36:29 2014] [error] [client 81.215.15.54] POST:VALUESArray\n(\n    [auth] => QGpeFAUB/C0UVU4D/TvukAm895IgBc5ZqIFoBeh+lQR8p/e/c8Zd69l3QYdA4RfUUYayHq5ywIQx\n    [http_service_ticket] => Yi4/A41yjXdfNH0KqCR38GmY1968RSbPPGfKaC4I8fR/ksgMV4X5uk1arg2M98volap88CHt89qLnnpvncMrqnBqAMuRhES/kxnzI28VO7oMKtLkNVwT7CbM8o2o85FGx0L2+H4CQhf4dtffUIA0joioarN10ddX0t0SCrOy2ZnuJDCVjoqVpLgcl0CtPrm/hRSIljpd5XWceCg2aafm00yudy0ObKT58TUAmdN7GppYUZE7gKx8huANRWYuulrm7+99aj4q6XFHTBAov8up3E0A/48yzfEfoeF+XddfZnu1dG7e72yem8DS\n    [attributes] => {"contentType":["epub"]}\n)\n
+[Fri Jun 27 10:36:29 2014] [error] [client 81.215.15.54] GET:VALUES
+[Fri Jun 27 10:36:29 2014] [error] [client 81.215.15.54] criteria:(contentType=:epubcontentType )
+[Fri Jun 27 10:36:29 2014] [error] [client 81.215.15.54] criteriaValues:{"epubcontentType":"epub"}
+[Fri Jun 27 10:36:38 2014] [error] [client 81.215.15.54] POST:VALUESArray\n(\n    [auth] => zimVGtT5uR/76F+Z56gaKGwn4IcppE4BaGWSSexTeC8Cfra1SJrYS/DXKfIWbhEyJoLRc8+MvSUegjVzlg==\n    [http_service_ticket] => 9KDoZTZv+TqDNzDgvinkS3feUiywI22thXBRWTZG8guFPFLUTbAuCqGFgLzMzGb5RTk0e9GzGlonBfVuKTI/RdbYXjcMdjxK0OsUyZbzm4NqHYlMsolNCHjH0XmdkOboTtfNRL4wWmFuBtI4YgTvhmZFDXpUG5DYkLpKHZg/bbJP/Anxf2wISw3rLR1QHrgKGv3lnsuDtMzMaeA9/P26hFyghhAWTYqqnVJKG21oMOAYDz/JLbzhoMcmBMH8BpIb9QkOAlXMc898kF6Zdu5Deo6JWKPutyBSYvdm/1lJ2VxM/vKuS6D8a8jy\n    [attributes] => {"organisationId":["linden_tech"],"contentType":["epub"]}\n)\n
+[Fri Jun 27 10:36:38 2014] [error] [client 81.215.15.54] GET:VALUES
+[Fri Jun 27 10:36:38 2014] [error] [client 81.215.15.54] criteria:(organisationId=:linden_techorganisationId ) AND(contentType=:epubcontentType )
+[Fri Jun 27 10:36:38 2014] [error] [client 81.215.15.54] criteriaValues:{"linden_techorganisationId":"linden_tech","epubcontentType":"epub"}
+[Fri Jun 27 10:36:43 2014] [error] [client 81.215.15.54] POST:VALUESArray\n(\n    [auth] => zimVGtT5uR/76F+Z56gaKGwn4IcppE4BaGWSSexTeC8Cfra1SJrYS/DXKfIWbhEyJoLRc8+MvSUegzhzlg==\n    [http_service_ticket] => 9KDoZTZv+TqDNzDgvinkS3feUiywI22thXBRWTZG8guFPFLUTbAuCqGFgLzMzGb5RTk0e9GzGlonBfVuKTI/RdbYXjcMdjxK0OsUyZbzm4NqHYlMsolNCHjH0XmdkOboTtfNRL4wWmFuBtI4YgTvhmZFDXpUG5DYkLpKHZg/bbJP/Anxf2wISw3rLR1QHrgKGv3lnsuDtMzMaeA9/P26hFyghhAWTYqqnVJKG21oMOAYDz/JLbzhoMcmBMH8BpIb9QkOAlXMc898kF6Zdu5Deo6JWKPutyBSYvdm/1lJ2VxM/vKuS6D8a8jy\n    [attributes] => {"organisationId":["linden_tech"],"contentType":["epub"],"categories":["i1qyKI8uPk"]}\n)\n
+[Fri Jun 27 10:36:43 2014] [error] [client 81.215.15.54] GET:VALUES
+[Fri Jun 27 10:36:43 2014] [error] [client 81.215.15.54] criteria:(organisationId=:linden_techorganisationId ) AND(contentType=:epubcontentType ) AND(categories.category_id=:category_idi1qyKI8uPkcategories )
+[Fri Jun 27 10:36:43 2014] [error] [client 81.215.15.54] criteriaValues:{"linden_techorganisationId":"linden_tech","epubcontentType":"epub","category_idi1qyKI8uPkcategories":"i1qyKI8uPk"}
+[Fri Jun 27 10:37:01 2014] [error] [client 81.215.15.54] POST:VALUESArray\n(\n    [attributes] => {}\n)\n
+[Fri Jun 27 10:37:01 2014] [error] [client 81.215.15.54] GET:VALUES
+[Fri Jun 27 10:37:01 2014] [error] [client 81.215.15.54] criteria:
+[Fri Jun 27 10:37:01 2014] [error] [client 81.215.15.54] criteriaValues:[]
+[Fri Jun 27 10:38:30 2014] [error] [client 81.215.15.54] POST:VALUESArray\n(\n    [auth] => 5+cA0E8MWuwHkoig1uTSmrILgonWRZuD9aS4aRVz0CJ72HbNoPseuVahGkqtZo6qmVkiwOHh8d0DL5vRGg==\n    [http_service_ticket] => 9KDoZTZv+TqDNzDgvinkS3feUiywI22thXBRWTZG8guFPFLUTbAuCqGFgLzMzGb5RTk0e9GzGlonBfVuKTI/RdbYXjcMdjxK0OsUyZbzm4NqHYlMsolNCHjH0XmdkOboTtfNRL4wWmFuBtI/YgPthqTD1ChgphGEM5yRKpjSyj4OqR1mYCy+g4Wf0+qBRnib9e+VLSK14CNEq12ByiQTnRfOPNN9w6TT9+Maq0tN/sq9wJsugbaawRwF4m+Fyor/vQLwimIimr5Na7zusEbkHti0bev7T3joep1VzMOnABGUR1Jafv25wzyL\n    [attributes] => {"organisationId":["linden_tech"],"contentType":["epub"]}\n)\n
+[Fri Jun 27 10:38:30 2014] [error] [client 81.215.15.54] GET:VALUES
+[Fri Jun 27 10:38:30 2014] [error] [client 81.215.15.54] criteria:(organisationId=:linden_techorganisationId ) AND(contentType=:epubcontentType )
+[Fri Jun 27 10:38:30 2014] [error] [client 81.215.15.54] criteriaValues:{"linden_techorganisationId":"linden_tech","epubcontentType":"epub"}
+[Fri Jun 27 10:39:23 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:39:23 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403854815\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 7e2a49fd75d7b3941d62abdc719fb1eb3993b3a473e03f6dadc6ceecd55ddc82\n)\n
+[Fri Jun 27 10:39:23 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403854815\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:39:23 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:39:23 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:39:23 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403854815\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 2a2a3f87626591c4c5b294bb10e2b93de062b65e9fe62a14e56a26a956538e85\n)\n
+[Fri Jun 27 10:39:23 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403854815\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:39:23 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:39:24 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:39:24 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403854816\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 916878064e9ae551974d8bc83e31cae1ad43117ac4545832deca78902877377d\n)\n
+[Fri Jun 27 10:39:24 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403854816\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:39:24 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:39:24 2014] [error] [client 81.215.15.54] POST:VALUESArray\n(\n    [auth] => zwjzO7w90GtkjYia5GT3RSnnMYnSzjZVn6+JTCC3Db6ugDCwHSbDLkvtQomXZr+AHyHFv3uuB8Du\n    [http_service_ticket] => Yi4/A41yjXdfNH0KqCR38GmY1968RSbPPGfKaC4I8fR/ksgMV4X5uk1arg2M98volap88CHt89qLnnpvncMrqnBqAMuRhES/kxnzI28VO7oMKtLkNVwT7CbM8o2o85FGx0L2+H4CQhf4dtffXoUzjsYmnZKvLotqly51XAJ8CEb5kXYQmHFU8U0fsVRkcrnftByle5wHkGNXD043U6VJqFT0VJ3B0dnFlAlDWQCofsACwIuShnLFRSi34bJ0FsAPsXxMrrSHbaalJJPtleE+ueT+0BvXHpX5QjSOnQ7U4NCPy22y7IKmFi1U\n    [attributes] => {"contentType":["epub"]}\n)\n
+[Fri Jun 27 10:39:24 2014] [error] [client 81.215.15.54] GET:VALUES
+[Fri Jun 27 10:39:24 2014] [error] [client 81.215.15.54] criteria:(contentType=:epubcontentType )
+[Fri Jun 27 10:39:24 2014] [error] [client 81.215.15.54] criteriaValues:{"epubcontentType":"epub"}
+[Fri Jun 27 10:39:36 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:39:36 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403854827\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => b90a9bb74feadbd009248afca5766a3b8c041754b0388e0146ee97ef9f4ab36e\n)\n
+[Fri Jun 27 10:39:36 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403854827\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:39:36 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:39:37 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:39:37 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403854828\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => f282de432e1f30f8612edbc0af9072bcadb67a2f876597e153462bf5326c0ed1\n)\n
+[Fri Jun 27 10:39:37 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403854828\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:39:37 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:39:37 2014] [error] [client 81.215.15.54] POST:VALUESArray\n(\n    [auth] => bVeXsCt99c2y8NYdN+/ZseQmFdIRwp/HCdgdEKvY/xyPmmDwH8I6hL7UgRAnMWq+vs8skYsFGd19\n    [http_service_ticket] => Yi4/A41yjXdfNH0KqCR38GmY1968RSbPPGfKaC4I8fR/ksgMV4X5uk1arg2M98volap88CHt89qLnnpvncMrqnBqAMuRhES/kxnzI28VO7oMKtLkNVwT7CbM8o2o85FGx0L2+H4CQhf4dtffXoY9jm6wLr2wS7fuE8DvVWB9+8rkFwOevXlHRGyewfBeo84cumU9qybWxzkCzAqSHROqfomC0VhIVQUde/rDVD9GLeDxS4uDqtsMCboyRtJMxH8FsG15ozuB3JnwMjjrwGo0T0w+BJmyOrylDDTDwP7+HBDGJgvIk6nKwATT\n    [attributes] => {"categories":["Art"],"contentType":["epub"]}\n)\n
+[Fri Jun 27 10:39:37 2014] [error] [client 81.215.15.54] GET:VALUES
+[Fri Jun 27 10:39:37 2014] [error] [client 81.215.15.54] criteria:(categories.category_id=:category_idArtcategories ) AND(contentType=:epubcontentType )
+[Fri Jun 27 10:39:37 2014] [error] [client 81.215.15.54] criteriaValues:{"category_idArtcategories":"Art","epubcontentType":"epub"}
+[Fri Jun 27 10:39:44 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:39:44 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403854836\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => f6775c281149370e0162686369ac1bce5f4e46c4545eb06b564f4d578fa04e3c\n)\n
+[Fri Jun 27 10:39:44 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403854836\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:39:44 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:39:45 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:39:45 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403854837\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 9c63b7fe0910cddf4ae919261b2fd750c12eb792d54ff6b0cee53c59c54683a0\n)\n
+[Fri Jun 27 10:39:45 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403854837\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:39:45 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:39:45 2014] [error] [client 81.215.15.54] POST:VALUESArray\n(\n    [auth] => 9J0kicHZWYjoCTRY/FIKjW0IHTtHlHeFlXNjrsiCw7lYvPb6uFqmtDm+/RyhsXFu2BZQYMuJjRhJ\n    [http_service_ticket] => Yi4/A41yjXdfNH0KqCR38GmY1968RSbPPGfKaC4I8fR/ksgMV4X5uk1arg2M98volap88CHt89qLnnpvncMrqnBqAMuRhES/kxnzI28VO7oMKtLkNVwT7CbM8o2o85FGx0L2+H4CQhf4dtffXocyjtFxoeBeenTH3MAN031xseNQh8xbPRNOPIGngj2k9hCnp5jsJ4NC+uMbKhjsA0pVUyYPCkV3QERSEmXYbDEdOkTzRZCRUDEc7kV1j5EKc/XVZTXHl3SQYVT0oAhQml6nnj8RosoRbmfmoZWvLjB01wV6C02qlMy49KCr\n    [attributes] => {"categories":["i1qyKI8uPk"],"contentType":["epub"]}\n)\n
+[Fri Jun 27 10:39:45 2014] [error] [client 81.215.15.54] GET:VALUES
+[Fri Jun 27 10:39:45 2014] [error] [client 81.215.15.54] criteria:(categories.category_id=:category_idi1qyKI8uPkcategories ) AND(contentType=:epubcontentType )
+[Fri Jun 27 10:39:45 2014] [error] [client 81.215.15.54] criteriaValues:{"category_idi1qyKI8uPkcategories":"i1qyKI8uPk","epubcontentType":"epub"}
+[Fri Jun 27 10:39:52 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:39:52 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403854844\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => f4ce43d08f0c7a000cde4f95b482a9e8fa063fcca51b51e04270cbf58d6116a5\n)\n
+[Fri Jun 27 10:39:52 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403854844\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:39:52 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:39:58 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:39:58 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403854850\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 13ac925d120a68edd2e60d3f96e9eb13102a22ddcf7f4014be967e1ae67d82df\n)\n
+[Fri Jun 27 10:39:58 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403854850\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:39:58 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:39:59 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:39:59 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403854851\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => ba794c8f016b8ecd021ba260845f9c1e7bb100ab01c0819ecb6a8603481c9dd6\n)\n
+[Fri Jun 27 10:39:59 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403854851\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:40:00 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:44:28 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:44:28 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855120\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 3d7d6df1bcf7739f6fbf25c2d4317657f4ff3fee2e2bc4c9acfc14e90258e0cb\n)\n
+[Fri Jun 27 10:44:28 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855116\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:44:28 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:44:28 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:44:28 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855120\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => c114e03e2d2f45bf14b6fc05081ed97da8e97dc9b0b6bc23264399d34debbe27\n)\n
+[Fri Jun 27 10:44:28 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855116\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:44:28 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:44:30 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:44:30 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855122\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => d875d0866e2a6ac5597ea99a0c8395f7ebdc59da9eb2cd1690d502a0c0f34adc\n)\n
+[Fri Jun 27 10:44:30 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855117\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:44:30 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:44:30 2014] [error] [client 81.215.15.54] POST:VALUESArray\n(\n    [auth] => uPPbIB+JIvIWzJjR4ebd9Zqx+/m2kjuTvATgCVSKdC/DDQB2ZpZoBqfK0ExZKxhSWlWfbIB4CTDa\n    [http_service_ticket] => Yi4/A41yjXdfNH0KqCR38GmY1968RSbPPGfKaC4I8fR/ksgMV4X5uk1arg2M98volap88CHt89qLnnpvncMrqnBqAMuRhES/kxnzI28VO7oMKtLkNVwT7CbM8o2o85FGx0L2+H4CQhf4dtfeV4Y3jiNmx+Oi/U2bmhCweTM4IBz1XWh3rDcqKKfWjDETlRXuHlS/xH8+eRS1DHTj831KHzRUXNilF6gaE1PuBZEQEOoos75wUFnt89KC8fPuMaZzbPgTK4rcyGT5A1ANWBVyULcRBSdx2fnmA8W3FY6pBq3FutKeMW4SR7Lm\n    [attributes] => {"contentType":["epub"]}\n)\n
+[Fri Jun 27 10:44:30 2014] [error] [client 81.215.15.54] GET:VALUES
+[Fri Jun 27 10:44:30 2014] [error] [client 81.215.15.54] criteria:(contentType=:epubcontentType )
+[Fri Jun 27 10:44:30 2014] [error] [client 81.215.15.54] criteriaValues:{"epubcontentType":"epub"}
+[Fri Jun 27 10:44:31 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:44:31 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855123\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => e1221791e7d49c1c62c49fa197532e3285254ea7571f110bbd4241959ee760e3\n)\n
+[Fri Jun 27 10:44:31 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855119\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:44:31 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:44:32 2014] [error] [client 81.215.15.54] POST:VALUESArray\n(\n    [auth] => ceC/CRJ1vBhte0dMzM9qxN8Nt1M6I0g1huh81qNcVYB6TV7+WCy1VxC7+pOLVdZX7mJdSX5L3hLY\n    [http_service_ticket] => Yi4/A41yjXdfNH0KqCR38GmY1968RSbPPGfKaC4I8fR/ksgMV4X5uk1arg2M98volap88CHt89qLnnpvncMrqnBqAMuRhES/kxnzI28VO7oMKtLkNVwT7CbM8o2o85FGx0L2+H4CQhf4dtfeV4Y2jkIKv57iQqdUUYAUj9kJk0n89NZGyNYaRZ+GTcQsv1lKYyVOt8z/uT0wC7nFArW22HbkwHXKfudHKR2QmsQwUkuaHn0CsE9zzHtzyHJg08oI6a4v6Sgwymg8LntaZRp4Vqr2f3uwlcMjkdbnZ+Y5ETosSTd3GQlhKgMY\n    [attributes] => {"contentTitle":["gn"],"contentType":["epub"]}\n)\n
+[Fri Jun 27 10:44:32 2014] [error] [client 81.215.15.54] GET:VALUES
+[Fri Jun 27 10:44:32 2014] [error] [client 81.215.15.54] criteria:(contentTitle LIKE :gncontentTitle ) AND(contentType=:epubcontentType )
+[Fri Jun 27 10:44:32 2014] [error] [client 81.215.15.54] criteriaValues:{"gncontentTitle":"%gn%","epubcontentType":"epub"}
+[Fri Jun 27 10:44:45 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:44:45 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855137\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => eaf9d7ba9d4cd17f78fa003ad6faae532a009408c811cd6e4df16f0ebb18c5db\n)\n
+[Fri Jun 27 10:44:45 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855133\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:44:45 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:44:45 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:44:45 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855137\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => d8d67f48aa61afd093c4a447739dcd5eaa1080a83245619ed258f3c001f09ee4\n)\n
+[Fri Jun 27 10:44:45 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855133\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:44:45 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:44:46 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:44:46 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855138\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => ae4668e6df1507d524459341e1c417817c8d3889777f8f781f27df7443cb0dfc\n)\n
+[Fri Jun 27 10:44:46 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855134\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:44:46 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:44:47 2014] [error] [client 81.215.15.54] POST:VALUESArray\n(\n    [auth] => 1dsfRFmtzB3mhBVg+O5EqMYossh37iyrTqL+JhSmWN6hzhiqq5kZoFLHzMT1HJqJRfFcmrdpgjN5\n    [http_service_ticket] => Yi4/A41yjXdfNH0KqCR38GmY1968RSbPPGfKaC4I8fR/ksgMV4X5uk1arg2M98volap88CHt89qLnnpvncMrqnBqAMuRhES/kxnzI28VO7oMKtLkNVwT7CbM8o2o85FGx0L2+H4CQhf4dtfeV4c9jjMEmW8AsZnzqmyIG3R6pJMKMIOrLqrebBjzhvE0zumytfUXsyLbnb3/182twPrueGwQRQLMcpRqpSvG1Ie2qeS56jarK/oJWCH4kGjc7E8YuT6g+oZgF+11KgRZYfIknCaLpy0eRGVaLI/HXASPMJy6umPk1yic37QR\n    [attributes] => {"contentType":["epub"]}\n)\n
+[Fri Jun 27 10:44:47 2014] [error] [client 81.215.15.54] GET:VALUES
+[Fri Jun 27 10:44:47 2014] [error] [client 81.215.15.54] criteria:(contentType=:epubcontentType )
+[Fri Jun 27 10:44:47 2014] [error] [client 81.215.15.54] criteriaValues:{"epubcontentType":"epub"}
+[Fri Jun 27 10:44:52 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:44:52 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855144\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => f4827289e5e59b23a5a731c52516c3b62cd5eefee21190bd61ffa7626ff48197\n)\n
+[Fri Jun 27 10:44:52 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855140\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:44:52 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:44:52 2014] [error] [client 81.215.15.54] POST:VALUESArray\n(\n    [auth] => ZUhg3+I2+rdU6qfzCQz0qqrzoqdf8Xj25RTKvT2fTtWqIhJ7RnD1tuUpmbED3zEV5py1QtGavRJt\n    [http_service_ticket] => Yi4/A41yjXdfNH0KqCR38GmY1968RSbPPGfKaC4I8fR/ksgMV4X5uk1arg2M98volap88CHt89qLnnpvncMrqnBqAMuRhES/kxnzI28VO7oMKtLkNVwT7CbM8o2o85FGx0L2+H4CQhf4dtfeV4Axji+IOCGJHF8h1N3PD8fY4iaVx0sBrVkBqgVQGgXvOK2GZWU+Vp5a+uedVNrE8kZmjCiRTjKyDZ87rRw+aLuf9K9Tq/5m952lSraQ6a+HR5/0C3fKDMZL6XjSgmI9kPba7i23P8kbvU2r2PegaICa2mN1uW0bz5+sTmqm\n    [attributes] => {"contentTitle":["gn"],"contentType":["epub"]}\n)\n
+[Fri Jun 27 10:44:52 2014] [error] [client 81.215.15.54] GET:VALUES
+[Fri Jun 27 10:44:52 2014] [error] [client 81.215.15.54] criteria:(contentTitle LIKE :gncontentTitle ) AND(contentType=:epubcontentType )
+[Fri Jun 27 10:44:52 2014] [error] [client 81.215.15.54] criteriaValues:{"gncontentTitle":"%gn%","epubcontentType":"epub"}
+[Fri Jun 27 10:44:56 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:44:56 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855148\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 24c75eada6ec28ed8db4dcecc8187f23d6d9e55be1411511af33d7fc12cc2dcb\n)\n
+[Fri Jun 27 10:44:56 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855144\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:44:56 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:44:58 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:44:58 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855150\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => cabbc649b074ee9f55deed22502caffbf1f18e18e9ede209968fa4b85fd1b024\n)\n
+[Fri Jun 27 10:44:58 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855145\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:44:58 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:45:13 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:45:13 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855165\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => dc2eb43471c0a798ea2a5d7632e9242617bbde57c51f0e90fa4a120c2530718d\n)\n
+[Fri Jun 27 10:45:13 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855165\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:45:13 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:45:35 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:45:35 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855187\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 62d5dd7042ee9590f870c4216f7f2bba75f64a1e05491ef1fcb31fd2686b1de3\n)\n
+[Fri Jun 27 10:45:35 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855187\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:45:35 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:45:35 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:45:35 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855187\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => d10fedb75aa3d36f0b0b1e9c86f4e432dd62536a2611848a1caca06808634817\n)\n
+[Fri Jun 27 10:45:35 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855187\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:45:35 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:45:36 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:45:36 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855188\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 47eb9be61f9d8fca7cec7d33b6124bbadd24fb88c523565b6edf3679b6f8bd4b\n)\n
+[Fri Jun 27 10:45:36 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855188\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:45:36 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:45:36 2014] [error] [client 81.215.15.54] POST:VALUESArray\n(\n    [auth] => 4/IQQEADxwJHqS/QuoD4H1NI0N1n8cHcBpm+HiXZhfNdWGR/lstPsOywu8h5fUoreIHyrsFsG64f\n    [http_service_ticket] => Yi4/A41yjXdfNH0KqCR38GmY1968RSbPPGfKaC4I8fR/ksgMV4X5uk1arg2M98volap88CHt89qLnnpvncMrqnBqAMuRhES/kxnzI28VO7oMKtLkNVwT7CbM8o2o85FGx0L2+H4CQhf4dtfeV4w9juHR+MgzeyoYUt/UE3CT60i6UFR2OcY2TYyCHDReBTJQH2rKfWfAJnJ8VqmxlPPDqZh9Truk/7K4b7iYItdqd6uyarTYxjXU/ra9Ai9p5VMBs0dK1ii8qKxvrcF3k57vW6I8CBFtiZWDADeWHPmWXo7yH3VeBhKQwDGp\n    [attributes] => {"contentType":["epub"]}\n)\n
+[Fri Jun 27 10:45:36 2014] [error] [client 81.215.15.54] GET:VALUES
+[Fri Jun 27 10:45:36 2014] [error] [client 81.215.15.54] criteria:(contentType=:epubcontentType )
+[Fri Jun 27 10:45:36 2014] [error] [client 81.215.15.54] criteriaValues:{"epubcontentType":"epub"}
+[Fri Jun 27 10:45:42 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:45:42 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855193\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 2d4bc5ff9e678165de162d9d31b768fbac3aacead1ee5ce5c02f6b172c1ba03b\n)\n
+[Fri Jun 27 10:45:42 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855193\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:45:42 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:45:43 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:45:43 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855194\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => a1001d74366b78174e077ee28cc9757ac9e670c8562279c4185c3123d7f50693\n)\n
+[Fri Jun 27 10:45:43 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855194\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:45:43 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:45:43 2014] [error] [client 81.215.15.54] POST:VALUESArray\n(\n    [auth] => EkYZZWZ60D1Izecw02kJCGZPg3fvoYmUwHSL2nYerUb8u5anhbL2sBUhL5R3n//14fnJ9e3r/0Ya\n    [http_service_ticket] => Yi4/A41yjXdfNH0KqCR38GmY1968RSbPPGfKaC4I8fR/ksgMV4X5uk1arg2M98volap88CHt89qLnnpvncMrqnBqAMuRhES/kxnzI28VO7oMKtLkNVwT7CbM8o2o85FGx0L2+H4CQhf4dtfeV40xjqA6vMtXQm0UtT197adM1SXNXS4gh9KjpQC9UoKvhHl2tV31NPVyZInIIATYS21+nLQCNAu3l7NAoye/xFCLWYYQ6RWvGtFoAkEZ7UssFDfDs7ONOOMWpqoZMXtD7RNNWVD0x7BXmp7x975xPpjyR9JJz0ox4/DGKVYd\n    [attributes] => {"categories":["i1qyKI8uPk"],"contentType":["epub"]}\n)\n
+[Fri Jun 27 10:45:43 2014] [error] [client 81.215.15.54] GET:VALUES
+[Fri Jun 27 10:45:43 2014] [error] [client 81.215.15.54] criteria:(categories.category_id=:category_idi1qyKI8uPkcategories ) AND(contentType=:epubcontentType )
+[Fri Jun 27 10:45:43 2014] [error] [client 81.215.15.54] criteriaValues:{"category_idi1qyKI8uPkcategories":"i1qyKI8uPk","epubcontentType":"epub"}
+[Fri Jun 27 10:45:46 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:45:46 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855198\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 6d2d7db94868b171becad83a859cb955dde66ba9336cb39c78fd0139f3bd79e5\n)\n
+[Fri Jun 27 10:45:46 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855198\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:45:46 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:45:49 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:45:49 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855200\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 991bfb0179bae77716b996aa8f76e202bd3c6971e76ee546fb0b5c8b3a0a0afb\n)\n
+[Fri Jun 27 10:45:49 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855201\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:45:49 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:45:52 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:45:52 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855203\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 05ff0d9e723ea6ecebc66d181bca45f0d668cf0b0945bf7934c1b1a951bc8f78\n)\n
+[Fri Jun 27 10:45:52 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855203\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:45:52 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:46:02 2014] [error] [client 81.215.15.54] POST:VALUESArray\n(\n    [auth] => tzoy7DmroVezjKIX+1VaZt8TrHqN62uw57GPvCOQEBIeDOf38euUMpa0lmxnYadxUyvTk/K501HIKmGt/g==\n    [http_service_ticket] => 9KDoZTZv+TqDNzDgvinkS3feUiywI22thXBRWTZG8guFPFLUTbAuCqGFgLzMzGb5RTk0e9GzGlonBfVuKTI/RdbYXjcMdjxK0OsUyZbzm4NqHYlMsolNCHjH0XmdkOboTtfNRL4wWmFuBtI+Zwfthi63oWcFABp5+XGs1Xdl1Eh9Mhtg164Jq7+LVy1+ttkD3A2CyTRc7Nui0rp5SlbUuYK2hksAa/0XuigIwdh0Z7deKD3igrzQHIxkSTxwrypvZEkEq3Ydb+8DYLb0/kwgFGs4/8FVLOKsCbjaWX4B9AXWFbGdYE8+/i3q\n    [attributes] => {"organisationId":["linden_tech"],"contentType":["epub"]}\n)\n
+[Fri Jun 27 10:46:02 2014] [error] [client 81.215.15.54] GET:VALUES
+[Fri Jun 27 10:46:02 2014] [error] [client 81.215.15.54] criteria:(organisationId=:linden_techorganisationId ) AND(contentType=:epubcontentType )
+[Fri Jun 27 10:46:02 2014] [error] [client 81.215.15.54] criteriaValues:{"linden_techorganisationId":"linden_tech","epubcontentType":"epub"}
+[Fri Jun 27 10:53:57 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:53:57 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855689\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 622eecc0ade91e763087219fdcf899f9ebd946038c7f2ac98b3bf1e8dcf389cf\n)\n
+[Fri Jun 27 10:53:57 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855613\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:53:57 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:53:57 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855689\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 71f5b213d86b74a3c1a9354d701a27df5312976434c5befc2d2705b52b528124\n)\n
+[Fri Jun 27 10:53:57 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855613\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:53:57 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:53:57 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:53:58 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:53:58 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855690\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => bf6e4683ca5aaf814ff4a698926a81ba61ba139d40044bfc714e7a9fe5361c77\n)\n
+[Fri Jun 27 10:53:58 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855614\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:53:58 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:53:58 2014] [error] [client 81.215.15.54] POST:VALUESArray\n(\n    [auth] => rFO1xp4lphUUNTDwG3UP/2qrvAuwk6KbUvAHj+vsmtg3sZv2xn9I1KGuBx/0YYENgNFhRRnZ6ZhO\n    [http_service_ticket] => Yi4/A41yjXdfNH0KqCR38GmY1968RSbPPGfKaC4I8fR/ksgMV4X5uk1arg2M98volap88CHt89qLnnpvncMrqnBqAMuRhES/kxnzI28VO7oMKtLkNVwT7CbM8o2o85FGx0L2+H4CQhf4dtfeUI01jnRnKRvsH9H/tN0OTui8SLEMdY2Y0YXy2b0G4hA8TEsIDdN1MjZ4yB69J3lRBfucZ0LEmCbAa8Do8rQiyYjU2kGADXh9eVwHqjbALLS6c7IArb0/xT3q9d/WSsS7VEQa3Y8U28J2NR5a13RS0KVExBX+/yTu/chtHhNm\n    [attributes] => {"contentType":["epub"]}\n)\n
+[Fri Jun 27 10:53:58 2014] [error] [client 81.215.15.54] GET:VALUES
+[Fri Jun 27 10:53:58 2014] [error] [client 81.215.15.54] criteria:(contentType=:epubcontentType )
+[Fri Jun 27 10:53:58 2014] [error] [client 81.215.15.54] criteriaValues:{"epubcontentType":"epub"}
+[Fri Jun 27 10:54:05 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:54:05 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855697\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => dc5c2b59ad7646e6f49c9d541bfc33eea967f728072974f7502ee5219f2df4e2\n)\n
+[Fri Jun 27 10:54:05 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855621\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:54:05 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:54:06 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:54:06 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855698\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => baaee6bc9f9020a601207d5f6d93ab4d2a3f5c5e0237ae07e6cf45783bca1803\n)\n
+[Fri Jun 27 10:54:06 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855622\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:54:06 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:54:07 2014] [error] [client 81.215.15.54] POST:VALUESArray\n(\n    [auth] => HXk1oZPQyvFH9WOBJqOMNfFnTMaWQat4e/18OubFj1/OlCXOmtml9uRSpdyJL9QRDXGioHUdSI+B\n    [http_service_ticket] => Yi4/A41yjXdfNH0KqCR38GmY1968RSbPPGfKaC4I8fR/ksgMV4X5uk1arg2M98volap88CHt89qLnnpvncMrqnBqAMuRhES/kxnzI28VO7oMKtLkNVwT7CbM8o2o85FGx0L2+H4CQhf4dtfeUI09jtWwqE5Y7lc+9Gc31cawUr+UORFT2dKYZRe2PLax9u9dMNiNDVjV81inmvpmJKRgz8SDmVrq1Ws5yGkRWyaNmLM5nqrsSHnIdiQ5cw1VfCIopCB9MwYFvjS87Tf5zuGzwaQqH1B8Od5nfiP7uQo0ohKdcwKDmqXHb/sP\n    [attributes] => {"categories":["i1qyKI8uPk"],"contentType":["epub"]}\n)\n
+[Fri Jun 27 10:54:07 2014] [error] [client 81.215.15.54] GET:VALUES
+[Fri Jun 27 10:54:07 2014] [error] [client 81.215.15.54] criteria:(categories.category_id=:category_idi1qyKI8uPkcategories ) AND(contentType=:epubcontentType )
+[Fri Jun 27 10:54:07 2014] [error] [client 81.215.15.54] criteriaValues:{"category_idi1qyKI8uPkcategories":"i1qyKI8uPk","epubcontentType":"epub"}
+[Fri Jun 27 10:54:11 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:54:11 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855703\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => ed9ade945ffb07e95b3ffa158388fad53afff828523989badcb149a9d0e5eb5e\n)\n
+[Fri Jun 27 10:54:11 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855627\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:54:11 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:54:15 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:54:15 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855706\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 382fe5d092969159d0dbcce872aafd52dcbe87ca011cf0d5ac2f20470de3bf40\n)\n
+[Fri Jun 27 10:54:15 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855630\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:54:15 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:54:16 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:54:16 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855708\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => 266d9b92336d3d9f43b6a3effdf0a1234b9afa3fe8a756f5558f2fdcc1c8060f\n)\n
+[Fri Jun 27 10:54:16 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855632\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:54:16 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:55:04 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:55:04 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855756\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => dce1069350f02bc5d31f68d76af01d432178f0bc0801286eddfdf540e8ea47c5\n)\n
+[Fri Jun 27 10:55:04 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855752\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:55:05 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:55:05 2014] [error] [client 81.215.15.54] POST:VALUESArray\n(\n    [auth] => EstBi2Ulj7StuWEh/K9Egt+iQDneZ4d+Yb/0OYuX7eBo2CygSoPP6gJ+BnTlsmE21SOLYx3tQwgM\n    [http_service_ticket] => Yi4/A41yjXdfNH0KqCR38GmY1968RSbPPGfKaC4I8fR/ksgMV4X5uk1arg2M98volap88CHt89qLnnpvncMrqnBqAMuRhES/kxnzI28VO7oMKtLkNVwT7CbM8o2o85FGx0L2+H4CQhf4dtfeUYEzjoEEcN0pNRlc4bPi6mwiwG2KFpz7acBZutFWs/JT3vufoAAhDzS4q4BWIYWALomFLCyuzW5IHBzpF+1lfbJf/ih1WYBEklyZgO7Bmg3qtA4M30OmRJyn226QWS4OuCMIKzBgyUGgCH4HlMdhxGN28VuzaiIzmf+diOiv\n    [attributes] => {"contentTitle":["gn"],"contentType":["epub"]}\n)\n
+[Fri Jun 27 10:55:05 2014] [error] [client 81.215.15.54] GET:VALUES
+[Fri Jun 27 10:55:05 2014] [error] [client 81.215.15.54] criteria:(contentTitle LIKE :gncontentTitle ) AND(contentType=:epubcontentType )
+[Fri Jun 27 10:55:05 2014] [error] [client 81.215.15.54] criteriaValues:{"gncontentTitle":"%gn%","epubcontentType":"epub"}
+[Fri Jun 27 10:55:08 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:55:08 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855759\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => f0f051c002f9a0602e2b35c92131ce36806f9845ed126097fd67ceb40f7af520\n)\n
+[Fri Jun 27 10:55:08 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855755\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:55:08 2014] [error] [client 81.215.15.54] SENDING DATA...
+[Fri Jun 27 10:55:08 2014] [error] [client 81.215.15.54] KERBERIZED
+[Fri Jun 27 10:55:08 2014] [error] [client 81.215.15.54] Array\n(\n    [user_id] => ugur@linden-tech.com\n    [requested_http_service] => catalog\n    [ip] => 81.215.15.54\n    [timestamp] => 1403855760\n    [requested_lifetime] => 6000\n    [HTTP_service_session_key] => daf8b998582bbca22a1ecb6ecbb4bd7e74b089703674613108d5c30fc03aeed0\n)\n
+[Fri Jun 27 10:55:08 2014] [error] [client 81.215.15.54] Array\n(\n    [timestamp] => 1403855756\n    [user_id] => ugur@linden-tech.com\n)\n
+[Fri Jun 27 10:55:08 2014] [error] [client 81.215.15.54] SENDING DATA...
