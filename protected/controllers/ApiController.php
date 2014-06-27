@@ -111,21 +111,7 @@ class ApiController extends Controller
 
 	}
 
-	public function actionGetMainInfo()
-	{
-		if (!CHttpRequest::getIsPostRequest()) {
-			$this->error("AC-GMI","Wrong Request",func_get_args(),CHttpRequest::getIsPostRequest());
-			$this->response("");
-			return null;			
-		}
-
-		 $id=CHttpRequest::getPost('id',0);
-		// $id="VgWaWF8DQ3J8U7tAiGqQuRHucsA6uyWLQjk1Qm0Ibz5e";
-		if (!$id) {
-			$this->error("AC-GMI","Catalog Not Found",func_get_args());
-			return false;
-		}
-
+	public function mainInfo($id){
 		//$res=ContentMeta::model()->findAll('contentId=:contentId',array('contentId'=>$id));
 		$content=Content::model()->find('contentId=:contentId',array('contentId'=>$id));
 
@@ -143,11 +129,48 @@ class ApiController extends Controller
 		$host=Yii::app()->db->createCommand("SELECT h.address FROM host h, content_host c where c.content_id='".$id."' AND h.id=c.host_id")->queryRow();
 		$data['host_address']=$host['address'];
 		$data['host_port']=$host['port'];
-		// if ($res) {
-		// 	foreach ($res as $key => &$items) {
-		// 		$items=$items->attributes;
-		// 	}
-		// }
+
+
+		return $data;
+	}
+
+	public function actionGetMainInfo()
+	{
+		if (!CHttpRequest::getIsPostRequest()) {
+			$this->error("AC-GMI","Wrong Request",func_get_args(),CHttpRequest::getIsPostRequest());
+			$this->response("");
+			return null;			
+		}
+
+
+
+		$id=CHttpRequest::getPost('id',0);
+		$ids=json_decode($id);
+		if (is_array($ids)){
+			$multiple=true;
+		} else {
+			$multiple=false;
+		}
+		// $id="VgWaWF8DQ3J8U7tAiGqQuRHucsA6uyWLQjk1Qm0Ibz5e";
+		if (!$id) {
+			$this->error("AC-GMI","Catalog Not Found",func_get_args());
+			return false;
+		}
+
+
+		if (!$multiple){
+			$data = $this->mainInfo($id);
+		}
+		else{
+			$data = [];
+			foreach ($ids as $key => $value) {
+				$data[]=$this->mainInfo($value);
+			}
+		}
+
+
+		
+
 
 		$this->response($data);
 
@@ -168,15 +191,17 @@ class ApiController extends Controller
 		}
 		define('UPLOAD_DIR', 'images/');
 		$img = $res;
-
+		/*
 		if (strlen($img) > 10000 ){
+				
 				$img = functions::compressBase64Image($img,4000,100,20000);
 				if ($Meta->metaValue){
 					$Meta->metaValue =$img;
-					$Meta->save();
+					//$Meta->save();
 				}
-		}
 
+		}
+		*/
 		$exp=explode(";", $img);
 		$ext=explode("/", $exp[0]);
 		$extension = $ext[1]; 
