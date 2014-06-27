@@ -116,6 +116,7 @@ class ApiController extends Controller
 		//$res=ContentMeta::model()->findAll('contentId=:contentId',array('contentId'=>$id));
 		$content=Content::model()->find('contentId=:contentId',array('contentId'=>$id));
 
+		$data['contentId']=$content->contentId;
 		$data['contentTitle']=$content->contentTitle;
 		$data['contentExplanation']=$content->contentExplanation;
 		$data['contentIsForSale']=$content->contentIsForSale;
