@@ -140,7 +140,8 @@ class ApiController extends Controller
 			$data['created']=$content->created;//ContentMeta::model()->find('contentId=:contentId AND metaKey=:metaKey',array('contentId'=>$id,'metaKey'=>'date'))->metaValue;
 
 
-			$host=Yii::app()->db->createCommand("SELECT h.address FROM host h, content_host c where c.content_id='".$id."' AND h.id=c.host_id")->queryRow();
+			$host=Yii::app()->db->createCommand("SELECT * FROM content_host ch  inner join  host h on (h.id = ch.host_id ) where ch.content_id =:contentId ")->bindParam(":contentId",$content->contentId,PDO::PARAM_STR)->queryRow();
+			
 			$data['host_address']=$host['address'];
 			$data['host_port']=$host['port'];
 			$dataArray[]=$data;
