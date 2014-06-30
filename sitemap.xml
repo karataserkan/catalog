@@ -112,4 +112,13 @@
 <url>
   <loc>http://catalog.lindneo.com/q/asd</loc>
 </url>
+<url>
+  <loc>http://catalog.lindneo.com/q/publisher:Uğur 2</loc>
+</url>
+<url>
+  <loc>http://catalog.lindneo.com/q/publisher:Uğur 2/1</loc>
+</url>
+<url>
+  <loc>http://catalog.lindneo.com/iframtest</loc>
+</url>
 </urlset>
