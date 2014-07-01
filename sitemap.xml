@@ -1540,4 +1540,17 @@
 <url>
   <loc>http://bigcat.okutus.com/gn_corp</loc>
 </url>
+<<<<<<< HEAD
 </urlset>
+=======
+<url>
+  <loc>http://catalog.lindneo.com/q/publisher:Uğur 2</loc>
+</url>
+<url>
+  <loc>http://catalog.lindneo.com/q/publisher:Uğur 2/1</loc>
+</url>
+<url>
+  <loc>http://catalog.lindneo.com/iframtest</loc>
+</url>
+</urlset>
+>>>>>>> 1252c817543ee9012c2053cf18fb6860480bac84
