@@ -646,9 +646,9 @@ class ApiController extends Controller
 
 	public function actionListCategoryCatalogs()
 	{
-		if (!$this->authenticate()) {
-			return null;
-		}
+		// if (!$this->authenticate()) {
+		// 	return null;
+		// }
 		if (!CHttpRequest::getIsPostRequest()) {
 			$this->error("AC-LCB","Wrong Request",func_get_args(),CHttpRequest::getIsPostRequest());
 			$this->response("");

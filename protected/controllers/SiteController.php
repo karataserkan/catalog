@@ -473,6 +473,7 @@ class SiteController extends Controller
 			}
 			$newCategory->category_id=$category['category_id'];
 			$newCategory->category_name=$category['category_name'];
+			$newCategory->parent_category=$category['parent_category'];
 			$newCategory->organisation_id=$content->organisationId;
 			if ($newCategory->save()) {
 				$contenCategory= new ContentCategories;
