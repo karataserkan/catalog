@@ -596,6 +596,7 @@ class ApiController extends Controller
 		// }
 
 		if (!CHttpRequest::getIsPostRequest()) {
+			error_log("Wrong Request");
 			$this->error("AC-GC","Wrong Request",func_get_args(),CHttpRequest::getIsPostRequest());
 			$this->response("Wrong Request");
 			return null;			
@@ -604,6 +605,7 @@ class ApiController extends Controller
 		$id=CHttpRequest::getPost('id',0);
 		
 		if (!$id) {
+			error_log("Organisation not Found!");
 			$this->error("AC-GC","Organisation Not Found",func_get_args());
 			$this->response("Organisation Not Found");
 			return false;
@@ -615,7 +617,7 @@ class ApiController extends Controller
 			$items=$items->attributes;
 		}
 
-		//print_r($categories);
+		error_log(print_r($categories,1));
 		$this->response($categories);
 
 			
