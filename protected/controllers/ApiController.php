@@ -95,10 +95,11 @@ class ApiController extends Controller
     		->from('content c,host h,content_host ch')
     		->where('c.contentId=:content AND h.id=ch.host_id AND c.contentId=ch.content_id',array('content'=>$id))
     		->queryAll();
-
+		
     	foreach ($hosts as $key => $host) {
 			$deleteFromCloud="python bin/client.py '{\"host\":\"".$host["address"]."\",\"port\":".$host["port"]."}' DeleteFromCatalog ".$id;
 			shell_exec($deleteFromCloud);
+			error_log($deleteFromCloud);
     	}
 
 		$content=Content::model()->find('contentId=:contentId',array('contentId'=>$id));
@@ -595,6 +596,7 @@ class ApiController extends Controller
 		// }
 
 		if (!CHttpRequest::getIsPostRequest()) {
+			error_log("Wrong Request");
 			$this->error("AC-GC","Wrong Request",func_get_args(),CHttpRequest::getIsPostRequest());
 			$this->response("Wrong Request");
 			return null;			
@@ -603,6 +605,7 @@ class ApiController extends Controller
 		$id=CHttpRequest::getPost('id',0);
 		
 		if (!$id) {
+			error_log("Organisation not Found!");
 			$this->error("AC-GC","Organisation Not Found",func_get_args());
 			$this->response("Organisation Not Found");
 			return false;
@@ -614,7 +617,7 @@ class ApiController extends Controller
 			$items=$items->attributes;
 		}
 
-		//print_r($categories);
+		error_log(print_r($categories,1));
 		$this->response($categories);
 
 			

@@ -732,7 +732,7 @@ class SiteController extends Controller
 
 
 
-		//unlink($uploadfile);
+		unlink($uploadfile);
 
 
 		echo json_encode($uploadRes);
