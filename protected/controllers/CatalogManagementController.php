@@ -1,6 +1,6 @@
 <?php
 class CatalogManagementController extends Controller{
-	
+	  
 	public function init()
     {
         $this->layout = false;
