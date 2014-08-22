@@ -32,6 +32,7 @@ $db_config_list=array(
 $params=array(
 	"walleye"=>array(
 			'adminEmail'=>'webmaster@example.com',
+			'editorIp'=>'94.103.35.20',
 			'reader_host'=>'http://reader.okutus.com',
 			'catalog_host'=>'http://bigcat.okutus.com',
 			'android_reader'=>'https://play.google.com/store/apps/details?id=com.linden.story.keloglan',
@@ -44,6 +45,7 @@ $params=array(
 		),
 	"ulgen"=>array(
 			'adminEmail'=>'webmaster@example.com',
+			'editorIp'=>'178.211.50.86',
 			'reader_host'=>'http://reader.lindneo.com/',
 			'catalog_host'=>'http://catalog.lindneo.com',
 			'android_reader'=>'https://play.google.com/store/apps/details?id=com.linden.story.keloglan',
