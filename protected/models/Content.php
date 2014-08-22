@@ -44,7 +44,7 @@ class Content extends CActiveRecord
 			array('contentPrice', 'numerical'),
 			array('contentId, contentReaderGroup', 'length', 'max'=>80),
 			array('organisationId', 'length', 'max'=>100),
-			array('contentType, contentIsForSale', 'length', 'max'=>4),
+			array('contentType, contentIsForSale', 'length', 'max'=>10),
 			array('organisationName', 'length', 'max'=>1000),
 			array('author', 'length', 'max'=>500),
 			// The following rule is used by search().
