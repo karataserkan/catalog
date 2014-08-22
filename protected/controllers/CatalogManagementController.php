@@ -4,8 +4,8 @@ class CatalogManagementController extends Controller{
 	public function init()
     {
         $this->layout = false;
-    }
-	
+    } 
+	    
 	public function actionDeleteCategories(){	
 		$data=Yii::app()->request->getPost('data');
 		if($data){
