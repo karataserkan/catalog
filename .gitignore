@@ -1,4 +1,5 @@
 protected/runtime/application.log
+./protected/runtime/application.log
 error.log
 sitemap.xml
 catalog_files

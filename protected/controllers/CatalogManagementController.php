@@ -10,7 +10,9 @@ class CatalogManagementController extends Controller{
 		$data=Yii::app()->request->getPost('data');
 		if($data){
 			$data_arr=json_decode(base64_decode($data));
+			error_log(print_r($data_arr,1));
 			foreach ($data_arr as $category) {
+				error_log("category:",$category);
 				$category_model=Categories::model()->find('category_id=:category_id',array('category_id'=>$category));
 				if($category_model)
 				{
@@ -26,7 +28,7 @@ class CatalogManagementController extends Controller{
 	    'postOnly + DeleteCategories'
 	  );
 	}
-	
+		
 	public function accessRules() {
         return array(
             array('allow',
